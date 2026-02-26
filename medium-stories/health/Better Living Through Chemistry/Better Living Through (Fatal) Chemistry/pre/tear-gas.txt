@@ -1,0 +1,19 @@
+The US government have been busy this week denying that pepper spray is a chemical (spoiler, it is a chemical). They’ve also been at pains to point out that it’s not the same as tear gas, which is at least technically correct. I’ve had a lot of requests over the past week for a graphic looking at tear gas, so here it is!
+
+Tear gas is, confusingly, not usually a gas – or at least, the active ingredient isn’t. What we refer to as tear gas is usually a compound called 2-chlorobenzalmalononitrile, or CS for short. At room temperature, it’s a white solid, and it’s usually dispersed as microscopic particles or dissolved in solution as a spray.
+
+The most common way in which tear gas is dispersed is in burning canisters. These canisters contain a starter mixture, which includes charcoal which starts burning when the canister is ignited. An oxidiser such as potassium nitrate helps the charcoal burn faster.
+
+The smoke mixture contains the active ingredient, CS. It also contains sucrose (sugar) as a fuel, and another oxidiser, potassium chlorate, to keep the reaction going. The potassium chlorate converts into potassium chloride as it reacts, adding to the smoke produced. This smoke disperses the CS as a cloud of microscopic particles into the surrounding area.
+
+CS can also be used as a spray. For this purpose, it’s dissolved in a solvent such as methyl isobutyl ketone. It can’t just be dissolved in water, because with water it hydrolyses (breaks it down) into other compounds.
+
+Exposure to tear gas is thought to bind to TRPA1 receptors, the same receptors that oils in mustard, wasabi and horseradish bind to to generate their pungency. It irritates mucous membranes, including the eyes, nose, mouth, skin and respiratory tract. This can lead to inflammation and difficulty breathing. The effects typically last for 15–30 minutes after exposure.
+
+Usually, there are no long term effects of tear gas exposure. However, people with pre-existing conditions that affect the respiratory system, such as asthma, are more vulnerable to CS exposure. And there’s some evidence that CS exposure might increase susceptibility to respiratory diseases – not ideal when we’re in the middle of a respiratory disease pandemic. Additionally, symptoms from exposure to CS can be more severe if it’s released in an enclosed area as opposed to outside.
+
+Despite a range of home-made suggestions for treating tear gas exposure, there is no known antidote. Suggestions such as milk or baking soda solution have not been conclusively shown to be more effective than plain water.
+
+If you are exposed to tear gas, the key thing to do is remove yourself from exposure. This means getting away from the contaminated area and into fresh air as soon as possible. When possible, contaminated clothing should be removed. If you happened to be wearing contact lenses, these should be removed as quickly as possible, as leaving them in could lead to damage to the eyes.
+
+As particles from tear gas can stick to the skin, it’s a good idea to wipe these off in the first instance. The skin and eyes should then be washed with copious amounts of water; in the case of the eyes, irrigation with saline solution or water for 10–20 minutes is recommended.

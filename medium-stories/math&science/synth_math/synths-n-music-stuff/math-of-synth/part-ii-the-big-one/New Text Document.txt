@@ -1,0 +1,427 @@
+High-level: applied category theory (ACT) is already pretty deep in “music as math”, and it is starting to touch DSP and signal-flow thinking, but most of the heavy categorical work is still on structure and composition, not directly on “better tape saturation”. Where it does shine is:
+
+Describing musical structures and transformations (neo-Riemannian, counterpoint, patterns) compositionally.
+
+Treating signal chains, feedback networks, and spatial graphs as string diagrams / monoidal categories.
+
+Giving you algebraic gadgets (operads, polynomial functors, wiring diagrams) that look a lot like modular synth patch-topologies and effect graphs.
+
+Below is a tour, then some concrete software and how you might exploit this as a dev.
+
+1. Why category theory is a good fit for audio
+Two big reasons:
+
+Compositionality: You constantly wire stuff together:
+
+Notes → chords → phrases → sections.
+
+Filters → distortions → delays → reverbs → mix busses.
+Category theory gives you a precise language for “things with inputs and outputs that you can plug together”, via symmetric monoidal categories, operads, props, etc.
+
+Diagrams = patch cables:
+String diagrams for monoidal categories are literally node-and-wire graphs. They are used to formalize signal-flow diagrams and circuits. That is exactly what modular synths and DAW routing look like.
+​
+
+So ACT’s sweet spot is: “What’s the right algebra so you can reason about (and possibly optimize / generate) these graphs?”
+
+2. Category theory in music theory & composition
+2.1. Mazzola, toposes, Rubato
+Guerino Mazzola et al. built a whole categorical music theory ecosystem:
+
+The Topos of Music (and follow‑ups) uses category theory and topos theory as a foundation for music theory (pitch, rhythm, performance, gesture).
+
+Rubato Composer is a free, GPL composition/analysis environment explicitly built on category theory and topos theory.
+
+Core ideas:
+
+The basic data type is a denotator: a generalized musical object modeled as a set‑valued presheaf over a category of modules and diaffine homomorphisms.
+
+In CT-speak: a contravariant functor 
+M
+o
+p
+→
+S
+e
+t
+M 
+op
+ →Set. You can regard this as a very abstract, typed container for musical information.
+
+Rubato is implemented as a functorial concept architecture: “rubettes” are components that operate on denotators and are composed in dataflow networks. That dataflow graph is literally a categorical wiring diagram.
+
+Later volumes (e.g. Topos of Music II: Performance) tie expressive performance (tempo/intonation fields) to differential geometry and then back into the Rubato software so you can experiment computationally.
+
+So Rubato is your reference example of actual software where category theory is not just in the paper; it’s in the core data model and plugin system.
+
+2.2. Transformational & structural theories
+A few strands:
+
+Transformational music theory as categories:
+Neo-Riemannian theory normally uses groups acting on sets (triads, etc.). Popoff and others recast that in categorical terms using groupoids and category extensions to handle partial, non-invertible, cross-cardinality transformations.
+​
+
+ICRAM / Andreatta, “Towards a categorical theory of creativity”:
+Uses categories, functors, natural transformations as a way to formalize analytic and creative moves on musical processes.
+​
+
+Philosophical sketches on category theory applied to music (Pareyon):
+Argues Yoneda lemma etc. give a coherent “philosophy of music” where what matters is not objects-in-themselves but webs of morphisms (how musical objects relate / transform).
+​
+
+2.3. Operads & algebra of musical phrases
+This is where things start looking a lot like patch macros.
+
+Music box operad (Samuele Giraudo):
+
+Represent polyphonic musical phrases as multi-patterns (scale-degree + rhythm patterns).
+
+The set of multi-patterns forms an operad: each phrase is both a musical phrase and an operation that accepts other phrases and plugs them into its “holes”.
+
+This supports transformations like transposition, inversion, retrograde as operadic compositions and allows random generation of longer phrases emulating the style of some seed patterns, via “bud generating systems” (colored operads with constraints).
+
+Bud‑Music‑Box software:
+An OCaml-based tool that implements this operad model for generative music.
+​
+It:
+
+lets you define patterns and multi-patterns;
+
+composes them via the operad structure;
+
+exports to ABC → MIDI.
+
+This is already a “higher-order patching” system: instead of plugging oscillators and filters, you plug phrase-operators into each other.
+
+3. Categories for signal flow and DSP
+3.1. Signal-flow diagrams as symmetric monoidal categories
+Baez, Fong, Spivak, Zanasi, etc. have pushed a unifying view:
+
+Signal-flow diagrams / circuits can be modeled as morphisms in a symmetric monoidal category where:
+
+Objects = signal types (e.g. 
+R
+n
+R 
+n
+  for n channels).
+
+Morphisms = linear maps / relations or more general systems.
+
+⊗ = parallel composition (placing processors side by side).
+
+Composition = series connection.
+​
+
+Fong & Spivak use this extensively in Seven Sketches in Compositionality: An Invitation to Applied Category Theory: one of the examples is signal-flow graphs and linear systems.
+
+A standard DSP signal-flow graph for filters is exactly this, just in engineering notation.
+​
+
+For linear stuff (filters, delay lines, mixing matrices), you can work in a prop of matrices over a field. For more abstract reasoning (e.g. which networks can be simplified, black-boxed, or composed), you move to categories of relations, corelations, etc.
+​
+
+3.2. Graph signal processing with a categorical twist
+“Graph signal processing with categorical perspective” (Ji et al.) builds a category-theoretic framework for signals on graphs. Audio tie-in:
+
+A spatialization network, feedback delay network, or diffusion network is a directed (often weighted) graph over which you propagate audio or energy.
+
+Graph signal processing typically frames operations as linear operators on functions over nodes; Ji et al. add a categorical layer so you can reason about uncertainties and transformations abstractly.
+​
+
+For spatial audio, room modeling via networks of delay-line junctions, etc., fits quite naturally into that setting.
+
+3.3. Faust, arrows, and string diagrams
+The Faust language is a functional, block-diagram DSP language. There is explicit work linking Faust’s semantics to categorical ideas:
+
+In “Reasoning About Sound Programs” (slides for a Faust talk), the semantic toolkit listed includes string diagrams and monoidal closed categories, alongside stream/dataflow, FRP, etc.
+​
+
+The rough picture:
+
+a Faust block is a morphism;
+
+sequential (:) and parallel (, or , :) composition match categorical composition and tensor;
+
+feedback and state are handled via suitable categorical structure (e.g. traced monoidal categories).
+
+So Faust + its theoretical semantics are an example of a DSP language where CT is part of the formal story, even if an average Faust user never sees it.
+
+3.4. FRP and Haskell audio experiments
+“Screaming in the IO monad: a realtime audio processing and control experiment in Haskell” shows a realtime audio engine using Haskell’s FRP/stream abstractions.
+​
+
+FRP itself (Yampa, etc.) is deeply categorical: arrows, monads in symmetric monoidal categories, etc. Many FRP papers are built on that substrate, and this leaks into the design of audio libraries.
+
+This is very close in spirit to a categorical DSL for signal processing graphs: types = objects, arrows = time-varying signal transformers.
+
+4. Physical modeling: strings, bells, resonances through a categorical lens
+4.1. Classical picture
+Physics-wise:
+
+A vibrating string supports multiple normal modes; a musical sound is a superposition of these harmonics.
+​
+Each mode satisfies a wave equation with boundary conditions; solutions give the harmonic series.
+
+Similar stories hold for plates, membranes, and 3D bodies (bells, glasses). The eigenmodes and coupling between them give the characteristic “shimmer”.
+
+None of that is inherently categorical: you solve PDEs or approximate them (finite differences, digital waveguides, modal synthesis). But category theory gives you a way to organize these systems and their couplings.
+
+4.2. Categorical dynamical systems & wiring diagrams
+Spivak’s work on functorial dynamics and interaction (AFOSR grant documents, book on polynomial functors) is basically:
+
+Objects: dynamical systems with interfaces (inputs/outputs).
+
+Morphisms: ways of wiring systems together (wiring diagrams).
+
+Uses polynomial functors and related structures to model state spaces and interaction patterns.
+​
+
+In an audio context, you can imagine:
+
+Each string, plate, or air cavity as a stateful system (ODE/PDE solver).
+
+Couplers (bridge, soundboard, joints) as morphisms connecting their interfaces.
+
+The entire instrument graph is a morphism in a category of dynamical systems built by composing these boxes via wiring diagrams.
+
+That lets you reason about rewiring (add another string, change a coupling) abstractly without diving into the PDE every time. The PDE lives inside the “box”; CT lives in how boxes interconnect and what invariants composition preserves (energy flow, symmetries, etc.).
+
+For example, Baez & Fong’s passive linear networks framework uses cospans, symplectic geometry, and Dirichlet forms to model electrical and other passive networks categorically. Mechanical/acoustic analogs (masses, springs, dampers, acoustic impedances) fall right into that; physical modeling synth topologies match the same pattern.
+​
+
+5. Nonlinear DSP: tape, magnetics, busted cones
+Here, ACT is mostly structural, not numerical.
+
+5.1. What you normally do
+Tape emulation / hysteresis:
+
+Nonlinear static curve + dynamic state (hysteresis, bias, saturation memory).
+
+Often modeled as differential equations, Preisach-type hysteresis models, or black-box neural nets.
+
+Amp sims, cone breakup, cabinet + mic:
+
+Multi-stage nonlinear system: preamp tubes, power amp, transformer, speaker nonlinearity and modal resonances, mic coloration and positional filters.
+
+Hybrid linear/nonlinear modeling (Volterra, wave digital filters, convolution IRs, etc.).
+
+Magnetic distortions and head construction:
+
+Coupled electromagnetic + mechanical PDE/ODE systems.
+
+ACT is not magically better at “approximate this B‑H curve” than standard math. But you can use it to:
+
+Structure the block graph: Each nonlinearity / filter / convolution is a morphism; series/parallel paths form a string diagram in a symmetric monoidal category of nonlinear systems.
+
+Express feedback cleanly: Feedback loops (e.g. tone stack vicinity, plate reverb tanks) are modelled using traced monoidal categories or via categorical feedback operators. This matches how Spivak/Fong treat feedback in signal-flow diagrams.
+​
+​
+
+Reason about energy and causality:
+
+For passive blocks (cabs, rooms, plates), Baez–Fong style passive network categories let you prove that composition stays passive (no energy creation), which is a nice sanity check for reverb/delay networks.
+​
+
+For general systems, you can encode constraints (monoids of resources, etc.) and restrict allowed compositions.
+
+So in practice: you still implement your wave digital filter or custom saturator, but you treat it as an arrow in a typed category of systems, and you let category-theoretic laws drive refactorings, optimizations, and safety properties.
+
+6. Spatialization, reverb, delays as categorical objects
+Spatial / temporal effects are particularly graph‑like, so CT fits nicely.
+
+6.1. Delay & feedback networks
+Feedback delay networks / allpass lattices / Schroeder/Moorer architectures are directed graphs of delay lines + filters + mixers. Classical DSP writes these as matrices and block diagrams.
+​
+
+In CT terms:
+
+Objects: 
+R
+n
+R 
+n
+  channels (or a suitable signal type).
+
+Morphisms: linear or nonlinear maps built from delays, filters, gains.
+
+Composition: wiring delay blocks and filters.
+
+Feedback: traced monoidal structure.
+
+The Graph of Audio Processors concept article frames complex effect chains as DAGs with differentiable processors, precisely to exploit their compositional structure for optimization. That is essentially a concrete instance of a free symmetric monoidal category on a set of processors.
+​
+
+6.2. Spatialization
+Panners, binaural renderers, HOA encoders/decoders are linear maps: vector of channel samples → vector of output samples.
+
+A full object‑based / ambisonic pipeline is a composition of such maps with some dynamic control side channels.
+
+Again, CT doesn’t invent new panning laws; it gives you:
+
+a clean algebra to define and compose these maps;
+
+a way to express equivalences of routing diagrams (e.g. move a gain through a sum) and automate simplifications.
+
+6.3. Room / plate reverb as networks
+Plate / room algorithms that use FDNs or scattering networks are graphs of energy‑conserving scattering nodes + delays. This is very close to the categorical passive network picture of Baez & Fong, just in the acoustic domain.
+​
+
+You could, in principle, specify your reverb topology as a morphism in a passive network category and get passivity/energy‑decay properties “for free” from the theory.
+
+7. Existing software with categorical flavor (esp. synth patching / programming)
+Here’s the part you explicitly asked for: what you can actually run today that uses (or is very close to) ACT-style structures.
+
+7.1. Rubato Composer (category- and topos-based)
+What it is: Java-based, GPL software environment for composition, analysis, and performance, explicitly based on category theory & topos theory.
+
+Core tech:
+
+Denotators as presheaves; modules-and-diaffine-morphisms category as base; fully functorial data architecture.
+
+Plugin components called rubettes that you wire together in dataflow graphs to process denotators.
+
+Use cases:
+
+Highly abstract composition (serial, spectral, geometric constructions).
+
+Advanced analysis and expressive performance modeling.
+​
+
+If you want a “mathematical category theory DAW” for symbolic music, this is it.
+
+7.2. Bud Music Box (operad-based generative music)
+What it is: OCaml tool implementing the music box operad for generative music.
+​
+
+Theory:
+
+Multi-patterns (interval + rhythm patterns) forming an operad.
+
+Algorithms using bud generating systems (colored operads) to generate new phrases emulating given ones.
+
+Workflow:
+
+Define your multi-patterns.
+
+Specify allowed compositions via colors / monoid parameters.
+
+Let it generate ABC → MIDI content.
+
+This is closer to “symbolic phrase patching” than synth patching, but the algebra is very operad‑y and compositional.
+
+7.3. Rubato ecosystem (Topos of Music II, performance, etc.)
+The Topos of Music II: Performance volume emphasizes that Rubato is also a platform for testing performance theories (tempo, rubato, intonation fields) by embedding differential-geometric models into the same categorical data architecture.
+
+If you care about performance-level control (humanization, expressive timing) at a categorical level, Rubato + those books are the reference.
+
+7.4. General algorithmic composition tools (not strictly CT, but structurally close)
+Not explicitly “category theory”, but worth mentioning:
+
+Opusmodus: a Common Lisp–based computer-aided composition environment that supports algorithmic/generative work on pitch, rhythm, timbre, etc.
+
+It’s not framed in CT terms, but the way it composes transformations on musical parameters is very functorial in spirit.
+
+These can be nice playgrounds if you want to start encoding categorical ideas yourself (e.g. as Lisp macros, libraries implementing operads / categories over musical data).
+
+7.5. Audio graph / pipeline libraries
+On the DSP side, there are libraries and frameworks that line up well with categorical structures even if they don’t call them that:
+
+XMOS lib_audio_dsp:
+
+Provides a library of DSP “stages” (biquads, dynamics, mixers, delays, reverb, etc.) that you connect into pipelines via a design API and JSON representations.
+
+The pipeline is literally a typed directed graph of processing stages. A free symmetric monoidal category on a generator set of stages is not a bad mental model.
+
+SignalFlow / AudioGraph:
+
+Sound synthesis framework where an AudioGraph is a network of Node and Patch objects traversed to generate audio blocks.
+​
+
+Again, this is functionally a symmetric monoidal category of processors and a wiring diagram.
+
+And of course, mainstream environments:
+
+Max/MSP, Pure Data, SuperCollider, VCV Rack, Bitwig Grid, etc., all present patch graphs that are string-diagram‑like. Most don’t give you categorical laws directly, but there’s nothing stopping you from layering CT semantics on top (e.g. a typed IR, equational rewrites, etc.).
+
+7.6. Haskell / FRP audio work
+Screaming in the IO monad (Haskell realtime audio experiment) rides on FRP abstractions; FRP itself has categorical semantics (monads, arrows, etc.).
+​
+
+If you want to prototype a categorical audio language, Haskell + FRP is probably the quickest “actually runnable” route.
+
+8. How to exploit this as a coder (esp. in Rust / DSP land)
+Given your background, here are a few concrete directions where ACT is not just abstract vibe, but might actually structure your code and tools:
+
+8.1. A typed category-of-patches DSL
+Design an internal Rust DSL where:
+
+Objects = typed audio signal shapes:
+
+Single-sample streams vs block streams.
+
+Channel counts, sample rates as phantom types.
+
+Morphisms = stateless or stateful DSP units:
+
+Traits like Fn(&mut State, &Input) -> Output.
+
+Tensor = parallel composition (tuple of signals, struct-of-signals).
+
+Composition = wiring; use a graph IR that explicitly encodes the monoidal structure.
+
+Then:
+
+Encode equational laws (associativity, unitors, symmetry) to give canonical forms of graphs and enable safe rewrites (e.g. commuting gains with sums where legal).
+
+Model feedback via a traced monoidal structure (careful with causality and buffer size).
+
+This gives you a typed patch graph reminiscent of homotopy.io / string-diagram tools, but targeted at audio.
+
+8.2. Operads for patch macros and morphologies
+Steal the music box operad idea but for synth / effect topologies:
+
+Define an operad whose operations are patch “shapes” (e.g. “2-op FM block”, “waveshaper + prefilter + postfilter”, “FDN of depth N”).
+
+Operadic composition = plugging one patch shape into another’s slots.
+
+Use colored operads to restrict allowable nestings (e.g. no global feedback loops crossing certain boundaries).
+
+Now your patch-programmer is manipulating operadic trees rather than raw graphs. Bud Music Box’s generative algorithms become inspiration for patch-morphology explorers (e.g. evolve cab + mic chains under operadic constraints).
+
+8.3. Categorical graph logic for spatialization
+For spatial and reverb graphs:
+
+Treat the multichannel system as living in a category of linear relations / matrices; use categorical tools (limits, colimits) to derive certain canonical decompositions (e.g. factoring a big mix matrix into simpler stages).
+
+Borrow from graph signal processing with categorical perspective to handle uncertainty or adaptive topologies in a principled way.
+
+8.4. Physical modeling as compositional dynamical systems
+Model your physical models not as “one monolithic simulation” but as compositional systems à la Spivak:
+
+Each component (string segment, bridge, soundboard mode, air cavity, mic) is:
+
+a polynomial functor representing its interface and state update; or
+
+at least an object in a category of dynamical systems.
+
+Wiring diagrams (as in Spivak’s functorial dynamics work) describe the topology and can be analyzed symbolically before you run the numerical solver.
+
+Even if you don’t go full polynomial-functor formalism, just treating these as compositional boxes with typed ports lets you assert and maintain invariants (e.g. passivity, energy constraints).
+
+9. Reality check
+There is genuine, serious applied category theory in music theory, algorithmic composition, and abstract system modeling.
+
+There are real tools:
+
+Rubato Composer (functorial architecture, presheaf-based music objects).
+
+Bud Music Box / music box operad implementation.
+
+In practical audio DSP (tape, amps, spatialization), category theory is not yet the way people design new saturators. It’s a way to:
+
+rigorously talk about the graph of processors;
+
+build better typed APIs / DSLs for patching and composition;
+
+get structure-preserving rewrites and correctness guarantees.

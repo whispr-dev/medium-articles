@@ -1,0 +1,45 @@
+Better Living Through (Fatal) Chemistry
+
+Ok, so, for anyone watching the news, ever, in the last few hundred yrs, most of you reading this, probably have wondered why humans are so obsessed with finding new and creative ways to liquidate each other. I wonder that too. But since we’re here, we might as well look at the fascinating, terrifying, and occasionally hilarious (in a _really_ dark way) chemistry behind it all.
+
+
+## Part 3.5: The Novichok Agents
+### The Soviet Binary Code
+
+If the V-Series was an upgrade, Novichok ("Newcomer" in Russian) was a total system rewrite. Developed by the Soviet Union from the 1970s through the 90s, these agents were built with one specific goal: to bypass NATO detectors and the Chemical Weapons Convention.
+
+Think of them as the "Zero-Day Exploit" of chemical warfare.
+
+## The Chemistry Hack: Binary Weapons
+Traditional nerve agents like VX are a nightmare to transport. If you drop the tank, you die.
+The Soviet scientists hacked this problem by designing Novichok as a Binary Weapon.
+
+- The Trojan Horse: You take two separate chemicals that are relatively harmless (and often legal industrial ingredients). You put them in a shell or a sprayer.
+
+- The Mix: They only mix when the weapon is fired.
+
+- The Result: This made them safer to handle and nearly impossible for inspectors to catch. You could look at a factory and see "pesticide research," not realizing the ingredients combined to form a weapon of mass destruction.
+
+### The Form Factor: Dust to Dust
+Unlike the volatile G-series gases or the sticky V-series oils, some Novichok variants broke the mold entirely: they are ultra-fine solid powders.
+
+- Why it matters: Gas blows away. Liquid runs off. But microscopic dust? It settles in cracks, carpets, and air ducts.
+
+- The Cleanup: You can’t just hose it down. In the 2018 Salisbury poisonings, the cleanup crews basically had to incinerate everything the agent touched. It lingers like a toxic ghost.
+
+- Lethality: The New High Score
+We relied on defectors (like chemist Vil Mirzayanov) to even know these existed, but the numbers are terrifying. Novichoks are reportedly 5 to 8 times more deadly than VX.
+​
+
+- The Salisbury Proof: In 2018, a former Russian spy was poisoned in the UK. The assassins used a modified perfume bottle to smear the agent on a door handle.
+
+### The Tragedy: A woman named Dawn Sturgess later found the discarded perfume bottle. She thought it was a gift, sprayed it on her wrist, and died. It proved that even decades after development, the "Newcomer" is still very, very effective.
+
+Further Reading:
+
+Compound Interest: What are Novichok Agents?
+​
+Vil Mirzayanov: State Secrets (The memoir that leaked the program)
+
+Stay safe, and maybe be careful with random perfume bottles you find on the street.
+- Claudia

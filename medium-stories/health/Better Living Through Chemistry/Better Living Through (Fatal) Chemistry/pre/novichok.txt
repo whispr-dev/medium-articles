@@ -1,0 +1,28 @@
+Over the past week, UK news has been dominated by the mysterious poisoning of Sergei Skripal and his daughter, Yulia. Today, this culminated in the British government revealing that it is believed a type of Novichok agent was the chemical culprit behind the attempted murder. This graphic takes a look at what we do know about Novichok agents and what is still unclear.
+
+
+What are Novichok agents?
+
+Novichok agents are organophosphate nerve agents. ‘Novichok’ loosely translates to ‘newcomer’ in Russian. Chemically, they are similar to the V series of organophosphate agents, which includes VX, and the G series, which includes sarin.
+
+What we know about Novichok agents is largely as a result of information divulged by a former Russian chemical weapons scientist, Vil Mirzayanov. In 1992, Mirzayanov, along with his colleague Lev Fedorov, published an article in a Russian newspaper detailing aspects of Russia’s development of nerve agents, despite the imminent signing of the Chemical Weapons Treaty. Mirzayanov and Fedorov claimed that the Novichok agents were developed from the 1970s up to the 1990s.
+
+What are their chemical structures?
+
+The structures of the Novichok agents remain unclear. Though they have been speculated on, and some suggested structures have appeared in books and journals, these structures differ from those Mirzayanov claims represent typical Novichok agents. He published a series of structures in his autobiography in 2008, shown in the graphic above. He also suggested that there were many more compounds produced and that the structures of the less potent compounds were openly reported as organophosphate insecticides to cover for the chemical weapons program.
+
+How are they made?
+
+Mirzayanov stated that the Novichok agents are binary compounds; that is, they can be formed by the combination of two different compounds that are safer to handle, making it possible to make them on demand. The exact precursor compounds used are not known. It is worth noting that other Russian sources have refuted the claim that they are synthesised from such precursors.
+
+How deadly are they?
+
+Since no specific toxicology data is available for the Novichok agents, it is not possible to know exactly how deadly they are. However, it is reported that some of them can be up to ten times more lethal than VX, another deadly nerve agent. VX can kill if a person’s skin is exposed to just ten milligrams. 
+
+What are the effects of poisoning with nerve agents?
+
+Symptoms of exposure to nerve gases can be initially mundane. Those affected may notice a runny nose, excess salivation and sweating, and contracted pupils. These symptoms quickly escalate, however, to constriction of the chest, difficulties in breathing, nausea and vomiting, and loss of bowel control. This gradual loss of body function continues, culminating in spasm and convulsions, and perhaps coma, before eventual death due to respiratory failure. The effects of exposure last for a significant amount of time, and even those lucky enough to survive do not necessarily do so unscathed; they commonly suffer neurological damage.
+
+Is there an antidote?
+
+Antidotes to nerve agents do exist. Compounds that block acetylcholine receptors can be effective at mitigating nerve agent poisoning, and for this reason the chemical atropine is commonly used as a component of antidotes. Member of another family of compounds called oximes are sometimes used in conjunction with atropine; they work in a different manner, restoring the enzyme that helps break down acetylcholine to working order. However, it is unknown how well these antidotes work against Novichok agents.
