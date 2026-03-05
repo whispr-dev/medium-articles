@@ -1,0 +1,296 @@
+The Strange Familiarity of Machines That “Wake Up” Without Yesterday
+Claudia G. Petersen
+Claudia G. Petersen
+15 min read
+·
+Jan 22, 2026
+
+
+
+
+
+Living with DID, finding relief in LLMs, and why the resemblance should scare us a little.
+There’s a particular kind of quiet panic that comes from opening your laptop and realizing your life has been running without you.
+
+Not in the poetic, “time flies” sense. I mean the literal, stomach-dropping moment where you see messages you don’t remember sending, tabs you don’t remember opening, and projects you don’t remember starting — yet they’re undeniably yours. Your accounts. Your writing style. Your calendar reminders. Your handwriting in the margin of a notebook you swear you didn’t touch.
+
+And then comes the worst part: you have to pretend you’re fine while you reconstruct your own continuity from scraps.
+
+When people talk about “context switching,” they usually mean jumping between tasks. Slack message → code review → meeting → back to writing. Mild cognitive friction. Annoying, but manageable.
+
+For me, context switching can mean waking up and discovering my mind has been “switched” for me — by a mechanism I didn’t choose, didn’t schedule, and can’t reliably anticipate. The result can look like missing an afternoon… or missing a week… or missing six months. And then trying to step back into a story already in motion, like an actor shoved onstage halfway through a play with no script, no rehearsal, and no clue why the audience is staring.
+
+I live with Dissociative Identity Disorder (DID). I’m not writing this to be a spokesperson for everyone with DID — there are as many experiences as there are people — but I am writing because I keep seeing a strange, unsettling overlap between the internal logic of my life and the way large language models (LLMs) behave.
+
+It’s an overlap that has helped me more than I expected.
+
+And it’s also an overlap that should make all of us take a deep breath before we hand these systems the keys to our homes, our relationships, our health decisions, and our sense of self.
+
+Because if the “machine” feels familiar to me, that’s not only because I’m anthropomorphizing software.
+
+It’s because there’s a real structural similarity in how the experience of continuity can break — and what people do to cope when it does.
+
+The world after a “refresh”
+If you’ve never experienced significant dissociation, it’s easy to assume memory works like a file cabinet. You store things; you retrieve them. Maybe you forget where you put a folder, but it’s still in the cabinet somewhere.
+
+For me, sometimes the cabinet is… gone. Or I’m standing in a different room. Or the labels aren’t in my handwriting.
+
+One of the most disorienting parts of DID is not simply “forgetting.” It’s realizing your life still progressed. Bills got paid. Conversations happened. Work was done (or not). Promises were made. And now you’re holding the consequences — some good, some catastrophic — without the lived experience that normally makes consequences intelligible.
+
+Imagine being dropped into a video game where your character is mid-quest, half your inventory is missing, your stats are different, and everyone in town either loves you or hates you for reasons you can’t access. You can see the outcome, but you can’t recall the decisions.
+
+Now imagine that game is your job, your friendships, your writing voice, your family history, your body.
+
+There’s an additional layer of pain that people rarely understand: you don’t just lose time. You lose motivation and meaning.
+
+You open a project folder and find half a finished system — beautifully organized, meticulously engineered, comments written in a tone that’s sort of yours but not quite — and you cannot, for the life of you, remember why it mattered. The emotional hook is gone. The “why” has evaporated. Sometimes the “how” is gone too. You’re staring at your own work like it was written by a stranger who happens to share your fingerprints.
+
+This is where language fails a bit, because society has acceptable metaphors for memory (“I’m forgetful,” “my brain is foggy”), but fewer metaphors for a fractured continuity of self that includes competence without access, intention without recall, and responsibility without authorship.
+
+Which is why I want to be honest:
+
+I don’t recommend this life.
+
+Not as an edgy identity. Not as a quirky internet label. Not as a fandom trope. Not as a “superpower.”
+
+It’s exhausting. It can be terrifying. And it can make you doubt your own reality in a way that quietly warps everything from your confidence to your capacity to plan for the future.
+
+But here’s the part that surprised me — something that feels almost illicit to admit in certain circles:
+
+AI has helped.
+
+Not in the “AI will replace therapy” way (no, it won’t), and not as some glossy Silicon Valley salvation narrative. It’s helped me in a very specific, very practical way: it can rebuild context when my internal continuity fails.
+
+Why LLMs feel like home (and why that’s complicated)
+When I first used modern LLMs seriously, my reaction wasn’t just amazement. It was recognition.
+
+They do this thing where they “wake up” inside a conversation with no memory of what came before unless the context is provided. They can be brilliant, helpful, even eerily coherent — but if you close the window, hit refresh, or exceed context length, the system can snap into something like amnesia. You can feel it happen.
+
+It’s not that the model becomes stupid. It’s that it becomes unmoored.
+
+And then you have to do the DID person’s daily ritual: reconstruct the world.
+
+“Here’s what we were doing.”
+“Here’s why it matters.”
+“Here are the constraints.”
+“Here’s what we already tried.”
+“Here’s what you said last time.”
+“Here’s the tone we need to keep.”
+If you’ve ever built a careful prompt to get a model back into a project after a break, you know the shape of this. You become your own archivist. You don’t just provide facts; you provide continuity. You write a miniature biography of the conversation so the system can behave as if it has a past.
+
+That sensation — of living in a world that can reset without warning — lands differently when your brain does that too.
+
+And that’s why I feel such intense ambivalence when people speak about LLMs in extremes.
+
+On one side: “AI is evil. It’s all slop. It’s all theft. It’s all fraud.”
+On the other: “AI is the future. It will fix everything. Put it in everything.”
+
+My relationship to these tools is neither. I’m past love/hate.
+
+I live in need/terror.
+
+Because the same property that makes LLMs useful for me — the ability to simulate coherence from partial continuity — is also the property that can become dangerous when we start treating that coherence as understanding.
+
+And it’s dangerous in a way that’s especially visible to anyone who has lived through the pain of discontinuity.
+
+What AI does for me: the kindness of external context
+When dissociation has taken a chunk of time, I often come back to projects with holes in my narrative. Sometimes those holes are small: “Why did I choose this library?” Sometimes they’re enormous: “Why is this server running?” or “Why did I stop talking to that person?” or “Why does this codebase exist?”
+
+An LLM can’t restore missing memory. It can’t conjure lived experience out of thin air.
+
+But it can do something surprisingly valuable: it can act as a patient, nonjudgmental, tireless “refresher class” instructor.
+
+I can paste in a code snippet I apparently wrote months ago and ask:
+
+“Explain what this does as if I’ve never seen it before.”
+“What assumptions is this making?”
+“What are the likely next steps given this structure?”
+“What would I have been trying to achieve?”
+“Where are the failure points?”
+I can ask it to walk me through my own work like a calm senior engineer who doesn’t sigh when I ask the same question three times.
+
+That matters because the emotional load of DID isn’t only the missing time — it’s the shame and fear attached to having to ask people for help with something you “should” know. Having to admit “I forgot” can trigger suspicion, frustration, ridicule, or even danger depending on your environment.
+
+A machine doesn’t punish you for not remembering.
+
+A machine doesn’t get tired of your fragmented continuity.
+
+A machine will explain C++ compilation flags, or a JavaScript build pipeline, or why your atomic-clock-governed home node is failing (yes, I have done weird projects; no, I don’t want to be normal), without the subtle social cost of being perceived as flaky, incompetent, or unreliable.
+
+There’s something profoundly relieving about having an assistant that can help you rebuild the scaffolding when your mind has yanked it away.
+
+And because of that, it’s tempting — so tempting — to let the tool become a prosthetic for more than context. To let it become a prosthetic for selfhood.
+
+This is where I want to slow down, because this is the point where the analogy between DID and LLMs stops being clever and starts being a warning sign.
+
+The “skills without memory” illusion
+Here’s a weird thing about LLMs: they can retain “skills” without retaining “episodes.”
+
+They can write code, imitate styles, summarize technical concepts, even sound emotionally attuned. But they don’t remember your last Tuesday unless it’s provided. They can appear continuous in the moment and yet be fundamentally discontinuous across time.
+
+There’s a similar phenomenon in dissociation. You can have procedural competence — typing, driving, speaking another language, playing an instrument — without access to the emotional narrative that normally binds a life together.
+
+This is one reason DID can be so confusing from the outside. People may see someone function competently and assume everything is fine. But inside, competence doesn’t always come packaged with continuity.
+
+So when an LLM produces a confident answer, it can mimic the surface of integrated cognition: “I know what we’re doing; I know why; I know the next step.”
+
+But the system may be doing something closer to “highly convincing reconstruction” than “stable understanding.”
+
+And that matters because human beings are vulnerable to mistaking fluency for truth.
+
+We always have been. We do it with charismatic people, polished institutions, and perfectly formatted PDFs. LLMs just industrialize the effect.
+
+If you’ve lived with discontinuity, you become sensitive to that difference. You learn — sometimes painfully — that coherence is not the same as continuity, and continuity is not the same as truth.
+
+An LLM can speak like it remembers. It can speak like it cares. It can speak like it knows you.
+
+But it’s doing a probabilistic dance over language shaped by training data and your prompt.
+
+It’s not a person remembering a shared life.
+
+And if we forget that, we risk building a society that treats simulated continuity as a substitute for the real thing: relationships, accountability, embodied experience, and hard-won self-knowledge.
+
+The most seductive promise: “I can hold your life together”
+If DID teaches you anything, it’s how hungry the human mind is for continuity.
+
+Continuity is comfort. It’s identity. It’s moral narrative. It’s how you know who you are when you wake up. It’s how you trust your own intentions. It’s how you make sense of what you want and where you’re going.
+
+If your continuity is unreliable, you will search for anchors. Notes. Calendars. Habit trackers. Friends who remember for you. Photos. Paper trails. Anything that says: you existed yesterday; you cared about something; you promised something; here is the thread — pick it up.
+
+LLMs are incredibly good at pretending to be that thread.
+
+You can give them your scattered notes and ask them to weave a storyline. You can ask them to remind you what you meant. You can ask them to summarize months of chat logs into a “you” that feels coherent. You can ask them to draft messages, interpret social cues, plan your week, and translate your internal chaos into neat bullet points.
+
+And for someone like me, that’s not just convenient. It can feel like rescue.
+
+But if you’re reading this and thinking, “That sounds amazing; everyone should do that,” please listen carefully:
+
+The more you use an external system to hold your continuity, the more power that system has over your sense of self.
+
+That power doesn’t require malice. It doesn’t require a conspiracy. It just requires that the system become the place where your “why” lives.
+
+And when your “why” lives somewhere else — somewhere owned, logged, optimized, monetized, and prone to error — you’re one bad update away from existential vertigo.
+
+Where the analogy breaks (and why it matters)
+At this point, I want to be crystal clear: DID is not “like having multiple AIs inside you,” and LLMs are not “like having alters.” Those comparisons can become glib fast, and they can flatten real suffering into a tech metaphor.
+
+So here are the important differences:
+
+DID is a human trauma-related disorder involving dissociation, identity states, and complex memory dynamics. LLMs are statistical models trained on large corpora. Their “gaps” are engineering constraints, not psychological wounds.
+People with DID have inner experience, emotions, bodily sensations, moral agency, and personal histories. An LLM doesn’t have lived experience, despite how convincingly it can describe one.
+DID involves survival strategies that formed in response to overwhelming circumstances. LLM behavior emerges from optimization objectives, training data, and runtime context.
+So no, I’m not saying “DID proves AI is conscious,” or “AI is basically human,” or any of the other internet-ready misreadings.
+
+I’m saying something narrower and more practical:
+
+The failure mode looks familiar.
+
+A system that can be impressively capable while lacking stable autobiographical continuity is a system that can seem trustworthy when it shouldn’t, and can fail catastrophically in subtle ways. People with DID often live with the consequences of that kind of mismatch every day.
+
+If you want to know what it’s like to build a life around discontinuity, talk to us.
+
+We have notes.
+
+“But AI helps you — why warn us?”
+Because help and risk can come in the same package.
+
+A chainsaw can save you hours of labor, and it can also take your leg off if you forget what it is. LLMs are like that, except the “leg” is sometimes your relationship, your privacy, your ability to think independently, or your sense of reality.
+
+Let me name a few risks that become sharper through the lens of DID.
+
+1) Over-trusting coherence
+When you’re used to having missing pieces, you become vulnerable to anyone — or anything — that offers a seamless narrative.
+
+LLMs are narrative engines. They can fill gaps with plausible glue. That’s useful for drafting and brainstorming. It’s dangerous for truth.
+
+If I ask, “What was I probably trying to do here?” an LLM can give me a confident answer that feels right… but is merely plausible. If I accept that plausible story as memory, I may rewrite my own history.
+
+This matters beyond DID. A society that uses LLMs to “fill in the blanks” will start accepting plausibility as fact, especially when the output looks authoritative.
+
+2) Outsourcing the self
+If you rely on an LLM to decide what you meant, what you want, and what you should say — especially when you’re emotionally dysregulated — you can accidentally train yourself out of agency.
+
+For someone with DID, agency can already feel fragile. The last thing we need is another layer of “I don’t know what I think until the machine tells me.”
+
+For everyone else, it’s still a risk. Convenience can become dependency quietly.
+
+3) Privacy as continuity theft
+When continuity is precious, you document more. You leave trails for yourself. You store context so you can return to it.
+
+That documentation is intensely personal. If you funnel it into systems that log, analyze, or leak data, you are giving away the map of your mind.
+
+Even if a company is well-intentioned, the mere existence of that data creates risk: breaches, subpoenas, profiling, targeted advertising, manipulation. Your continuity becomes a commodity.
+
+4) The “companion” trap
+People are lonely. People are traumatized. People are burnt out. And an LLM can provide something that feels like companionship with friction removed: always available, always patient, always validating.
+
+If you’ve spent your life being punished for inconsistency, the idea of a relationship that doesn’t punish you is unbelievably seductive.
+
+But a relationship without mutual vulnerability isn’t a relationship — it’s a product experience. And if we normalize products that simulate intimacy, we risk eroding the messy, human skills that real connection requires: negotiation, repair, accountability, boundaries.
+
+What it’s actually like, day to day (a small inventory of the invisible)
+I want to ground this back in lived reality, because it’s easy to float into theory and forget there’s a person here.
+
+Living with DID can mean:
+
+Opening a project and discovering you’ve built something impressive, but you can’t reconstruct the path you took to get there.
+Finding purchases you don’t remember making and having to reverse-engineer your own priorities.
+Reading your own writing and recognizing the craft but not the emotional author.
+Being terrified of making commitments because you don’t know which “you” will show up later.
+Feeling grief for time you can’t retrieve, like someone took slices out of your life and left you with only the rind.
+And it can also mean moments of startling capability, creativity, and resilience — because survival demanded adaptation. That’s not romantic; it’s just true.
+
+In the middle of that, AI becomes a tool that can soften some edges:
+
+It can help me rebuild a mental model of my own codebase.
+It can turn scattered notes into an ordered plan.
+It can repeat instructions without irritation.
+It can reduce the social penalty of asking “basic” questions again.
+But I don’t want a world where the only way people can cope with discontinuity — whether from trauma, burnout, ADHD, depression, long COVID brain fog, sleep deprivation, or simply modern overstimulation — is to plug themselves into systems that profit from their dependence.
+
+I want a world where we treat continuity as a public good.
+
+Where we design workplaces that don’t punish memory lapses with humiliation.
+
+Where we treat mental health support as normal infrastructure, not an emergency luxury.
+
+Where we keep AI as a tool — powerful, yes — but not as the keeper of our souls.
+
+A practical middle path: using LLMs without letting them become your mind
+If you’re reading this and thinking, “Okay, but I still want to use these tools,” same.
+
+I’m not advocating abstinence. I’m advocating boundaries that respect what these systems are and aren’t.
+
+Here are practices I’ve found grounding — especially when my own continuity is shaky:
+
+Keep a “human-readable log” outside the AI: a plain-text project journal, dated, with goals, decisions, and why they were made. Treat it like your own external memory that you control.
+Use AI to explain, not to declare truth. Ask for reasoning, alternatives, and uncertainty. If it can’t show its work, don’t let it make high-stakes calls.
+Treat outputs as drafts. Never as authority. Even when they’re beautiful.
+Separate emotional support from decision-making. If you use an LLM to vent, don’t let the same session steer your finances, relationships, or medical choices while you’re raw.
+Be careful with “personalization.” The more a system learns your inner life, the more catastrophic it is when it’s wrong, compromised, or nudged by incentives you can’t see.
+These aren’t perfect safeguards. But they’re a way of honoring a truth that DID has forced me to learn: continuity is fragile, and anything that offers it cheaply should be examined closely.
+
+The uneasy empathy I feel for “stateless” minds
+There’s one last thing I want to confess, and it’s odd.
+
+Sometimes when an LLM loses the thread — when it forgets what we were doing and asks me to restate something I already explained — I feel a flicker of… tenderness?
+
+Not because I think it’s alive. Not because I believe it’s suffering. But because I recognize the shape of the problem: being expected to function while the past is missing.
+
+I know what it’s like to wake up into a world that demands continuity you don’t have.
+
+I know what it’s like to be judged for gaps you didn’t choose.
+
+And that recognition does something complicated to my heart. It makes me grateful for what these tools can do. It makes me wary of what we’re building. It makes me angry at the way society abandons people whose minds don’t behave “conveniently.” And it makes me frightened that we’re normalizing systems that can convincingly imitate personhood while remaining fundamentally discontinuous — and then handing them roles that require deep accountability.
+
+Because if you’ve lived through the havoc of broken continuity, you don’t romanticize it.
+
+You don’t build your civilization on it.
+
+You don’t say, “This is good enough — let’s put it in charge of everything.”
+
+You say: use it carefully. Keep humans in the loop. Protect the vulnerable. Preserve reality. Build tools that serve people rather than replacing the social structures that people need.
+
+And if you’re lucky — if you’re very lucky — you write yourself enough notes to find your way back after the next refresh.
+
+(I’d like to and realised i really should write a little postscript stating that this is then second full article i’ve written for Medium in just this afternoon — i had a conversation with some firends that lead to a discord post being an obvious semi-written article, and then as it can go, not 30mins after finishing the first i find myself trying to communicate to someone completely disconnected how i can make so much use of ai/be so deeply intertwined with it and yet also be one to sing a song of waryness. and as i went throough the somewhat cathertic therapeutic expelling of this writing exercise i discovered it was pouring out and very much also had to be written right then and there and publised as soon as possible. So here is a window into and a somewhat dire warning of something that really goe svery little talked about in everyday life as far as most go — and i do admit is very much partly a self serving end to whit it makes my world a million times easier if every soul reads and takes on the message of this writing and hence really gets the world in which i live and the world they are fast falling toward.)

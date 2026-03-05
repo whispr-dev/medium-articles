@@ -1,0 +1,30 @@
+
+---
+
+
+Wants: Mount a GPS Antenna (has).
+
+Goal: Unobstructed 360° sky view (horizon to zenith, no trees/buildings blocking >20° elevation) + stable/no motion + good ground plane. For GPSDO like yours, more visible sats = quicker lock, better holdover discipline, sub-ns accuracy.
+Step-by-step optimal ways (prioritized for home/static beacon):
+
+- Best: Outdoors on metal roof/surface
+Stick the mag base directly on a ferrous metal roof, gutter edge, or car/top of a metal shed if nearby. The roof metal becomes a huge ground plane—boosts signal big (like pro installs). Clear sky = gold for atomic-grade sync. Weatherproof, so rain/snow fine.
+- Great alternative: Metal ground plate outdoors
+If no metal roof, grab a cheap steel plate (~12-18" square, scrap or hardware store) and mount it high (e.g., fence post, window ledge outside). Slap the puck on that—mimics pro geodetic setups for cm-level (overkill but resilient).
+
+---
+
+I have: Antenna, cabling, lightning protection, adaptors, connectors etc.
+
+---
+
+Extra needed: proper grounding is mandatory for lightning protection unit or it won't shunt surges (it'll just be a fancy connector).
+- Most have a dedicated ground lug/screw on the body.
+- You need: 10 AWG (or thicker) solid copper wire (not braided—stranded ok but solid better for lightning), short as - possible (<3ft/1m ideal) to your building's earth ground (ground rod, mains panel bus, or structural ground).
+- Often a grounding kit/clamp (sold separate ~£10-20) for clean bond.
+- Mount on a grounded bulkhead plate if possible.
+
+Pitfall: Skip grounding = no protection (surge has nowhere to go). Route ground wire straight/down, no loops.
+
+---
+
