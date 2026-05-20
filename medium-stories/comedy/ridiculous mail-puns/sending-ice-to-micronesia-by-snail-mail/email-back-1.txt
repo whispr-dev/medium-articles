@@ -1,0 +1,93 @@
+tracking number LY904172646DE shows no updates since Feb 7
+Sent
+
+Sent
+Message 1 of 1.For JAWS, turn virtual PC Cursor on if needed.
+
+tom@whispr.dev
+To:  support@prodigi.com
+ · 
+Mon 4 May at 19:19
+Message Body
+Hi,
+
+Thank you for the response. To clarify: the address IS correct - FSM Telecommunications Corporation is a real organization at that address in Pohnpei, Micronesia.
+
+My question is specifically about why your pricing system lists "Micronesia, Federated States of" as being in the "EU" shipping zone with GBP pricing, when Micronesia is located in the Pacific Ocean, approximately 8,000 miles from Europe.
+
+I discovered this while reviewing your pricing CSV, where Micronesia appears listed under EU zones. This appears to be a data quality issue in your shipping zone configuration that may be causing routing/delivery problems.
+
+Can someone from your technical team investigate why Micronesia is categorized as EU in your system?
+
+Thanks,
+Tom
+##- Please type your reply above this line -##
+Thanks for getting in touch with Prodigi Support.
+
+We've received your request and our team is reviewing it now.
+
+In the meantime, you can have a look at the following articles that might help
+
+Do any of these articles answer your question?
+	
+Why hasn’t my order been delivered yet?
+All items have estimated delivery times shown in our price lists and apps to give you an idea of how long it... Read more
+
+✔ Yes, close my request	View article
+	
+What should I do if my order has not arrived?
+Delivery issues are quite rare but if they do happen we're here to help. There are a few things we recommend checking... Read more
+
+✔ Yes, close my request	View article
+	
+What has changed with EU customs fees on low-value imports?
+Several EU countries have introduced new customs handling fees on shipments valued at €150 or less arriving from... Read more
+
+✔ Yes, close my request	View article
+
+ 
+	Why hasn’t my order been delivered yet?		
+All items have estimated delivery times shown in our price lists and apps to give you an idea of how long it typically takes to deliver a product to various countries around the world.
+
+Factors which could delay delivery times include:
+
+Mistyped or incorrectly formatted address
+Customs and import restrictions
+Failed delivery attempts (i.e. no one home to receive the order)
+Postal strikes
+Other adverse conditions (such as storms and natural disasters)
+If there is a protracted delay with your order then our customer support team will typically deal with this proactively. Alternatively, if an order is outside the expected delivery window then please use this form for additional information.
+
+Occasionally, orders do get lost in the mail - more often, we find, when being shipped untracked to less common shipping destinations. In the event that an order is not received within 28 working days of shipping for international orders, we’ll be more than happy to send a replacement  or refund (we can start reprints sooner for locally shipped orders).
+
+Just let us know using this form and we’ll make the arrangements on your behalf.
+
+Please note however that we cannot offer free replacements for orders not received due to an incorrect address.
+
+Does this article answer your question?		
+✔ Yes, close my request	✘ No
+ 
+If you have any additional details that could help us resolve your query more effectively, simply reply to this email.
+
+We'll get back to you as soon as possible with a response.
+
+Best wishes,
+The Prodigi Team
+
+	
+Tom
+
+May 4, 2026, 19:48 GMT+2
+
+Hi, my tracking number LY904172646DE shows no updates since Feb 7. Last scan was 'booked for aircraft' in Germany. Destination is Micronesia (which your system lists as EU zone). Can you investigate please?
+
+
+
+<iframe src="https://github.com/sponsors/whispr-dev/card" title="Sponsor whispr-dev" height="225" width="600" style="border: 0;"></iframe>
+
+
+Reply
+
+Reply all
+
+Forward
