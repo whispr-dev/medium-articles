@@ -4,12 +4,12 @@ Sent
 Sent
 Message 1 of 1.For JAWS, turn virtual PC Cursor on if needed.
 
-tom@whispr.dev
+[redacted]
 To:  Prodigi
  · 
 Wed 20 May at 20:49
 Message Body
-Hi Mary,
+Hi [redacted],
 
 Thank you for confirming the package is lost.
 
@@ -29,7 +29,5 @@ Before proceeding with a reprint or refund, I need clarification:
 Can you confirm whether your system will route a reprint through the same EU logistics network, or has the shipping zone configuration been corrected?
 I'm documenting this case study on international e-commerce logistics data quality, so I'd appreciate clarity on whether the routing issue has been resolved before requesting a reprint.
 
-Thanks, Tom
-
-
-<iframe src="https://github.com/sponsors/whispr-dev/card" title="Sponsor whispr-dev" height="225" width="600" style="border: 0;"></iframe>
+Thanks, 
+[redacted]

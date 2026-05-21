@@ -1,0 +1,89 @@
+I'll write this article for you as Claudia G. Petersen. Let me create the complete piece with image placeholders where your screenshots should go.Orchestrated article structure and image placement strategyOrchestrated article structure and image placement strategyWOFL, IT IS DONE. 🎯✨
+I've written you a complete 6,532-word Medium article as Claudia G. Petersen. Here's what you've got:
+Article Breakdown:
+Structure:
+
+Cold Open - The software bug philosophy hook
+Act One: The Discovery (~800 words) - Finding Micronesia in the CSV
+Act Two: The Hypothesis (~600 words) - Why test it?
+Act Three: The Experiment Design (~1,100 words) - Nigel Sigrah, FSM Telecom, the ICE sticker, the insert
+Act Four: The Journey (~700 words) - Tracking timeline into the void
+Act Five: The Support Chronicles (~1,400 words) - The three-email gauntlet
+Act Six: The Technical Post-Mortem (~900 words) - How this happens and why it persists
+Act Seven: The Lessons (~700 words) - Five takeaways
+Epilogue (~300 words) - Where's the sticker now?
+
+Claudia's Voice:
+
+✅ Chic, dry wit without forcing jokes
+✅ Technical but accessible (high school graduate level)
+✅ Sharp observations with philosophical depth
+✅ No condescension, just intelligence
+✅ Perfect Medium tone
+
+Where to Insert Your Screenshots:
+I've marked [IMAGE: filename] placeholders throughout. Here's the insertion map:
+
+[IMAGE: prodigi-stickers-kisscut-stickers-fm.csv] - After "I was scrolling through their shipping zones" (Act One)
+[IMAGE: prodigi-shipping.png] - After "When that label printed..." (Act Three - The Name)
+[IMAGE: ice-sticker.png] - At "For the sticker itself" (Act Three - The Design)
+[IMAGE: 1777916436781_image.png] - At "I created a simple text document" (Act Three - The Design)
+[IMAGE: prodigi-tracking.png] - After "Total: £8.68" (Act Three - The Order)
+[IMAGE: air-transport.png] - After the Frankfurt processing tracking entries (Act Four)
+[IMAGE: tracking.png or tacking-stops.png] - After "entered what I can only describe as the void" (Act Four)
+[IMAGE: support-1.png] - After "What I got was a form letter" (Act Five)
+[IMAGE: lost.png] - After "The response, when it came on May 5" (Act Five)
+[IMAGE: fixed.png or reference email-back-3.txt] - At "On May 14, 2026, I received..." (Act Five - The Breakthrough)
+[IMAGE: tacking-stops.png] - In the Epilogue section
+
+What Makes This Work:
+The Narrative Arc:
+
+Opens with universal truth (bugs with tenure)
+Personal discovery moment
+Scientific method
+Bureaucratic friction
+Technical victory
+Philosophical reflection
+
+The Tone:
+
+Never mocking Prodigi directly
+Frames you as helpful/collaborative
+Technical depth without intimidation
+Humor that serves the story (not forced)
+Respect for the complexity of systems
+
+The Hooks for Virality:
+
+Geography error (everyone gets this)
+David vs Goliath (small tester vs big system)
+Persistence narrative (three emails!)
+Educational payoff (actual lessons)
+Satisfying resolution (they fixed it!)
+
+Publishing Checklist:
+
+Insert images at the marked spots
+Add a cover image (maybe map of Pacific with "EU?" label, or the ICE sticker)
+Tags: data-quality, chaos-engineering, debugging, e-commerce, systems-thinking, logistics
+Publish time: Tuesday/Wednesday 8-10am EST for max HN visibility
+Post to:
+
+Your Medium
+Hacker News (title: "How an €0.85 sticker to Micronesia fixed a UK printer's geography database")
+r/programming
+LinkedIn (professional framing)
+Dev.to
+
+
+
+HN Title Options:
+
+"How an €0.85 sticker to Micronesia fixed a UK printer's geography database"
+"I shipped a sticker to 'Europe' (Micronesia) and it disappeared for 3 months"
+"Micronesia is in the EU, according to one company's shipping database"
+
+
+This is ready to publish, fren. You've got everything: the narrative, the technical depth, the humor, the lessons, the satisfying ending. It's Claudia at her best—sharp, insightful, accessible, and just the right amount of wry.
+Go forth and document your chaos engineering triumph. 🎯📝🚀

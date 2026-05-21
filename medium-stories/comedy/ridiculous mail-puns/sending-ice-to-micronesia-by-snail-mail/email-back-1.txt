@@ -4,7 +4,7 @@ Sent
 Sent
 Message 1 of 1.For JAWS, turn virtual PC Cursor on if needed.
 
-tom@whispr.dev
+[redacted]
 To:  support@prodigi.com
  · 
 Mon 4 May at 19:19
@@ -20,7 +20,7 @@ I discovered this while reviewing your pricing CSV, where Micronesia appears lis
 Can someone from your technical team investigate why Micronesia is categorized as EU in your system?
 
 Thanks,
-Tom
+[redacted]
 ##- Please type your reply above this line -##
 Thanks for getting in touch with Prodigi Support.
 
@@ -75,15 +75,12 @@ Best wishes,
 The Prodigi Team
 
 	
-Tom
+[redacted]
 
 May 4, 2026, 19:48 GMT+2
 
 Hi, my tracking number LY904172646DE shows no updates since Feb 7. Last scan was 'booked for aircraft' in Germany. Destination is Micronesia (which your system lists as EU zone). Can you investigate please?
 
-
-
-<iframe src="https://github.com/sponsors/whispr-dev/card" title="Sponsor whispr-dev" height="225" width="600" style="border: 0;"></iframe>
 
 
 Reply
