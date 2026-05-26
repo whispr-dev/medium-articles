@@ -1,0 +1,412 @@
+I Accidentally Built a Tiny Universe on a Surface Pro 7
+Or: what Benford’s Law, observer bias, and one modest laptop taught me about doing real research without a supercomputer
+
+There is a particular kind of scientific question that sounds, at first, like it was invented at 2:13 a.m. by someone who has had one coffee too many and perhaps not enough sunlight.
+
+For example:
+
+If observers inside a toy universe measure things, could the numbers they see naturally fall into Benford’s Law?
+
+This is the sort of question that makes one pause, sip tea, and wonder whether mathematics has finally got into the curtains.
+
+But it turns out to be a real question. Not a solved question, not a grand cosmic revelation, and certainly not a proof that we live inside a simulation run by bored posthuman interns. But a serious, testable, surprisingly rich question.
+
+And the best part?
+
+The whole thing ran on a Microsoft Surface Pro 7.
+
+Not a datacenter. Not a GPU cluster. Not a glowing wall of NVIDIA cards consuming the yearly power budget of a small principality. A Surface Pro 7 — a perfectly respectable but very mortal machine from the late 2010s, sold with consumer-grade Intel processors and 4–16 GB RAM configurations. In other words: not exactly CERN in a handbag.
+
+That matters. Because this project became, among other things, a reminder that useful computational research is not reserved for institutions with air-conditioned server rooms and grant-funded acronyms. Some of it can still be done by one stubborn person, one ordinary computer, and an unwillingness to let a strange idea go untested.
+
+The weird law hiding in ordinary numbers
+
+Let us begin with Benford’s Law.
+
+Most people assume that if you collect a large pile of real-world numbers — populations, river lengths, stock prices, file sizes, city areas — the first digit should be roughly random. Surely 1, 2, 3, 4, 5, 6, 7, 8, and 9 should each appear about one ninth of the time.
+
+Very sensible. Very democratic. Also, very often wrong.
+
+In many naturally occurring datasets, the leading digit is much more likely to be small. The number 1 appears as the first digit about 30% of the time, while 9 appears less than 5% of the time. The formula is:
+
+P(first digit = d) = log10(1 + 1/d)
+
+So 1 gets the biggest slice, 2 gets a smaller slice, and by the time 9 arrives the buffet has been mostly ravaged.
+
+The story begins with Simon Newcomb in 1881, who noticed that logarithm table books had dirtier pages near the front. This suggested that people were looking up numbers beginning with 1 more often than numbers beginning with 8 or 9. Frank Benford rediscovered and popularised the phenomenon in 1938 after collecting more than 20,000 values from different domains.
+
+So far, charming. Victorian spreadsheet vibes.
+
+But the deeper explanation is not really about digits. It is about scale.
+
+If numbers are spread evenly across powers of ten — 1 to 10, 10 to 100, 100 to 1,000, and so on — then the first digit distribution becomes uneven. The gap from 1 to 2 on a logarithmic scale is much larger than the gap from 9 to 10, which is why 1 wins so often. Mathematics, it turns out, has favourites.
+
+This is where the project began to get interesting.
+
+Because generating Benford-like numbers directly is easy. You can simply pull numbers from a log-uniform distribution and, ta-da, Benford appears like a magician who was already hiding in the box.
+
+But that is not emergence. That is cheating politely.
+
+The better question is:
+
+Can Benford-like behaviour appear from a process that was not directly told to be log-uniform?
+
+That question became the core of the experiment.
+
+The philosophical itch: what if “observed” is not the same as “exists”?
+
+The project started from a philosophical conversation about fractals, multiplicative dynamics, simulation-like models, observers, and whether regularities in what we observe may partly reflect the way observation itself filters reality.
+
+This is not as mystical as it sounds.
+
+Imagine a forest. There are many things in the forest: roots, insects, birds, fungus, water, fallen leaves, and at least one hiker taking photographs of trees while failing to notice the entire fungal kingdom beneath their boots. The hiker’s photo album is not “the forest.” It is the forest as filtered through a particular creature, walking on particular paths, with particular interests and particular sensory limits.
+
+Science faces a similar problem in more formal clothing. What we measure is not always the same as what exists. Sometimes the act of being an observer changes the sample.
+
+This idea appears in anthropic reasoning and observer-selection theory. Brandon Carter’s anthropic principle, in its careful form, says that what we can expect to observe is constrained by the conditions required for observers like us to exist. Nick Bostrom later developed this into a broader discussion of “observation selection effects”: cases where evidence is pre-filtered by the condition that some observer is in a position to receive it.
+
+Again, this is not “therefore, simulation.” It is more modest and more useful:
+
+Observed data may be biased toward observer-compatible slices of a larger possibility space.
+
+That is the philosophical seed of the project.
+
+If Benford’s Law often appears when numbers span scales, and if observers tend to encounter only certain slices of possible worlds, then perhaps a toy “observer-world” model could produce Benford-like measurements without being forced into log-uniformity from the start.
+
+A small universe. A humble observer. A suspicious number of leading 1s.
+
+Lovely. Let’s make it sweat.
+
+Building a tiny universe
+
+The project became a Rust simulation called wofl_sim.
+
+The architecture was deliberately clean:
+
+samplers produce values
+metrics analyze values
+reports summarize values
+exporters consume values only if diagnostics pass
+
+This sounds obvious until one has worked on research code and discovered that “just one quick script” often turns into a haunted shed full of global variables.
+
+The model tested several kinds of number-generating worlds:
+
+Mode	What it was for
+control-log-uniform	The mathematical baseline. Benford by construction. Useful, but not evidence of emergence.
+correlated-log-uniform	An engineered log-uniform source with correlation. Excellent for practical parameter generation, but philosophically less interesting.
+multiplicative-universe	A single-attractor toy universe using multiplicative dynamics.
+multi-regime-universe	A world with multiple dynamic regimes, allowing broader scale coverage.
+observer-universe	The main research candidate: multi-regime dynamics plus observer weighting, random centres, transition jitter, and phase randomisation.
+
+The project’s guiding distinction became:
+
+Benford readiness != whole-log uniformity != export readiness
+
+That sentence did a lot of work.
+
+A dataset can match Benford’s Law without being evenly spread across the entire log range. A dataset can be useful for synthesizer parameter export without being philosophically interesting. And a model can be scientifically interesting precisely because it is not just a flat, perfectly engineered distribution.
+
+This was the main point: we were not trying to make a perfect random number machine. We were trying to see whether causal multiplicative dynamics plus observer-conditioned sampling could produce Benford-like observables.
+
+What “mantissa” means, without making everyone regret being alive
+
+Benford’s Law is usually introduced through first digits. But first digits are only the visible bit.
+
+The deeper object is the fractional part of the logarithm.
+
+Suppose you take a number and compute:
+
+log10(number)
+
+A number like 1,000 has log10 = 3. A number like 5,000 has log10 about 3.699. The part after the decimal point tells you where the number sits between one power of ten and the next.
+
+That fractional part is what we cared about.
+
+You can think of it this way:
+
+10, 100, 1,000, and 10,000 are all “power of ten landmarks.”
+A number’s fractional log position tells you where it lands between two such landmarks.
+If those positions are evenly spread, Benford-like leading digits follow naturally.
+
+So instead of only asking, “Do the first digits look right?” we asked:
+
+Are the numbers distributed correctly in logarithmic space?
+
+That is why the project tracked not just Benford MAD — a first-digit error measure — but also:
+
+Mantissa KS, which checks the shape of the fractional-log distribution.
+Log KS, which checks whole-log-space fit.
+Coverage ratio, which asks how much of the intended scale range the model actually explores.
+Log entropy, which measures spread or diversity.
+Lag correlations, which test whether the stream has memory, rather than being independent samples poured from a very clean bucket.
+
+The handover document described these metrics as part of the core scientific stack and stressed that mantissa behaviour, whole-log flatness, and export readiness should not be treated as the same thing.
+
+The first interesting result: single-attractor worlds can become Benford-ish
+
+The early multiplicative-universe model did something genuinely interesting.
+
+It did not cover all of log-space evenly. It had an attractor — a region it tended to inhabit. Yet it produced decent Benford and mantissa behaviour.
+
+That matters because it separated two ideas that are often blurred together:
+
+“Numbers look Benford-like.”
+“Numbers are globally log-uniform.”
+
+Those are related, but they are not identical.
+
+The single-attractor model suggested that a causal multiplicative world could produce Benford-like observable statistics while remaining structurally non-flat in broader log-space.
+
+That was the first proper “oh, there may be something here” moment.
+
+Not proof of anything cosmic. Not a Nobel prize. Not even a polite email from the universe. But a real modelling result.
+
+The next problem: one attractor is not enough
+
+A single-attractor world was interesting, but narrow.
+
+So the model grew multiple regimes.
+
+A regime is just a different dynamic zone. Imagine a world that sometimes behaves like a quiet pond, sometimes like a storm system, and sometimes like a badly trained espresso machine. Each regime has its own tendencies. The system moves among them.
+
+At first, adding regimes broadened coverage but damaged the mantissa behaviour. That was an important failure.
+
+It meant:
+
+More scale coverage alone is not enough.
+
+The model needed the regimes to mix in a way that did not create artificial “phase locking” in logarithmic space. In plain English: if the regimes line up too neatly, the numbers keep landing in suspiciously patterned places between powers of ten.
+
+The fix was to add:
+
+random regime centres,
+observer weighting,
+transition jitter,
+phase randomisation.
+
+This produced the observer-universe.
+
+The word “observer” here is not supernatural. It means the simulated stream is not sampled as though from nowhere. It is sampled through a weighting mechanism — a simplified computational metaphor for the idea that observers encounter some states more readily than others.
+
+The bug that nearly spoiled the party
+
+No real research project is complete until a bug walks in wearing a fake moustache.
+
+In the early grid results, the 7-regime and 17-regime rows were exactly identical. That is not “unlikely.” That is “the code is staring at us and lying.”
+
+The suspected cause was that a grid value of 7 looked like a default value, so it was accidentally promoted into the observer-universe default of 17. The fix was to track whether values were explicitly supplied, rather than inferring intent from whether a number happened to equal a default. This is exactly the kind of bug that makes software engineering less “typing” and more “cross-examining a raccoon.”
+
+After patching the code, we reran the focused validation grid.
+
+That grid tested:
+
+regimes: 7, 11, 13, 17
+transition jitter: 0.35, 0.50, 0.65, 0.80
+seeds: 32 per configuration
+samples: 100,000 per seed
+
+That is 16 configurations, each tested across 32 seeds.
+
+Not enormous by modern industrial standards, but very respectable for a personal machine. Also, crucially, reproducible and inspectable.
+
+The result: 11 regimes, 0.50 jitter
+
+The best configuration was:
+
+observer-universe
+regimes = 11
+transition jitter = 0.50
+score = 83.741
+Benford MAD = 0.001473
+Mantissa KS = 0.006086
+Log KS = 0.081391
+coverage = 0.999965
+ready = 32/32/32
+config hash = a70083c1880adcb7
+
+The top three configurations all used 11 regimes, with jitter values 0.50, 0.35, and 0.65. The 13-regime models were strong runners-up, while 17 and 7 regimes performed worse overall.
+
+The duplicate diagnostics also came back clean:
+
+No exact duplicate aggregate metric rows detected across distinct grid configurations.
+
+That was the moment the old 7/17 alias bug stopped haunting the results.
+
+The most interesting interpretation is not simply “11 won.” The deeper result is:
+
+More complexity did not automatically improve the model.
+
+Seven regimes were too few. Seventeen were not better. Eleven appeared to be a sweet spot in this setup.
+
+That is exactly the sort of result one hopes for in a toy model: not a monotonic “turn knob upward, receive science” result, but a structured optimum.
+
+Science likes a sweet spot. It sounds so much less desperate than overfitting.
+
+What the result does — and does not — imply
+
+Here is the strongest defensible version of the claim:
+
+A causal, multiplicative, observer-weighted, multi-regime toy model can produce robust Benford-like and mantissa-ready measurements without simply drawing values from a globally log-uniform distribution.
+
+That is a good result.
+
+It does not imply:
+
+that the physical universe is a simulation,
+that Benford’s Law proves observer selection,
+that all natural systems should obey this model,
+or that we have solved cosmology on a tablet with a kickstand.
+
+What it does imply is subtler and more useful:
+
+When dynamics, scale, regime switching, and observer-conditioned sampling interact, Benford-like regularities can emerge in ways that are not reducible to “we sampled log-uniform numbers.”
+
+That places the project near several existing research traditions.
+
+Benford’s Law has deep mathematical literature around scale invariance, base invariance, mixed distributions, and logarithmic structure. Hill’s 1995 work gave a major statistical derivation showing how mixtures of distributions can lead toward significant-digit laws. Berger and Hill’s later surveys emphasize that Benford’s Law is both robust and subtle; there is no single magic explanation that covers every case.
+
+There is also work connecting Benford behaviour to dynamical systems. Berger and Hill’s recent survey notes that Benford-like behaviour appears across deterministic and stochastic systems, discrete and continuous time, and one- and multi-dimensional settings.
+
+Burgos and Santos even describe a Markov process that converges toward the Newcomb-Benford distribution, which is particularly relevant because it shows that one can build a process that approaches Benford behaviour dynamically rather than merely sampling from a prepackaged Benford distribution.
+
+The philosophical side comes from observer-selection theory. Bostrom’s work on anthropic bias studies how evidence can be pre-filtered by the condition that an observer is in position to receive it. His simulation argument is relevant here only as a conceptual cousin: it treats observer-like experiences as objects that can be counted, weighted, and reasoned about probabilistically.
+
+The gap this project pokes at is the bridge between the two literatures:
+
+Benford emergence + observer-conditioned sampling
+
+The Benford literature is rich. The observer-selection literature is rich. The combination is much thinner.
+
+That is where this little model lives.
+
+The Surface Pro 7 part matters more than it sounds
+
+It would be easy to treat the hardware as a cute anecdote.
+
+It is not.
+
+The fact that this ran on a Surface Pro 7 changes the emotional temperature of the project. Modern personal computers are now powerful enough to let individuals do serious exploratory modelling. Not final industrial-scale proof. Not a billion-dollar simulation. But meaningful, structured, reproducible computational experiments.
+
+This matters because many people quietly assume that “research” belongs somewhere else.
+
+Somewhere with institutional access.
+Somewhere with expensive machines.
+Somewhere with permission.
+
+And yes, many kinds of research do require all that. Please do not try to discover a new particle with a laptop and vibes.
+
+But computational modelling has a democratic streak. A good question, a careful program, reproducible runs, proper metrics, and a healthy suspicion of your own results can take you surprisingly far.
+
+In this case, one ordinary device produced:
+
+a clean Rust simulation architecture,
+multiple model families,
+seed sweeps,
+diagnostic metrics,
+a regime × jitter grid,
+bug detection,
+bug correction,
+and a paper-candidate result.
+
+That is not nothing.
+
+That is the kind of “small science” we should take more seriously.
+
+Why this could go much further
+
+The current model is not finished. It is a beginning.
+
+The next stage should include ablation studies. That means switching off parts of the model one at a time to see what each ingredient contributes.
+
+For example:
+
+Variant	Question
+No random centres	Do random regime locations prevent log-space phase locking?
+No observer weighting	Does observer-conditioned sampling actually improve the result?
+No transition jitter	Does jitter help the system avoid artificial regularity?
+No phase randomisation	Does phase structure matter?
+Single-regime model	How much does multi-regime structure add?
+Direct log-uniform baseline	How close is the toy model to the engineered ideal?
+
+This is how the project becomes stronger. Not by making louder claims, but by making the model easier to attack and harder to dismiss.
+
+There are also obvious ways to scale it:
+
+more seeds,
+more samples,
+larger regime grids,
+alternative observer-weighting functions,
+different bases besides 10,
+real-world dataset comparisons,
+GPU acceleration,
+distributed runs,
+formal statistical confidence intervals,
+interactive visualisation,
+public reproducibility packages.
+
+In other words, the Surface Pro 7 was enough to find the door.
+
+It is not necessarily enough to explore the whole building.
+
+The real lesson
+
+The most satisfying result here is not “we found the number 11.”
+
+Though, admittedly, that is charming. Very numerology-adjacent if handled badly. We shall not.
+
+The real result is that a modest personal research setup can test a philosophical idea computationally.
+
+We began with a question that sounded almost metaphysical:
+
+Could the statistics seen by observers inside a world differ from the statistics of the world considered from nowhere?
+
+Then we made that question small enough to simulate.
+
+Then we asked whether a particular statistical signature — Benford-like mantissa behaviour — could emerge from a causal observer-world model.
+
+Then we found that, yes, in this toy setting, it could.
+
+That is the loop I love:
+
+philosophy → model → code → metrics → bug → fix → evidence → better philosophy
+
+No priesthood required.
+
+Just curiosity, discipline, and enough stubbornness to distrust identical 7-regime and 17-regime outputs when they start pretending to be twins.
+
+So what did we actually discover?
+
+A careful summary would be:
+
+In a controlled Rust-based toy model, observer-weighted multi-regime multiplicative dynamics produced robust Benford-like and mantissa-ready outputs across repeated seed sweeps, with the best focused-grid configuration using 11 regimes and 0.50 transition jitter. The result supports the idea that Benford-like observed statistics can arise from structured causal dynamics and observer-conditioned sampling, without being directly imposed by globally log-uniform sampling.
+
+A more human version:
+
+We built a tiny universe, gave it rules, sampled it like an observer, and the numbers started behaving in a way real-world numbers often do.
+
+That is not proof of a cosmic secret.
+
+But it is a beautiful little finding.
+
+And it was done on a machine many people would consider fit mainly for writing emails, browsing the web, and slowly warming one’s knees.
+
+Which is, frankly, rude to the machine.
+
+Final thought
+
+The age of personal computation did not end when big AI and cloud clusters arrived. It changed shape.
+
+There is still an enormous amount of intellectual territory available to anyone with a computer, a question, and the patience to turn a weird thought into a testable model.
+
+This project began with philosophy and ended, for now, with a focused validation grid.
+
+That is a good arc.
+
+It suggests that the future of research is not only bigger machines doing bigger things. It is also ordinary machines letting individual minds ask stranger, sharper, better questions.
+
+And sometimes the universe you can afford to build is small enough to fit on a Surface Pro.
+
+That does not make it trivial.
+
+It makes it yours.
