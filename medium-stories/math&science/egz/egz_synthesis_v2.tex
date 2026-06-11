@@ -1,0 +1,1350 @@
+\documentclass[11pt,a4paper]{article}
+
+% --- Packages ---
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[margin=2.5cm]{geometry}
+\usepackage{amsmath,amssymb,amsthm,mathtools}
+\usepackage[final,protrusion=true,expansion=false]{microtype}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{url}
+\usepackage{xcolor}
+\usepackage{titlesec}
+\usepackage{tocloft}
+\usepackage{fancyhdr}
+\usepackage{parskip}
+\usepackage{csquotes}
+\usepackage{graphicx}
+
+\hypersetup{
+  colorlinks=true,
+  linkcolor=blue!50!black,
+  citecolor=blue!50!black,
+  urlcolor=blue!60!black,
+  pdftitle={The Erd\H{o}s--Ginzburg--Ziv Frontier: A Synthesis},
+  pdfauthor={Synthesis Document}
+}
+
+% --- Theorem environments ---
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\newtheorem*{question}{Question}
+
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+
+\theoremstyle{remark}
+\newtheorem*{remark}{Remark}
+\newtheorem*{intuition}{Intuition}
+
+% --- Useful macros ---
+\newcommand{\F}{\mathbb{F}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\E}{\mathbb{E}}
+\newcommand{\Prob}{\mathbb{P}}
+\newcommand{\entropy}{\mathbf{H}}
+\newcommand{\sUFp}{\mathfrak{s}}
+\newcommand{\poly}{\mathrm{poly}}
+\newcommand{\codim}{\mathrm{codim}}
+\newcommand{\Span}{\mathrm{Span}}
+\newcommand{\rank}{\mathrm{rank}}
+\newcommand{\Spec}{\mathrm{Spec}}
+\newcommand{\dist}{d}
+\newcommand{\PFR}{\textsf{PFR}}
+\newcommand{\EGZ}{\textsf{EGZ}}
+\newcommand{\BSG}{\textsf{BSG}}
+\newcommand{\bigO}{\mathcal{O}}
+
+% --- Section formatting ---
+\titleformat{\section}{\Large\bfseries}{\thesection}{1em}{}
+\titleformat{\subsection}{\large\bfseries}{\thesubsection}{1em}{}
+
+% --- Header / footer ---
+\pagestyle{fancy}
+\fancyhf{}
+\setlength{\headheight}{14pt}
+\fancyhead[L]{\textit{The EGZ Frontier: A Synthesis}}
+\fancyhead[R]{\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+
+\begin{document}
+
+% ====================================================
+% TITLE PAGE
+% ====================================================
+\begin{titlepage}
+\centering
+\vspace*{2cm}
+
+{\Huge\bfseries The Erd\H{o}s--Ginzburg--Ziv Frontier\par}
+\vspace{0.5cm}
+{\LARGE A Synthesis of the Recent Landscape\par}
+\vspace{2cm}
+
+{\large
+From Harborth's conjecture through Sauermann--Zakharov,\\[0.4em]
+the polynomial Freiman--Ruzsa theorem,\\[0.4em]
+abstract Balog--Szemer\'edi--Gowers methods,\\[0.4em]
+and the emerging spectral stability programme.\\}
+
+\vspace{2.5cm}
+\begin{minipage}{0.85\textwidth}
+\itshape\small
+A reference document covering the additive-combinatorial machinery surrounding the higher-dimensional Erd\H{o}s--Ginzburg--Ziv problem. Written to be accessible to a mathematically literate reader without specialist background; intended as both a starting point for newcomers and an orientation map for those returning to the area after recent developments.
+\end{minipage}
+
+\vfill
+
+{\large December 2025 / May 2026\par}
+\vspace{1em}
+{\small Compiled as a synthesis of an extended discussion}
+
+\end{titlepage}
+
+% ====================================================
+% TABLE OF CONTENTS
+% ====================================================
+\tableofcontents
+\newpage
+
+% ====================================================
+% ABSTRACT / PREFACE
+% ====================================================
+\section*{Preface and Reader's Guide}
+\addcontentsline{toc}{section}{Preface and Reader's Guide}
+
+This document synthesises an extended exploration of the live frontier of additive combinatorics surrounding the Erd\H{o}s--Ginzburg--Ziv (\EGZ) theorem and its higher-dimensional analogues. It is structured to serve three audiences simultaneously.
+
+\textbf{The complete newcomer} should start at Section~\ref{sec:intro} (``The picture, in plain words'') and read through Part~I in order. The mathematical demands rise gradually; by the end of Part~I the reader will have enough vocabulary to follow the rest. A fully worked proof of the original $m=3$ puzzle is given in Appendix~\ref{app:proof-m3}.
+
+\textbf{The mathematically literate but non-specialist reader} can skim Part~I and engage Part~II as a literature review. Part~II is the substantive content: a guided tour of the papers that have shaped this area in the last decade, with particular attention to the 18-month burst of activity from late 2023 through 2025.
+
+\textbf{The specialist returning to the area} can skip directly to Part~III, which contains the synthesis and the identification of open routes. The two routes to breaking the Sauermann--Zakharov multi-coloured barrier --- the multilinear Bogolyubov programme and the porting of cyclic-group inverse theorems --- are the document's main mathematical contributions as a piece of \emph{positioning} rather than original result.
+
+\textbf{A note on honesty.} The December 2025 spectral stability paper of Kazemi Moghadam (arXiv:2512.04433) appears prominently in our discussion. It claims a major open problem (\PFR\ over the integers). I have flagged it as a ``watch this space'' item rather than incorporated its conclusions into the synthesis. Section~\ref{sec:spectral} explains why this caution is warranted and what would need to happen before the claim could be relied upon.
+
+\textbf{What this document is not.} It is not a research paper. It contains no original mathematical results. Where I describe ``the right way to approach X'' or ``the missing piece'' I am stating informed opinions, not theorems. Where I describe proofs I am giving sketches, not formal arguments. The reader who wants to do mathematics in this area should treat this document as a map, not a substitute for the underlying papers.
+
+\textbf{Conventions.} Throughout, $p$ denotes a prime, $\F_p^n$ denotes the elementary abelian group of order $p^n$, and $\Z/N\Z$ denotes the cyclic group of order $N$. We write $\sUFp(\Z_m^n)$ for the \EGZ\ constant: the minimum $s$ such that every length-$s$ sequence in $\Z_m^n$ contains an $m$-term zero-sum subsequence. The base of all logarithms is~$2$ unless otherwise noted.
+
+\newpage
+
+% ====================================================
+% PART I: FOUNDATIONS
+% ====================================================
+\part{Foundations: From the Original Problem to the Modern Frame}
+
+\section{The picture, in plain words}
+\label{sec:intro}
+
+Suppose I hand you five whole numbers --- any five, chosen however you
+like. I now claim that hiding somewhere inside your five numbers, there
+are three whose sum is divisible by $3$. Always. No exceptions, no
+clever counter-example.
+
+That's a strange-sounding claim, so let's slow down and build the
+picture before we try to prove it.
+
+\paragraph{Three buckets.}
+Every integer, no matter how large or how negative, leaves one of three
+possible remainders when you divide it by $3$: either $0$, $1$, or $2$.
+So we can sort the integers into three buckets by remainder --- this is
+the top row of Figure~\ref{fig:buckets-and-triples}. The number $6$
+lands in bucket $0$; $7$ lands in bucket $1$; $8$ in bucket $2$; $9$
+back in bucket $0$; and so on. The bucket is the only thing about a
+number that matters here --- once we're hunting for sums divisible by
+$3$, we can forget the number itself and just remember which bucket it
+came from.
+
+\paragraph{What does it take to win?}
+Now ask a smaller question: if I pick three bucket labels --- and I'm
+allowed to pick the same bucket more than once --- which combinations
+of labels add up to a multiple of $3$?
+
+There are surprisingly few. They're shown in the bottom row of
+Figure~\ref{fig:buckets-and-triples}:
+\begin{align*}
+  0 + 0 + 0 &= 0 \quad\checkmark \\
+  1 + 1 + 1 &= 3 \quad\checkmark \\
+  2 + 2 + 2 &= 6 \quad\checkmark \\
+  0 + 1 + 2 &= 3 \quad\checkmark
+\end{align*}
+That's it. Four winning triples, and no others. Every other combination
+of three labels --- say $0+0+1$, or $1+1+2$ --- leaves a stubborn
+non-zero remainder behind.
+
+Notice the shape of the winners: either all three labels are
+\emph{the same}, or all three labels are \emph{all different}. There is
+no middle ground. That's the lever we're going to pull.
+
+% ----- Figure -----
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.85\textwidth]{mod_3_buckets_and_winning_triples}
+  \caption{\textbf{Top:} every integer lives in one of three buckets,
+    determined by its remainder mod~$3$.
+    \textbf{Bottom:} the only four ways to choose three bucket-labels
+    (with repetition) whose sum is a multiple of~$3$. Either all three
+    come from the same bucket, or one from each.}
+  \label{fig:buckets-and-triples}
+\end{figure}
+
+\paragraph{The puzzle, restated.}
+We started with \emph{``given any five integers, must there be three of
+them whose sum is divisible by $3$?''} Once our five integers are
+sorted into the three buckets, the question collapses into something
+much friendlier:
+
+\begin{quote}
+  If I drop $5$ balls into $3$ buckets, can I always find either\\
+  \textbf{(a)} three balls in a single bucket, or\\
+  \textbf{(b)} at least one ball in every bucket?
+\end{quote}
+
+Because (a) is ``all three labels the same'' and (b) is ``all three
+labels different'' --- and those are exactly the winning
+configurations.
+
+So the original problem about sums divisible by $3$ is now a much more
+visual question about balls and buckets. Before reading on, give it a
+moment: with only $5$ balls and only $3$ buckets, can you picture any
+arrangement that dodges \emph{both} (a) and (b)?
+
+\paragraph{A peek at the intuition.}
+It feels like the balls are forced to do one of two things --- either
+they \emph{cluster} (some bucket gets crowded, $\geq 3$) or they
+\emph{spread} (every bucket gets at least one). What we'll argue
+shortly is that there is no way to thread the needle between
+these two outcomes, and that both outcomes happen to be wins. The
+engine driving this is the pigeonhole principle, and once it's spelled
+out properly the whole thing fits on half a page. The full proof,
+together with worked numerical examples, is laid out in
+Appendix~\ref{app:proof-m3}.
+
+After the proof we'll come back to the natural follow-up: is $5$ the
+smallest number that works, or could we have managed it with $4$? That
+question turns out to open onto a much larger landscape --- and
+exploring that landscape is what the rest of this document is for.
+
+\section{From the puzzle to the general theorem}\label{sec:from-puzzle-to-theorem}
+
+The puzzle of Section~\ref{sec:intro} is the $m=3$ case of a result from
+1961 by Paul Erd\H{o}s, Abraham Ginzburg, and Abraham Ziv. Replacing
+``three'' throughout by an arbitrary positive integer $m$ gives:
+
+\begin{theorem}[Erd\H{o}s--Ginzburg--Ziv, 1961]
+\label{thm:egz-classical}
+Any sequence of $2m-1$ integers contains a subsequence of length exactly $m$ whose sum is divisible by $m$.
+\end{theorem}
+
+Five for $m = 3$, seven for $m = 4$, always twice the target length minus one.
+
+\paragraph{Is five really the smallest?}
+The intro promised we'd come back to this. The answer is yes ---
+four integers is not enough. Take the sequence $0, 0, 1, 1$: the
+possible $3$-element subsequences sum to $0+0+1=1$ or $0+1+1=2$, neither
+divisible by $3$. So $4$ integers can dodge the conclusion. The general
+construction works the same way in every $m$: the sequence
+$\underbrace{0, 0, \ldots, 0}_{m-1}, \underbrace{1, 1, \ldots, 1}_{m-1}$
+of length $2m - 2$ has no $m$-term subsequence summing to a multiple of
+$m$, because such a subsequence either contains too few ones (sum not
+$\equiv 0$) or exactly $m$ ones (sum $= m$, but only $m-1$ ones are
+available). So $2m-1$ is the right answer --- not $2m-2$, and not
+anything smaller.
+
+\begin{intuition}
+The number $2m - 1$ has nothing obvious to do with arithmetic; it's a
+combinatorial threshold, the point at which the structure of $\Z/m\Z$
+forces a coincidence. The theorem is saying that any sufficiently long
+sequence in $\Z/m\Z$ must contain a hidden additive structure. The
+proof in Appendix~\ref{app:proof-m3} handles the $m=3$ case
+concretely; the general case (proved in the original 1961 paper) uses
+the Cauchy--Davenport theorem and a more delicate counting argument,
+but the spirit is the same: pigeonhole forces either crowding or
+spreading, and both turn out to be wins.
+\end{intuition}
+
+\paragraph{What if you upgrade from integers to pairs?}
+The natural next question: replace integers with pairs of integers.
+What if our sequence lives in $\Z/m\Z \times \Z/m\Z$, and we want a
+length-$m$ subsequence whose pair-sum is $(0, 0)$ modulo $m$?
+
+Horst Kemnitz conjectured in 1983 that this requires $4m - 3$ elements.
+The conjecture stood for 25 years before Christian Reiher proved it in
+2007:
+
+\begin{theorem}[Kemnitz, conjectured 1983; Reiher, proved 2007]
+\label{thm:kemnitz}
+Any sequence of $4m - 3$ elements in $(\Z/m\Z)^2$ contains a subsequence of length exactly $m$ summing to $(0, 0)$.
+\end{theorem}
+
+The pattern continues. For sequences in $(\Z/m\Z)^d$, write
+$\sUFp(\Z_m^d)$ for the minimum length forcing such an $m$-term zero-sum
+subsequence. The classical \EGZ\ theorem says $\sUFp(\Z_m) = 2m - 1$.
+Kemnitz--Reiher says $\sUFp(\Z_m^2) = 4m - 3$.
+
+For $d \geq 3$, \emph{we don't know}. This is Harborth's conjecture and
+its generalisations. The problem has been open for over five decades.
+The conjecture for primes $p$ is:
+
+\begin{conjecture}[Harborth-style, for primes]
+\label{conj:harborth}
+For every prime $p$, $\sUFp(\Z_p^3) = 9p - 8$.
+\end{conjecture}
+
+In general dimension $d$, the lower bound $\sUFp(\Z_p^d) \geq (2^d - 1)(p - 1) + 1$ is classical, but the truth is widely believed to grow exponentially in $d$ in a more subtle way.
+
+\subsection{Why the experts care}
+
+The reason \EGZ-style problems matter goes beyond their statement. They sit at the intersection of three different mathematical worlds:
+
+\begin{itemize}[leftmargin=2em]
+  \item \emph{Combinatorial number theory.} The original Erd\H{o}s--Ginzburg--Ziv setting and its quantitative refinements (the Davenport constant, the EGZ constant for general finite abelian groups).
+  \item \emph{Additive combinatorics.} The Cauchy--Davenport theorem, the Freiman--Ruzsa structure theory of sets with small sumsets, the Plünnecke--Ruzsa inequalities.
+  \item \emph{Higher-order Fourier analysis.} The Gowers uniformity norms $U^k$, the inverse theorems classifying functions of large uniformity norm, the structural theory of nilsequences.
+\end{itemize}
+
+A breakthrough on \EGZ\ at the $d \geq 3$ level would necessarily produce machinery interesting to all three communities. Conversely, the recent burst of activity from late 2023 through 2025 --- proving the polynomial Freiman--Ruzsa conjecture, establishing quasipolynomial inverse theorems, developing abstract Balog--Szemer\'edi--Gowers methods --- has built a toolkit whose application to \EGZ\ is the obvious next chapter.
+
+That chapter has not yet been written. This document is partly about why, and partly about what would need to happen for it to be.
+
+\section{Building Up: From Sequences to Slice Rank}
+
+To understand what's happened in the last decade, you need a handful of concepts that aren't part of standard mathematical curricula. This section builds them up gradually, with the working assumption that the reader knows what a group is and roughly what linear algebra is.
+
+\subsection{The vector-space setting}
+
+\EGZ-style problems are usually studied in the group $\F_p^n$ rather than $\Z/m\Z^d$ for general $m$. This is partly a matter of convenience: $\F_p^n$ is a vector space over the field $\F_p$, which gives access to linear-algebraic tools. The two settings are related but technically distinct, and we'll mostly work in $\F_p^n$.
+
+\begin{definition}[The \EGZ\ constant]
+For a finite abelian group $G$ and a positive integer $\ell$, the constant $\sUFp_\ell(G)$ is the smallest $s$ such that any sequence of $s$ elements of $G$ contains a subsequence of length $\ell$ whose sum is the identity element of $G$. When $\ell = |G|$ (or, more relevantly, when $\ell$ equals the exponent of $G$), we just write $\sUFp(G)$.
+\end{definition}
+
+For $G = \F_p^n$, we have $\ell = p$ (the exponent), and the question is: what is $\sUFp(\F_p^n)$? The classical \EGZ\ theorem gives $\sUFp(\F_p) = 2p - 1$. Kemnitz--Reiher gives $\sUFp(\F_p^2) = 4p - 3$. For $n \geq 3$, this is open.
+
+\subsection{Cap sets and the connection to \EGZ}
+
+A subset $A \subseteq \F_p^n$ is called a \emph{cap set} if it contains no three-term arithmetic progression --- equivalently, no three distinct elements $a, b, c \in A$ with $a + b + c = 0$ (over $\F_3$ this is the same as no three distinct collinear points; for general $p$ the conditions need adjustment).
+
+The cap set problem asks: how large can a cap set be? Define $r(\F_p^n)$ to be the maximum size of a cap set in $\F_p^n$. For decades the best upper bound was $r(\F_3^n) \leq 3^n / n^{1+\epsilon}$, which is still essentially $3^n$. The trivial lower bound is exponential too --- explicit constructions give cap sets of size around $2.21^n$.
+
+In 2016, Ellenberg and Gijswijt proved a stunning improvement: $r(\F_3^n) \leq (2.756)^n$, breaking the trivial-base barrier in a single short paper. The technique --- the \emph{slice rank method}, also developed independently by Croot, Lev, and Pach --- turned out to be the central new tool in additive combinatorics for the last decade.
+
+The connection to \EGZ\ is concrete: a sequence of $s$ elements of $\F_p^n$ that fails to contain a $p$-term zero-sum subsequence has a tightly constrained structure, related to but not identical to the cap-set structure. Fox and Sauermann made this precise:
+
+\begin{theorem}[Fox--Sauermann, 2018]
+\label{thm:fox-sauermann}
+For any prime $p$ and positive integer $n$, $\sUFp(\F_p^n) \leq 2p \cdot r(\F_p^n)$.
+\end{theorem}
+
+So cap-set upper bounds directly bound \EGZ\ constants, with a factor of $2p$ between them. The slice rank revolution in cap sets translated immediately to progress on \EGZ.
+
+\subsection{Slice rank, briefly}
+
+The slice rank method takes a problem about combinatorial structures (cap sets, zero-sum sequences) and converts it into a problem about the rank of a multidimensional array (a \emph{tensor}). Then linear algebra controls the rank, and the linear-algebraic bound converts back to a combinatorial bound.
+
+Concretely: suppose you want to bound $|A|$ for some $A \subseteq \F_p^n$ avoiding a certain combinatorial structure. Define a function $F: A \times A \times A \to \F_p$ that takes the value $1$ when $(a, b, c)$ would be a forbidden triple, and $0$ otherwise. If $A$ contains no forbidden triples, this function is supported only on the diagonal $a = b = c$ (or some similar restricted set). 
+
+Now interpret $F$ as a three-dimensional tensor indexed by $A$. The \emph{slice rank} of this tensor is the smallest number of ``slice functions'' --- functions that depend on only one or two of the three coordinates --- needed to express $F$ as a sum. The slice rank of a tensor supported on the diagonal is exactly $|A|$ (each diagonal entry needs its own slice).
+
+So if the combinatorial constraint forces $F$ to be diagonal, its slice rank is $|A|$. But the slice rank can also be bounded from above by a polynomial-method argument: write $F$ as a polynomial in the coordinates, count monomials of bounded degree, and the rank is at most the number of low-degree monomials. The number of low-degree monomials is exponential in $n$ with base less than $p$. Combining: $|A| \leq (\text{base less than } p)^n$.
+
+This is the schema. The cap-set application is the cleanest instance. The \EGZ\ application is a variation where the function isn't quite supported on the diagonal but on a slightly larger set, and the bound comes out a little weaker (by the factor of $2p$ in Fox--Sauermann).
+
+\subsection{The multi-colour barrier}
+
+There is a subtle but important quantitative point that distinguishes the various \EGZ-related problems. Sauermann (2021) proved that in $\F_p^n$, the maximum size of a set $A$ containing no $p$ \emph{distinct} elements summing to zero is at most $p^{(1/2)(1+o(1))n}$. That is, the square root of the trivial bound.
+
+\begin{theorem}[Sauermann, 2021]
+\label{thm:sauermann-square-root}
+For any prime $p \geq 5$ and large $n$, any set $A \subseteq \F_p^n$ containing no $p$ distinct elements summing to zero has $|A| \leq p^{(1+o(1))n/2}$.
+\end{theorem}
+
+This is striking because the analogous bound for the \emph{multi-coloured} version (where instead of one set $A$ you ask about $p$ different sets $A_1, \ldots, A_p$ with a rainbow zero-sum) is genuinely tight at $\sqrt{p}^n$ for even $n$. Any approach to the single-set problem that also works for the multi-coloured version cannot break this $\sqrt{p}^n$ barrier.
+
+This is the \emph{multi-coloured barrier} we'll keep returning to. The Sauermann--Zakharov paper (the protagonist of Part~II) is structured around breaking it by using a swap-based modification argument that has no multi-coloured analogue.
+
+\section{The State of the Art on Harborth-Style Conjectures}
+
+Where do things stand specifically on Conjecture~\ref{conj:harborth}, and its generalisations to dimension $d > 3$?
+
+\textbf{Upper bounds.} The Sauermann--Zakharov paper (which we treat in detail in Section~\ref{sec:sauermann-zakharov}) gives $\sUFp(\Z_m^n) \leq D_{\varepsilon, m} (C_\varepsilon m^\varepsilon)^n$ for every $\varepsilon > 0$ and absolute constants $D_{\varepsilon, m}, C_\varepsilon$. This means the exponential \emph{base} is sub-polynomial in $m$ --- a striking improvement over the previous best of $p^{(1+o(1))n/2}$ for the prime case.
+
+\textbf{Lower bounds.} Elsholtz proved $\sUFp(\Z_p^d) \geq 1.125^{\lfloor d/3 \rfloor} \cdot 2^d \cdot (p - 1) + 1$. Edel improved this with constructions giving base around $2.1398^n$. The current state is:
+
+\begin{equation}
+(\text{Edel's } 2.1398)^n \cdot (\text{const}) \leq \sUFp(\Z_p^n) \leq (\text{Sauermann--Zakharov's } m^\varepsilon)^n \cdot (\text{const}).
+\end{equation}
+
+The gap is enormous: the lower bound is base-constant in $p$, the upper bound has base growing slower than any power of $p$, but both are far from any conjectured exact answer.
+
+\textbf{The $d = 3$ case specifically.} Bhowmik and Schlage-Puchta showed that asymptotically (in $p$) the conjectured value $9p - 8$ is correct: for any $\varepsilon > 0$, $\sUFp(\Z_p^3) \leq (9 + \varepsilon)p$ for $p$ sufficiently large. But the conjecture itself --- equality for \emph{every} $p$ --- remains open.
+
+\textbf{Sauermann--Zakharov's open Question 1.3.} Their paper explicitly asks: is there an absolute constant $c$ such that $\sUFp(\Z_m^n) \leq D_m \cdot c^n$ for some $D_m$ depending only on $m$? Their bound has base $m^\varepsilon \to \infty$ as $\varepsilon \to 0$; whether an absolute base exists is the natural next question. The lower bounds suggest yes, but no upper-bound proof gets there.
+
+This open question --- whether the exponential base can be made constant --- is the focal point of Part~II's literature review. Most of the technical machinery we discuss is in service of answering it.
+
+\newpage
+
+% ====================================================
+% PART II: LITERATURE REVIEW
+% ====================================================
+\part{The Recent Literature: A Guided Tour}
+
+This part is a literature review with judgment. Each subsection covers a paper or cluster of papers and explains both what it does and where it fits in the larger picture. The papers are grouped thematically rather than chronologically, though within each theme we proceed roughly in order of publication.
+
+
+\section{The EGZ-Specific Thread: Slice Rank and Its Limits}
+
+\subsection{Ellenberg--Gijswijt and the slice rank revolution}
+
+The starting point of the modern era is the 2016 paper of Jordan Ellenberg and Dion Gijswijt resolving the cap-set problem to base $2.756$. The technique, derived from earlier work of Croot--Lev--Pach on three-term progressions in $(\Z/4\Z)^n$, was reformulated by Terence Tao in a blog post under the name \emph{slice rank}.
+
+The slice rank reformulation made the technique applicable to a much wider class of problems. Where Croot--Lev--Pach had used the polynomial method directly, slice rank packaged the same argument as a statement about tensor rank: if a tensor $T$ has small slice rank then any set on which $T$ behaves like a diagonal is bounded.
+
+\subsection{Naslund: the first EGZ exponential bound}
+
+Eric Naslund's 2020 paper \emph{Exponential bounds for the Erd\H{o}s--Ginzburg--Ziv constant} \cite{naslund2020} was the first to use slice rank for \EGZ. The bound he obtained was
+\begin{equation}
+\sUFp(\F_p^n) \leq (p-1) \cdot 2^p \cdot (J(p) \cdot p)^n,
+\end{equation}
+where $J(p) \in [0.84, 0.92]$ is the Ellenberg--Gijswijt constant. This was the first sub-trivial exponential bound for the EGZ constant in $\F_p^n$ at large $n$.
+
+Naslund's technical contribution was introducing the \emph{partition rank} of a tensor, a generalisation of slice rank that allows finer-grained partitions of the index set. For \EGZ\ specifically, partition rank gives access to bounds that slice rank alone cannot reach.
+
+\subsection{Fox--Sauermann: the clean reformulation}
+
+Jacob Fox and Lisa Sauermann's 2018 paper~\cite{foxsauermann2018} put the slice-rank-meets-\EGZ\ machinery on its cleanest possible footing. Their result, Theorem~\ref{thm:fox-sauermann} above, states that $\sUFp(\F_p^n) \leq 2p \cdot r(\F_p^n)$ where $r$ is the cap set constant. This converts every cap-set upper bound directly into an \EGZ\ upper bound with a constant factor of $2p$.
+
+The proof is short and conceptually clean: take a sequence in $\F_p^n$ with no $p$-term zero-sum subsequence, show that its underlying set is essentially a cap set, apply the cap set bound. The proof uses a clever averaging argument to reduce the multi-sequence problem to a single-set problem.
+
+\subsection{Sauermann's solo paper: the square root barrier}
+
+Lisa Sauermann's 2021 paper~\cite{sauermann2021} broke the qualitative shape of the bound. Previously, upper bounds for the maximum size of an \EGZ-avoiding set in $\F_p^n$ had been of the form $p^{(1-o(1))n}$. Sauermann reduced this to $p^{(1/2)(1+o(1))n}$ --- the square root.
+
+The technique uses the \emph{multi-coloured sum-free theorem}, a strong form of the slice-rank machinery that controls not just diagonally-supported tensors but tensors with prescribed multi-coloured structure. The multi-coloured version had appeared earlier in the work of Kleinberg, Sawin, and Speyer on capacity questions.
+
+Sauermann's bound is tight in the multi-coloured setting: there exist multi-coloured configurations of size $\sim \sqrt{p}^n$. This is the multi-coloured barrier we discussed. Any approach that doesn't structurally distinguish the single-set problem from the multi-coloured problem cannot improve on $\sqrt{p}^n$.
+
+\subsection{Zakharov: the orthogonal regime}
+
+While most of the slice-rank-era work focused on the regime where $n$ is large and $p$ (or $m$) is fixed, Dmitrii Zakharov's 2020 work~\cite{zakharov2020} attacked the orthogonal regime where $n$ is fixed and $m$ is large. The classical Alon--Dubiner bound here was $\sUFp(\Z_m^n) \leq c(n) \cdot m$ with $c(n) = (cn \log n)^n$. Zakharov sharpened $c(n)$ to $4^n$ in the case where all prime factors of $m$ are large compared to $n$, using techniques from the additive structure theory of Cayley graphs.
+
+This is a different mathematical world from the slice-rank papers: Cayley graph expansion, additive number theory in finite groups, no slice rank in sight. The two regimes were brought together in the following paper.
+
+\subsection{Sauermann--Zakharov 2023: the central paper}\label{sec:sauermann-zakharov}
+
+The Sauermann--Zakharov paper~\cite{sauermannzakharov2023}, arXiv:2302.14737, is the headline result of the modern \EGZ\ literature. Its main theorem:
+
+\begin{theorem}[Sauermann--Zakharov, 2023]
+For every $\varepsilon > 0$ there exist constants $D_{\varepsilon, m}$ and $C_\varepsilon$ such that
+\[
+\sUFp(\Z_m^n) \leq D_{\varepsilon, m} \cdot (C_\varepsilon m^\varepsilon)^n
+\]
+for all positive integers $m$ and $n$.
+\end{theorem}
+
+So the exponential base is $m^{o(1)}$ --- sub-polynomial in $m$. This breaks both the $\sqrt{p}^n$ multi-coloured barrier (which would have given base $\sqrt{p}$) and the $4^n$ Zakharov barrier in the fixed-dimension regime.
+
+The proof technique is the central innovation worth understanding in detail.
+
+\subsubsection{The proof strategy in outline}
+
+The proof inducts on a conditional statement (Theorem 2.1 in their paper) that quantifies what happens when the iterated sumset $|\ell A|$ is small relative to $|A|$. The inductive variable is $c$, decreasing in steps of $1/2$ from a large value down toward $1$. The base case is $c = 3/2$ and uses a graph-colouring argument due to Caro--Wei. The inductive step splits into two cases based on whether the ``bad sums'' set has heavy or light mass.
+
+The key new ingredient is the \emph{higher-uniformity Balog--Szemer\'edi--Gowers theorem} of Borenstein and Croot, which is invoked in the heavy-mass case. Classical Balog--Szemer\'edi--Gowers controls $|A' + A'|$ for a subset $A' \subseteq A$; the higher-uniformity version controls $|\ell' A'|$ for all $\ell'$ simultaneously, which is exactly what the iteration needs.
+
+The unifying schema --- ``find a non-distinct solution then modify it'' --- is what breaks the multi-coloured barrier. You first find a $p$-tuple $(y_1, \ldots, y_p)$ summing to zero with elements in $A$ (using slice rank), where elements may repeat. Then you swap elements in $\ell$-tuples to make them distinct, preserving the sum. This swap operation has no multi-coloured analogue because there's no single set to swap within.
+
+\subsubsection{The open Question 1.3}
+
+The paper closes with an explicit open question: can the bound be improved to $\sUFp(\Z_m^n) \leq D_m \cdot c^n$ for an absolute constant $c$? Their bound has $c = m^\varepsilon \to \infty$ as $\varepsilon \to 0$. Edel's lower bound has $c = 2.1398$. Closing the gap to a constant base is the natural next goal, and it's the goal that motivates much of what follows.
+
+\subsection{Generalised EGZ: zero-sums of arbitrary length}
+
+A parallel thread studies $\sUFp_{\ell n}(C_n^r)$ for $\ell \geq 1$ --- zero-sum subsequences of length $\ell n$ rather than the natural length $n$. The papers of Bitz--Griffith--He~\cite{bitzgriffithhe2017}, Geneson~\cite{geneson2020}, Sidorenko~\cite{sidorenko2020}, Caro--Schmitt~\cite{caroschmitt2022}, and Costa--Della Fiore~\cite{costadellafiore2022} sit in this thread.
+
+\textbf{Bitz--Griffith--He} obtained the first exponential lower bound: $\sUFp_{2n}(C_n^r) > (n/2)(5/4 - O(n^{-3/2}))^r$. The proof is a clean probabilistic argument using the Lov\'asz Local Lemma.
+
+\textbf{Geneson} sharpened the constants in the general $\ell$-case to $1 + (\ell-1)^{\ell-1}/\ell^\ell$ via a more careful binomial estimate. Incremental but real.
+
+\textbf{Sidorenko} settled exact values of $\sUFp_{2m}(\Z_2^d)$ for $d \leq 2m + 1$ by routing through binary code theory. A genuinely different technique.
+
+\textbf{Caro--Schmitt} generalised the framework to elementary symmetric polynomials of degree $m$ rather than just sums, getting bounds for finite commutative rings of prime power cardinality.
+
+\textbf{Costa--Della Fiore} picked up the Caro--Schmitt thread and improved the bounds for $\F_q^n$ using a combination of LLL, expurgation, and slice rank.
+
+These papers don't directly address the prime-modulus question but they extend the techniques in ways that may eventually feed back.
+
+\subsection{Algorithmic side: Leung 2025}
+
+A genuinely 2025 development: Leung~\cite{leung2025} gave an $O(n \log \log \log n)$ algorithm to \emph{find} an EGZ subsequence (theoretically), and a simpler $O(n \log \log n)$ version that is practical. Previous best was $O(n \log n)$ via FFT. Not about the constant --- about constructive efficiency. Useful to know for implementations.
+
+\section{Higher-Order Fourier Analysis: The U\textsuperscript{k} Programme}
+
+This section steps back from \EGZ\ specifically and surveys the higher-order Fourier toolkit. The relevance to \EGZ\ is that the Sauermann--Zakharov bottleneck (the Borenstein--Croot higher-uniformity BSG) is morally a \emph{$U^2$-level statement} that has been pushed beyond its natural scope. Improving on it requires higher-uniformity machinery.
+
+\subsection{The Gowers norms}
+
+\begin{definition}[Gowers $U^k$ norm]
+For a finite abelian group $G$ and a function $f: G \to \C$, the $U^k$ norm is defined by
+\[
+\|f\|_{U^k}^{2^k} = \E_{x, h_1, \ldots, h_k} \prod_{\omega \in \{0,1\}^k} \mathcal{C}^{|\omega|} f(x + \omega \cdot h),
+\]
+where $\mathcal{C}$ is complex conjugation, $|\omega| = \omega_1 + \cdots + \omega_k$, and $\omega \cdot h = \omega_1 h_1 + \cdots + \omega_k h_k$.
+\end{definition}
+
+The intuition: $\|f\|_{U^k}$ is large when $f$ has algebraic structure of complexity at most $k - 1$. The hierarchy is:
+\begin{itemize}[leftmargin=2em]
+  \item $\|f\|_{U^2}$ large $\iff$ $f$ correlates with a linear character (Parseval).
+  \item $\|f\|_{U^3}$ large $\iff$ $f$ correlates with a quadratic phase $e^{2\pi i q(x)/p}$.
+  \item $\|f\|_{U^k}$ large $\iff$ $f$ correlates with a polynomial phase of degree $k - 1$ (in $\F_p^n$ with $k \leq p$).
+\end{itemize}
+
+These are the \emph{inverse theorems}. They say ``large norm implies visible structure''. The opposite direction --- visible structure implies large norm --- is much easier and we don't dwell on it.
+
+\subsection{The $U^3$ inverse theorem}
+
+The $U^3$ case was settled by Green--Tao~\cite{greentao2008} (odd order) and Samorodnitsky~\cite{samorodnitsky2007} (characteristic 2). Both proofs give exponential bounds: if $\|f\|_{U^3} \geq c$, then $f$ correlates with a quadratic phase with correlation at least $\exp(-c^{-O(1)})$.
+
+Sanders~\cite{sanders2012} improved this to quasipolynomial bounds, leveraging the Bogolyubov--Ruzsa lemma (Section~\ref{sec:bogolyubov}). Finally, Gowers--Green--Manners--Tao's polynomial Freiman--Ruzsa theorem~\cite{ggmt2023} implies the $U^3$ inverse theorem with polynomial bounds.
+
+\subsection{The $U^4$ inverse theorem}
+
+Beyond $U^3$, things become harder. Gowers and Milićević~\cite{gowersmilicevic2017} proved the first effective $U^4$ inverse theorem for $\F_p^n$ in high characteristic ($p \geq 5$), with doubly-exponential bounds. Tidor~\cite{tidor2021} extended this to low characteristic via the non-classical polynomial framework.
+
+Milićević's 2024 paper~\cite{milicevic2024}, arXiv:2410.08966, dramatically improved this: a \emph{quasipolynomial} $U^4$ inverse theorem in $\F_p^n$. The proof introduces the \emph{abstract Balog--Szemer\'edi--Gowers theorem} (Section~\ref{sec:abstract-bsg}) as a structural tool. This is the closest existing technology to what an \EGZ\ improvement would need.
+
+\subsection{The $U^k$ inverse theorem in cyclic groups}
+
+The cyclic group setting $\Z/N\Z$ has its own thread. Green--Tao--Ziegler~\cite{greentaoziegler2012} proved the $U^k$ inverse theorem for $\Z/N\Z$ qualitatively, using nilsequences. Manners~\cite{manners2018}, arXiv:1811.00718, in a 100+-page paper proved doubly-exponential quantitative bounds for all $k$, using a fundamentally different framework based on polynomial hierarchies on cubes.
+
+Leng, Sah, and Sawhney~\cite{lengsahsawhney2024}, arXiv:2402.17994, achieved quasipolynomial bounds for $U^{s+1}[N]$ for all $s$, building on Manners' framework plus improved equidistribution theory for nilsequences. This is the current state of the art in cyclic groups.
+
+\subsection{Why the cyclic-group results are ahead of $\F_p^n$}
+
+A striking observation from comparing these threads: as of mid-2026, the cyclic-group $U^k$ inverse theorem is at quasipolynomial bounds for \emph{all} $k$ (Leng--Sah--Sawhney), while the $\F_p^n$ inverse theorem is at quasipolynomial bounds only for $k \leq 4$ (Milićević).
+
+This is the reverse of the usual situation in additive combinatorics, where $\F_p^n$ is the cleaner setting because of vector space structure. The reason: cyclic groups have low rank, which makes the inverse theorem proofs simpler at the structural level (the obstructions form a smaller family). In $\F_p^n$, the obstructions are super-polynomially many --- making the inductive step in the inverse theorem proof harder.
+
+For our purposes (\EGZ\ in $\F_p^n$), this means we can't just import the cyclic-group machinery directly. We need either better $\F_p^n$ machinery (which Milićević's $U^4$ result is the leading example of) or a way to port the cyclic-group framework.
+
+\section{Polynomial Freiman--Ruzsa: The Entropy Method}
+
+The polynomial Freiman--Ruzsa conjecture (\PFR), or Marton's conjecture, is the structural foundation of much of what follows. It is now a theorem in finite-field settings.
+
+\subsection{The conjecture and what it says}
+
+\begin{conjecture}[Polynomial Freiman--Ruzsa, finite-field form]
+If $A \subseteq \F_p^n$ satisfies $|A + A| \leq K|A|$, then $A$ is covered by at most $\poly(K)$ translates of a subspace $V$ with $|V| \leq |A|$.
+\end{conjecture}
+
+The qualitative statement (with $\poly(K)$ replaced by ``some function of $K$'') is the classical Freiman--Ruzsa theorem. The conjecture is that the function is polynomial in $K$. This was the standing open problem in additive combinatorics until November 2023.
+
+\subsection{GGMT 2023: characteristic 2}
+
+Gowers, Green, Manners, and Tao~\cite{ggmt2023} proved \PFR\ in characteristic 2 (i.e., $G = \F_2^n$) in November 2023. The proof was simultaneously a surprise (for the technique) and an inevitability (for the timing, given the field's accumulated momentum).
+
+The technique abandons Fourier analysis entirely and works in the language of Shannon entropy. The key conceptual move:
+
+\textbf{Replace sets with random variables.} Instead of $A \subseteq G$ with $|A + A| \leq K|A|$, consider a $G$-valued random variable $X$. Define the entropic Ruzsa distance
+\[
+\dist[X; Y] = \entropy[X' + Y'] - \tfrac{1}{2}\entropy[X] - \tfrac{1}{2}\entropy[Y]
+\]
+where $X', Y'$ are independent copies. Entropic doubling $\dist[X; X]$ plays the role of combinatorial doubling $\log(|A+A|/|A|)$.
+
+The crucial property: entropic Ruzsa distance \emph{contracts} under group homomorphisms. Combinatorial doubling famously does not contract, which is what historically prevented inductive proofs. Entropic doubling does, which unlocks the iteration.
+
+\subsection{The fibring identity}
+
+The structural pillar of the GGMT proof is the \emph{fibring identity}: for a homomorphism $\pi: G \to H$ and independent $G$-valued $X, Y$,
+\[
+\dist[X; Y] = \dist[\pi(X); \pi(Y)] + \dist[X | \pi(X); Y | \pi(Y)] + I[X - Y : \pi(X), \pi(Y) | \pi(X) - \pi(Y)].
+\]
+The proof is a computation with conditional entropies, but the meaning is rich: entropic doubling decomposes additively along fibrations into base, fibre, and a cross-term measuring how non-product the fibration is. The cross-term is a mutual information, which is always non-negative.
+
+\subsection{The distance decrement and the characteristic-2 miracle}
+
+The proof works by iterating a \emph{distance decrement} proposition: given any pair $(X, Y)$, find a pair $(X', Y')$ such that $\dist[X'; Y'] \leq (1 - \eta) \dist[X; Y]$ for an absolute constant $\eta > 0$, with controlled drift from $(X, Y)$. After many iterations, $\dist[X_\infty; Y_\infty] = 0$, which forces $X_\infty$ to be uniform on a coset of a subgroup.
+
+The proof of the decrement uses the fibring identity to extract pair-correlations, then a characteristic-2-specific algebraic identity (the ``miracle''): in $\F_2$, $U + V = (X_1 + X_2) + (X_1 + X_3) = X_2 + X_3$ because $X_1 + X_1 = 0$. This identity is what makes the symmetric reduction work cleanly in characteristic 2; the analogous reductions in odd characteristic require more elaborate algebraic gymnastics.
+
+\subsection{The entropic Balog--Szemer\'edi--Gowers theorem}
+
+A key technical ingredient is the entropic version of Balog--Szemer\'edi--Gowers, which Tao~\cite{tao2010} had worked out years earlier and GGMT used in a slightly modified form. The entropic \BSG\ converts ``near-independence'' to ``actual independence after conditioning'', with multiplicative constant loss.
+
+This step is the dominant inefficiency in the GGMT proof. Tao~\cite{tao2024abridged} has openly commented that the entropic \BSG\ is the main remaining source of looseness in the constants, with the original GGMT constant of $12$ improved to $9$ by Liao~\cite{liao2024} via careful refinement.
+
+\subsection{Extension to bounded-torsion groups}
+
+A follow-up paper~\cite{ggmt2024} extended \PFR\ to all bounded-torsion abelian groups (including odd characteristic). The argument uses a \emph{multidistance}
+\[
+D[X_1, \ldots, X_m] = \entropy[X_1 + \cdots + X_m] - \tfrac{1}{m}\sum_i \entropy[X_i],
+\]
+generalising the entropic Ruzsa distance to $m$-fold symmetric configurations. An iterated fibring identity decomposes the multidistance over fibrations of $m$-tuples, and the characteristic-$m$ algebraic miracle takes the form of $m$-fold symmetric sums.
+
+This extension is critical because bounded-torsion includes $\F_p^n$ for all primes $p$, so \PFR\ is now a theorem in every finite vector space setting --- but \emph{not} in $\Z/N\Z$ when $N$ is unbounded.
+
+\subsection{Why $\Z/N\Z$ resists}
+
+Tao's blog post on Marton's conjecture identifies a specific obstruction to extending the entropy method to integers and large-modulus cyclic groups: the \emph{discrete Gaussian}. Discrete Gaussians on long arithmetic progressions have bounded doubling but are far from any finite subgroup, and they appear to be local minimisers of entropic Ruzsa distance under the iteration scheme.
+
+This is not just a technical obstacle but a structural one. The entropy method's pivot is contraction under homomorphisms, which works cleanly in bounded torsion because every element generates a small subgroup. In $\Z/N\Z$ with $N$ unbounded, homomorphic images can have very different scale behaviour, and the local-minimiser configurations preserve too much structure under iteration.
+
+This is the obstruction that the December 2025 spectral stability paper claims to overcome --- and the claim of which we treat with appropriate caution in Section~\ref{sec:spectral}.
+
+\section{Abstract Balog--Szemer\'edi--Gowers and Bilinear Bogolyubov}\label{sec:abstract-bsg}
+
+This section covers the structural \BSG-style tools developed in the last decade, with particular attention to Milićević's abstract \BSG\ and the bilinear Bogolyubov framework of Hosseini--Lovett. These are the engines of the modern $U^4$ proof and the most relevant technologies for breaking the Sauermann--Zakharov barrier.
+
+\subsection{Classical Balog--Szemer\'edi--Gowers}
+
+\begin{theorem}[Balog--Szemer\'edi 1994, Gowers 1998]
+Let $A, B \subseteq G$ be finite. If the additive energy $E(A, B) = |\{(a_1, a_2, b_1, b_2) : a_1 + b_1 = a_2 + b_2\}|$ satisfies $E(A, B) \geq c |A|^{3/2} |B|^{3/2}$, then there are subsets $A' \subseteq A$ and $B' \subseteq B$ of size at least $c^{O(1)}$ times their hosts, such that $|A' + B'| \leq C(c) \cdot |A|$.
+\end{theorem}
+
+The intuition: ``high additive energy'' means many additive quadruples, which is morally equivalent to ``large $U^2$ norm of the indicator function''. The conclusion extracts a subset with small sumset. This is the engine of all sumset-structural arguments.
+
+\subsection{Higher-uniformity BSG (Borenstein--Croot)}
+
+What Sauermann--Zakharov need is a version that controls not just $|A' + A'|$ but $|\ell A'|$ for all $\ell$ simultaneously. Borenstein and Croot~\cite{borensteincroot2011} proved such a result:
+
+\begin{theorem}[Borenstein--Croot, higher-uniformity BSG]
+Let $A \subseteq G$ and let $S \subseteq A^k$ with $|S| \geq |A|^{k - \delta}$. Suppose the set of sums $\{y_1 + \cdots + y_k : (y_1, \ldots, y_k) \in S\}$ has size at most $|A|^c$. Then there exists $A' \subseteq A$ with $|A'| \geq |A|^{1 - \varepsilon}$ such that $|\ell A'| \leq |A'|^{c(1 + \varepsilon \ell)}$ for all $\ell$.
+\end{theorem}
+
+This is the tool Sauermann--Zakharov plug into their Case 1. The conclusion ``$|\ell A'| \leq |A'|^{c(1 + \varepsilon \ell)}$'' is exactly the quantitatively-weak part: the factor $1 + \varepsilon \ell$ in the exponent is what forces Sauermann--Zakharov's bound to $m^\varepsilon$ instead of a constant base. A version with $1 + O(1/\log K)$ in the exponent (or polynomial in the energy excess) would give constant base.
+
+\subsection{Milićević's abstract BSG}
+
+Milićević's 2024 $U^4$ paper~\cite{milicevic2024} introduces an abstract version of \BSG\ that handles \emph{quadruple collections with hierarchical structure}. The statement (Theorem 13 in his paper):
+
+\begin{theorem}[Milićević, abstract BSG, paraphrased]
+Let $A \subseteq G$ and let $(Q_i)_{i=1}^{36}$ be a hierarchy of collections of additive quadruples in $A$ satisfying:
+\begin{itemize}
+\item (Largeness) $|Q_1| \geq c |G|^3$.
+\item (Symmetry) Each $Q_i$ is closed under the symmetries of additive quadruples.
+\item (Weak transitivity) If many pairs $(b, b')$ have $(a_1, a_2, b, b') \in Q_i$ and $(b, b', a_3, a_4) \in Q_j$, then $(a_1, a_2, a_3, a_4) \in Q_{i+j}$.
+\end{itemize}
+Then there is a subset $A' \subseteq A$ such that every additive quadruple in $A'$ can be embedded in a 36-tuple configuration covered by the hierarchy.
+\end{theorem}
+
+The key abstraction is the decoupling of the index group $G$ from the algebraic structure of the codomain. The classical \BSG\ assumes the codomain has good additive properties (the differences $a - b$ live in a group). Milićević's version handles codomains where ``equality'' is replaced by ``small-rank difference'' (Step 2 of his proof) or ``subspace agreement'' (Step 6). These conditions don't form groups, but the abstract framework still applies because it tracks quadruples directly rather than differences.
+
+This is the technology that, in our judgment, comes closest to what an improvement of Sauermann--Zakharov would need.
+
+\subsection{Hosseini--Lovett: bilinear Bogolyubov with polylog bounds}
+
+Hosseini and Lovett's 2019 paper~\cite{hosseinilovett2019} is the engine that makes Milićević's Step 5 work. The setting: $A \subseteq \F^n \times \F^n$ with density $\alpha$. Define horizontal and vertical difference operators
+\begin{align*}
+\phi_h(A) &= \{(x_1 - x_2, y) : (x_1, y), (x_2, y) \in A\}, \\
+\phi_v(A) &= \{(x, y_1 - y_2) : (x, y_1), (x, y_2) \in A\}.
+\end{align*}
+A \emph{bilinear variety} is a set of the form $\{(x, y) \in V \times W : b_1(x, y) = \cdots = b_r(x, y) = 0\}$ where $V, W$ are subspaces and $b_i$ are bilinear forms.
+
+\begin{theorem}[Hosseini--Lovett]
+Let $A \subseteq \F^n \times \F^n$ have density $\alpha$ and let $w = hvvhvvvhh$. Then $\phi_w(A)$ contains a bilinear variety of codimension $O(\log^{80} \alpha^{-1})$.
+\end{theorem}
+
+The codimension is polylog in $\alpha^{-1}$ --- the same scale as Sanders' linear Bogolyubov--Ruzsa lemma~\cite{sanders2012}. This is dramatically better than the previous best (doubly-exponential by Gowers--Milićević~\cite{gowersmilicevic2017bilinear}, triply-exponential by Bienvenu--L\^e~\cite{bienvenule2017}).
+
+The proof's elegance: it invokes Sanders' lemma four times, with no extra Fourier work. Each application of Sanders gives polylog codimension; the composition gives polylog with worse exponent. The key technical lemma (their Lemma 2.5) provides a cleanup step that converts per-element subspace structure into linearly-varying structure --- exactly the conversion Milićević needs in his Step 5.
+
+\subsection{Why this matters for Sauermann--Zakharov}\label{sec:bogolyubov}
+
+The schematic relevance for breaking the multi-coloured barrier:
+
+\begin{itemize}[leftmargin=2em]
+  \item Sauermann--Zakharov use Borenstein--Croot's BSG, which has exponential loss in $\ell$ (the factor $1 + \varepsilon \ell$).
+  \item Milićević's abstract BSG handles quadruples with hierarchical structure, with constant bounded by 36 in his application (extendable to other constants).
+  \item Hosseini--Lovett's bilinear Bogolyubov converts per-element subspace data into linearly-varying data at polylog cost.
+  \item A \emph{multilinear} Bogolyubov in $\F_p^n$ for $\ell \geq 3$, plugged into a Milićević-style abstract BSG with a custom quadruple hierarchy, could in principle replace Borenstein--Croot in Sauermann--Zakharov with constant-base loss.
+\end{itemize}
+
+This is what we mean by ``Route 1'' for breaking the multi-coloured barrier. The pieces are all current research but they have not been assembled.
+
+\section{The Cyclic-Group Track: Manners and Leng--Sah--Sawhney}
+
+While the $\F_p^n$ track has been the focus above, the cyclic-group track has progressed independently and (as noted above) is currently ahead.
+
+\subsection{Manners 2018: polynomial hierarchies}
+
+Frederick Manners' 2018 paper~\cite{manners2018} is a 100+-page treatise giving the first quantitative $U^k$ inverse theorem in $\Z/N\Z$ for all $k$. The bounds are doubly exponential (or worse for some parameters), but they are bounds where before there were none.
+
+The framework is genuinely different from the $\F_p^n$ work. There is no analogue of bilinear varieties in $\Z/N\Z$ (because there are no subspaces). Instead, Manners uses:
+
+\begin{itemize}[leftmargin=2em]
+  \item \emph{Systems of cubes.} Higher-order structure encoded via $\partial_{h_1} \cdots \partial_{h_k} f$ on parallelepipeds.
+  \item \emph{Polynomial hierarchies.} An indexed family of polynomial-like objects, with controlled transitions between levels.
+  \item \emph{Nilmanifold constructions.} The eventual algebraic structures that the analysis produces.
+  \item \emph{Approximate polynomials.} The intermediate objects that connect the combinatorial cube data to the geometric nilmanifold structure.
+\end{itemize}
+
+The proof is divided into Section 2 (from 1\% polynomials to global structure), Section 3 (improving global structure), Section 4 (recovering algebraic structure), and Section 5 (deduction of the inverse theorem). The structure-theoretic backbone is the polynomial hierarchy.
+
+This is exactly the kind of ``controlled transitions between levels of structure'' we will identify in Part III as the through-line of the entire programme.
+
+\subsection{Leng--Sah--Sawhney: quasipolynomial bounds for all $k$}
+
+The Leng--Sah--Sawhney paper~\cite{lengsahsawhney2024} from February 2024 sharpened Manners' bounds from doubly-exponential to quasipolynomial. The proof uses:
+
+\begin{itemize}[leftmargin=2em]
+  \item Improved equidistribution theory for nilsequences (Leng's previous paper).
+  \item Careful refinement of Green--Tao--Ziegler's sunflower decomposition.
+  \item A nilpotent structure theory adapted to be quantitative.
+\end{itemize}
+
+For all $s$, they prove: if $\|f\|_{U^{s+1}[N]} \geq c$, then $f$ correlates with a nilsequence with correlation at least $\exp(-\log^{O_s(1)} c^{-1})$. This is quasipolynomial in $c^{-1}$, matching the cyclic-group $U^3$ standard set by Sanders.
+
+\subsection{The porting problem (``Route 2'')}
+
+The natural question: can the Leng--Sah--Sawhney technology be ported to $\F_p^n$, giving a quasipolynomial $U^k$ inverse theorem for $\F_p^n$ at all $k$?
+
+The obstacle is the entropy issue mentioned earlier. In $\Z/N\Z$, the family of obstructions is bounded polynomially in $N$. In $\F_p^n$, it is bounded super-polynomially in the size of the group. The inductive hypothesis in Leng--Sah--Sawhney becomes weaker when transferred to $\F_p^n$, and the existing proof technique doesn't carry the weaker hypothesis through.
+
+Whether this is a fundamental obstacle or a technical one is, as of mid-2026, unclear. Milićević's $U^4$ result was a major advance for $\F_p^n$, and a $U^5$ or $U^6$ analogue would tell us whether the technique extends. As of this writing, no such paper exists in the public literature.
+
+\section{Watch This Space: Spectral Stability}\label{sec:spectral}
+
+\subsection{The claim}
+
+In December 2025, Mohammad Taha Kazemi Moghadam posted a paper on arXiv~\cite{kazemi2025} claiming:
+
+\begin{itemize}[leftmargin=2em]
+  \item \PFR\ with polynomial bounds in $\Z$.
+  \item \PFR\ with polynomial bounds in $\Z/N\Z$ uniformly in $N$.
+  \item \PFR\ with polynomial bounds in odd-characteristic finite fields.
+  \item As a corollary, a complete resolution of \PFR\ across all finite fields.
+\end{itemize}
+
+The strategy is a \emph{spectral stability dichotomy}: either the $L^4$ Fourier mass of $\mathbf{1}_A$ concentrates on a small span (yielding a near-coset via Paley--Zygmund), or it disperses (yielding a polynomial doubling decrement via a BSG step in a quotient). The argument iterates this dichotomy via a monotone potential.
+
+If correct, this is enormous. The \PFR\ conjecture in $\Z$ has been open for 25+ years; the GGMT proof in characteristic 2 explicitly does not extend, because of the discrete-Gaussian obstruction. A 29-page single-author paper resolving the integer version would be once-in-a-decade work.
+
+\subsection{Why caution is warranted}
+
+The reasons for caution, in approximate order of weight:
+
+\begin{enumerate}[leftmargin=2em]
+  \item \textbf{The claim is much stronger than its predecessors.} GGMT carefully established characteristic 2 first, then bounded torsion as a follow-up paper. The integer case has been a separate open problem and the GGMT technique provably cannot reach it. A spectral proof that handles $\Z$ requires a genuinely new ingredient that overcomes the discrete-Gaussian obstruction.
+  
+  \item \textbf{Sociological signals.} The paper is single-author, no institutional affiliation visible, no acknowledgements to discussions with experts, no Lean formalisation project initiated. Three rapid revisions over five days, growing from 11KB to 29KB. A ``Referee FAQ'' appendix anticipating objections rather than the paper having been pre-discussed with referees.
+  
+  \item \textbf{The Freiman modeling step is doing very heavy lifting.} The argument's $\Z$ bounds rest on Lemma H.1 (order-4 Freiman modeling) and Lemma H.2 (stability of $N$ across iteration). These lemmas claim that the entire iteration can be carried out inside a fixed cyclic group with no wrap-around on $2A - 2A$ throughout. Whether this works as claimed is the crux.
+  
+  \item \textbf{No expert engagement.} Searches turn up no MathOverflow discussion, no blog posts from Tao or Manners or Gowers commenting on the paper, no seminar talks. For a result of this magnitude this silence five months post-arXiv is unusual.
+\end{enumerate}
+
+\subsection{What the structural ideas are worth even if the proof has gaps}
+
+Independent of whether the proof works, the framework is conceptually interesting:
+
+\begin{itemize}[leftmargin=2em]
+  \item \emph{$L^4$ rigidity rather than $L^2$ smoothness.} Working with fourth moments captures finer structural information than additive energy alone, which is morally the second moment.
+  \item \emph{Exact projection rather than approximate decomposition.} The projector $P = \mu_{V^\perp} *$ is exact in the model cyclic group, avoiding the regularisation losses that plague Bohr-set approaches.
+  \item \emph{Concentration vs.\ dispersion as a clean dichotomy.} This binary structure --- either the spectrum concentrates and you win, or it disperses and you get an improvement in a quotient --- is more rigid than the entropy decrement, which is continuous.
+\end{itemize}
+
+Whether or not the integer case eventually falls to this approach, the spectral framework adds a tool to the conceptual toolkit. For our \EGZ\ purposes, the spectral framework's potential transferability is what matters --- and that transferability is hypothetical pending verification.
+
+\subsection{What would verification look like}
+
+The natural milestones would be:
+
+\begin{enumerate}[leftmargin=2em]
+  \item A blog post by Tao, Manners, or Gowers commenting on the argument.
+  \item Acceptance to a major journal (\emph{Annals of Mathematics}, \emph{Inventiones}, \emph{Acta Mathematica}).
+  \item Initiation of a Lean formalisation project (the natural next step given the GGMT precedent).
+  \item Application of the spectral framework to a derived problem (e.g., the $U^3$ inverse theorem in $\Z/N\Z$).
+\end{enumerate}
+
+As of May 2026, none of these has occurred. The paper sits in arXiv limbo: not retracted, not endorsed. We treat it accordingly --- as a thinking aid, not as a settled result.
+
+\newpage
+
+% ====================================================
+% PART III: SYNTHESIS
+% ====================================================
+\part{Synthesis and Open Directions}
+
+\section{The Through-Line: Controlled Transitions Between Levels of Structure}
+
+Reading the papers in Part II in sequence, a pattern emerges that's worth naming explicitly. Every significant advance is a sharpening of a \emph{controlled transition} between levels of higher-order additive structure. The transitions vary in form but share a common shape:
+
+\begin{itemize}[leftmargin=2em]
+  \item \textbf{PFR (GGMT 2023, 2024).} Transition from level $U^2$ to ``coset structure''. Mechanism: entropy decrement under fibring identity, with characteristic-specific algebraic miracle.
+  \item \textbf{Hosseini--Lovett bilinear Bogolyubov.} Transition from ``arbitrary per-element subspaces'' to ``linearly-varying subspaces''. Mechanism: iterated Sanders Bogolyubov--Ruzsa with random-sampling extraction.
+  \item \textbf{Milićević's $U^4$ inverse theorem.} Transition from ``approximately linear system of obstructions'' to ``global biaffine map''. Mechanism: abstract BSG plus algebraic regularity on bilinear varieties.
+  \item \textbf{Leng--Sah--Sawhney quasipolynomial $U^k$.} Transition through the nilsequence hierarchy. Mechanism: improved equidistribution theory plus refined sunflower decomposition.
+  \item \textbf{Manners 2018.} Transition through polynomial hierarchies on cubes. Mechanism: connectivity arguments, extending to global functions, iterating global structure.
+  \item \textbf{Sauermann--Zakharov.} Transition from ``many bad $\ell$-tuples'' to ``$\ell$-tuples in a structured subset'' via dichotomous induction. Mechanism: slice rank for the base case, Borenstein--Croot BSG for the heavy-mass case.
+\end{itemize}
+
+Each of these is a way of ``moving effectively around the blocking piece of mathematics''. The blocking piece is always an inverse theorem at some level $s$; the transition climbs from level $s - 1$ where things are easier, with quantitative loss controlled by the technical machinery.
+
+Conceptually, this matches the ``categorical bridge'' intuition that any reader of this document is likely to have had at some point: that one should be able to move into a different mathematical world where the obstruction dissolves, then move back. The execution is not categorical in the formal sense (no Caramello-style topos bridges, no homotopy type theory), but the \emph{pattern} of move-fix-move-back is the genuine engine.
+
+\section{Two Routes to Breaking the Multi-Coloured Barrier}
+
+The central open question identified in Sauermann--Zakharov is whether the $m^\varepsilon$ base in their bound can be improved to an absolute constant. We have identified two concrete routes.
+
+\subsection{Route 1: Multilinear Bogolyubov in $\F_p^n$}
+
+The schematic plan:
+
+\begin{enumerate}[leftmargin=2em]
+  \item Extend Hosseini--Lovett's bilinear Bogolyubov to a \emph{trilinear} (and ultimately $\ell$-linear) version in $\F_p^n$. The natural conjecture: for $A \subseteq G^\ell$ of density $\alpha$, some iterated difference operator $\phi_w(A)$ contains an $\ell$-linear variety of polylog codimension.
+  
+  \item Develop a multilinear ``popular sums'' lemma --- the analogue of Sanders' strong Bogolyubov--Ruzsa, but for $\ell$-fold sumsets.
+  
+  \item Adapt Milićević's abstract BSG to handle quadruple hierarchies built from $\ell$-tuple data (cover conditions, sumset conditions, subspace alignment in iterated sumsets).
+  
+  \item Plug the assembled multilinear-BSG into Sauermann--Zakharov to replace Borenstein--Croot. The expected outcome: constant-base bound on $\sUFp(\Z_p^n)$, with the constant depending on $\ell_{\max}$ in the Sauermann--Zakharov induction.
+\end{enumerate}
+
+\textbf{Plausibility assessment.} The extension of Hosseini--Lovett to higher $\ell$ should be tractable --- the bilinear case used Sanders four times; an $\ell$-linear case would presumably use Sanders $O(\ell)$ times, with codimension exponent degrading polynomially in $\ell$. The multilinear popular sums lemma is the genuinely new piece, and we believe it's within reach of current technology but no one has written it down.
+
+\textbf{Expected bound.} Even an efficient execution of Route 1 would give a constant base on the order of $\exp(20 \ell_{\max})$ or worse. This is far from Edel's $2.1398$ lower bound but would answer Question 1.3 affirmatively.
+
+\subsection{Route 2: Porting Leng--Sah--Sawhney}
+
+The schematic plan:
+
+\begin{enumerate}[leftmargin=2em]
+  \item Develop the appropriate nilspace structure for $\F_p^n$ at higher $k$. This is essentially the project of pushing Milićević's $U^4$ result to $U^5$, $U^6$, and beyond.
+  
+  \item Adapt the Leng--Sah--Sawhney equidistribution theory to the $\F_p^n$ nilspace setting. The cyclic-group equidistribution uses divisibility and rotation; the $\F_p^n$ analogue uses linear algebra over the prime field.
+  
+  \item Once a quasipolynomial $U^k$ inverse theorem for $\F_p^n$ is in place for all $k$, route the Sauermann--Zakharov bottleneck through it. The Borenstein--Croot step gets replaced by a higher-order Fourier extraction.
+\end{enumerate}
+
+\textbf{Plausibility assessment.} Route 2 is technically harder than Route 1 because the $\F_p^n$ nilspace theory at $\ell \geq 5$ is genuinely undeveloped. Milićević's $U^4$ paper is itself 70+ pages of dense work; extending to $U^5$ would presumably require comparable effort plus genuine new ideas. The advantage: if it works, the resulting machinery would give \emph{quasipolynomial} bounds, which are much closer to the conjectured truth than Route 1 would provide.
+
+\textbf{Expected bound.} Quasipolynomial in $p$ for $\sUFp(\Z_p^n)$ --- still far from Edel but better than Route 1.
+
+\subsection{Comparison and recommendation}
+
+If we had to bet on which route gets written first, our money is on Route 2 --- for the sociological reason that Leng, Sah, and Sawhney are actively working in this area and the natural next paper after their cyclic-group result is the $\F_p^n$ extension. Route 1 would require someone to assemble the multilinear Bogolyubov machinery from scratch; nobody appears to be doing this publicly.
+
+If a third route opens via the spectral stability framework (assuming the Kazemi Moghadam paper is verified), that would be Route 3: spectral concentration/dispersion dichotomy adapted to multi-set settings, with the $L^4$ Fourier mass replaced by appropriate higher-moment quantities. This route is hypothetical pending verification of the underlying \PFR\ proof.
+
+\section{Open Questions for the Newcomer}
+
+For a reader looking to enter this area, the following are concrete questions worth pursuing.
+
+\subsection{Direct \EGZ\ questions}
+
+\begin{question}[Sauermann--Zakharov Question 1.3]
+Is there an absolute constant $c$ such that $\sUFp(\Z_m^n) \leq D_m c^n$ for all $m, n$?
+\end{question}
+
+\begin{question}[Harborth's $d = 3$ conjecture]
+Is $\sUFp(\Z_p^3) = 9p - 8$ for every prime $p$? The asymptotic $\sUFp(\Z_p^3) \sim 9p$ is known (Bhowmik--Schlage-Puchta); the per-prime statement is open.
+\end{question}
+
+\begin{question}
+Can the lower bound be improved beyond Edel's $2.1398^n$? The current constructions are all algebraic-geometric; combinatorial constructions might give larger bases.
+\end{question}
+
+\subsection{Higher-order Fourier questions}
+
+\begin{question}
+Is there a polynomial $U^3$ inverse theorem for $\F_p^n$? Currently quasipolynomial via Sanders; conjectured polynomial via the strong form of \PFR.
+\end{question}
+
+\begin{question}
+Is there a quasipolynomial $U^5$ inverse theorem for $\F_p^n$? Currently doubly-exponential at best.
+\end{question}
+
+\begin{question}[Tao]
+Is there an efficient ``99\% inverse theorem'' for entropic Ruzsa distance, avoiding the constant-loss in the entropic BSG? This is the dominant inefficiency in GGMT.
+\end{question}
+
+\subsection{Bridge questions}
+
+\begin{question}
+Is there a clean multilinear Bogolyubov in $\F_p^n$ for $\ell \geq 3$? The bilinear case is settled (Hosseini--Lovett); the trilinear case is the next natural target.
+\end{question}
+
+\begin{question}
+Can the Milićević abstract BSG framework be applied outside the $U^4$ inverse theorem context? The Theorem 13 formulation is general but has not, to our knowledge, been used elsewhere.
+\end{question}
+
+\begin{question}
+Is there a structural reason that cyclic-group $U^k$ inverse theorems are ahead of $\F_p^n$ ones at $k \geq 4$, or is this a temporary state of the literature?
+\end{question}
+
+\subsection{The spectral stability question}
+
+\begin{question}\label{q:spectral}
+Does the spectral stability dichotomy of Kazemi Moghadam (December 2025) actually establish \PFR\ over $\Z$? This is the watch-this-space item.
+\end{question}
+
+The answer to Question~\ref{q:spectral} will significantly reshape the landscape. If yes, the discrete-Gaussian obstruction is bypassed and a third route to \EGZ\ improvements opens via spectral methods. If no (or if the proof has gaps that are not easily fixable), the existing two routes remain the natural targets, and the $\Z$ case of \PFR\ stays open as one of the headline questions of additive combinatorics.
+
+\section{Conclusion}
+
+The Erd\H{o}s--Ginzburg--Ziv frontier sits at a moment of intense activity. Between November 2023 and the present, the polynomial Freiman--Ruzsa theorem has been proved (with the integer case still contested), the $U^4$ inverse theorem in $\F_p^n$ has been brought to quasipolynomial bounds, all $U^k$ inverse theorems in cyclic groups have been brought to quasipolynomial bounds, and abstract Balog--Szemer\'edi--Gowers machinery has emerged as a structural tool. The Sauermann--Zakharov upper bound for $\sUFp(\Z_m^n)$ is sub-polynomial in $m$ but still has growing exponential base, and closing this to a constant is the headline open question.
+
+Our reading of the landscape is that the constant-base improvement is plausibly within reach via one of the routes identified above. The exact timing depends on which research group commits to which route. The Milićević $U^4$ result, the Hosseini--Lovett bilinear Bogolyubov, and the GGMT entropy method all provide pieces of the necessary machinery; what's missing is the assembly.
+
+For the reader entering this area, our recommendation is to start with one of:
+
+\begin{itemize}[leftmargin=2em]
+  \item Sauermann--Zakharov 2023~\cite{sauermannzakharov2023} (the central paper for \EGZ).
+  \item Milićević 2024~\cite{milicevic2024} (for the abstract BSG framework).
+  \item Hosseini--Lovett 2019~\cite{hosseinilovett2019} (for the cleanest illustration of the iterated-Sanders technique).
+  \item Tao's blog series on PFR (for the entropy method in accessible form).
+\end{itemize}
+
+The Manners 2018 paper~\cite{manners2018} is essential but very long; we recommend it after the others.
+
+The watch-this-space item is the December 2025 spectral stability paper. If it holds up, the landscape shifts substantially. If it does not, the field continues along the routes outlined here.
+
+The Harborth conjecture --- the original $d = 3$ statement that opened our exploration --- remains open. It is plausible that a serious attempt on Sauermann--Zakharov's Question 1.3 would, as a byproduct, settle Harborth as well. The two are tightly connected, both technically and in the sense that whoever cracks the multi-coloured barrier will have built machinery that bears directly on the small-$d$ case.
+
+\newpage
+
+% ====================================================
+% APPENDICES
+% ====================================================
+\appendix
+
+\section{Glossary}
+
+\begin{description}[leftmargin=0pt]
+\item[\textbf{Additive energy}] For a set $A$, $E(A) = |\{(a_1, a_2, a_3, a_4) \in A^4 : a_1 + a_2 = a_3 + a_4\}|$. Equivalently, $\|1_A * 1_A\|_2^2$ or, in Fourier, $|G| \sum_\xi |\widehat{1_A}(\xi)|^4$. Large additive energy is the dual to small doubling.
+
+\item[\textbf{Balog--Szemer\'edi--Gowers (BSG)}] Theorem connecting additive energy to sumset structure: high energy implies a substantial subset has small sumset. The classical theorem is for the $U^2$ level; higher-uniformity versions exist (Borenstein--Croot) and abstract versions exist (Milićević).
+
+\item[\textbf{Bilinear variety}] A subset of $\F^n \times \F^n$ of the form $\{(x, y) \in V \times W : b_1(x, y) = \cdots = b_r(x, y) = 0\}$ where $V, W$ are subspaces and $b_i$ are bilinear forms. The natural ``two-dimensional'' analogue of a subspace.
+
+\item[\textbf{Bogolyubov--Ruzsa lemma}] If $A \subseteq \F^n$ has density $\alpha$, then $2A - 2A$ contains a subspace of codimension polylog in $\alpha^{-1}$. The starting point for the $U^3$ inverse theorem; due to Sanders 2012 with the polylog quantitative form.
+
+\item[\textbf{Bohr set}] In $\Z/N\Z$, a set of the form $\{n : |e^{2\pi i \gamma n/N} - 1| < \rho \text{ for all } \gamma \in \Gamma\}$. The cyclic-group analogue of a subspace. Cannot be intersected as cleanly as subspaces, which is the main technical obstacle to porting $\F_p^n$ techniques to $\Z/N\Z$.
+
+\item[\textbf{Cap set}] A subset of $\F_3^n$ with no three-term arithmetic progression. Equivalently, no three distinct elements summing to zero. The Ellenberg--Gijswijt bound is $|A| \leq (2.756)^n$.
+
+\item[\textbf{Davenport constant}] For a finite abelian group $G$, the smallest $D$ such that any sequence of $D$ elements contains a zero-sum subsequence (of any length). Related to but distinct from the \EGZ\ constant.
+
+\item[\textbf{Dissociated set}] A set $S = \{s_1, \ldots, s_k\}$ in an abelian group is dissociated if the only $\pm 1$ combination $\sum \epsilon_i s_i = 0$ is the trivial one ($\epsilon_i = 0$ for all $i$). Used in Chang's theorem and Rudin's inequality to bound the dimension of the large spectrum.
+
+\item[\textbf{Doubling constant}] For a finite set $A$, the ratio $|A + A| / |A|$. Small doubling means $A$ is structurally close to a subgroup; large doubling means it's spread out.
+
+\item[\textbf{Entropic Ruzsa distance}] $\dist[X; Y] = \entropy[X' + Y'] - \frac{1}{2}\entropy[X] - \frac{1}{2}\entropy[Y]$ for independent copies $X', Y'$. The entropy analogue of the combinatorial Ruzsa distance. Contracts under homomorphisms, unlike combinatorial doubling.
+
+\item[\textbf{EGZ constant}] $\sUFp(G)$: the smallest $s$ such that any sequence of $s$ elements of the finite abelian group $G$ contains a subsequence of length $\exp(G)$ whose sum is zero. The Erd\H{o}s--Ginzburg--Ziv theorem says $\sUFp(\Z/m\Z) = 2m - 1$.
+
+\item[\textbf{Fibring identity}] $\dist[X; Y] = \dist[\pi X; \pi Y] + \dist[X|\pi X; Y|\pi Y] + (\text{cross-term})$ for a homomorphism $\pi$. Decomposes entropic Ruzsa distance additively over a fibration. Central pillar of the GGMT proof.
+
+\item[\textbf{Freiman--Ruzsa theorem}] If $A \subseteq G$ has $|A + A| \leq K|A|$, then $A$ is contained in a coset progression of rank $f(K)$ and size at most $g(K) |A|$, for some functions $f, g$. The polynomial version (Marton's conjecture) asks for $f, g$ polynomial in $K$.
+
+\item[\textbf{Freiman modeling}] A technique for embedding a subset of an infinite group (e.g., $\Z$) into a finite cyclic group $\Z/N\Z$ in a way that preserves additive structure up to a fixed sumset depth. The standard tool for transferring problems from $\Z$ to $\Z/N\Z$.
+
+\item[\textbf{Gowers norm $U^k$}] A norm on functions $f: G \to \C$ that measures correlation with degree-$(k-1)$ polynomial phases. Defined as $\|f\|_{U^k}^{2^k} = \E [\partial_{h_1} \cdots \partial_{h_k} f \cdot \text{conjugates}]$. Large $U^k$ norm signals algebraic structure.
+
+\item[\textbf{Higher-order Fourier analysis}] The subject extending classical Fourier analysis (which uses linear phases) to higher-degree polynomial phases. The inverse theorems for $U^k$ norms are the central results.
+
+\item[\textbf{Inverse theorem for $U^k$}] A theorem of the form: ``If $\|f\|_{U^k} \geq c$ then $f$ correlates with a structured object'' (polynomial phase, nilsequence, etc.). The state of the art varies by setting; see Section 5.
+
+\item[\textbf{Marton's conjecture}] Equivalent to the polynomial Freiman--Ruzsa conjecture. Now a theorem in characteristic 2 (GGMT 2023), bounded torsion (GGMT 2024), and (claimed) integers and odd characteristic (Kazemi Moghadam 2025, unverified).
+
+\item[\textbf{Multilinear variety}] An $\ell$-dimensional generalisation of bilinear variety: subset of $G^\ell$ defined by subspace conditions in each coordinate plus $\ell$-linear forms.
+
+\item[\textbf{Multi-coloured barrier}] In Sauermann's $U^p$-style problems: the bound $\sqrt{p}^n$ that cannot be broken by techniques that work for the multi-coloured version. Sauermann--Zakharov broke it by using a single-set modification argument.
+
+\item[\textbf{Nilsequence}] A function on $\Z$ of the form $n \mapsto F(g^n \Gamma)$ where $G/\Gamma$ is a nilmanifold and $F$ is continuous. The structured objects in the Green--Tao--Ziegler inverse theorem for $\Z/N\Z$.
+
+\item[\textbf{Non-classical polynomial}] In low characteristic ($k > p$), the obstructions to large $U^k$ norm are not polynomial phases over $\F_p$ but a generalisation involving values in $\Z/p^k\Z$ rather than $\Z/p\Z$. Required for the Tao--Ziegler inverse theorem.
+
+\item[\textbf{Partition rank}] A generalisation of slice rank introduced by Naslund, allowing finer-grained partitions of tensor indices. Gives slightly stronger bounds in some EGZ-style problems.
+
+\item[\textbf{Polynomial Bogolyubov}] A version of the Bogolyubov--Ruzsa lemma with codimension polynomial in $\log K$ rather than polylog. Equivalent to the polynomial Freiman--Ruzsa conjecture in finite-field settings.
+
+\item[\textbf{Slice rank}] The smallest number of slice functions (one-variable or two-variable functions of the three coordinates) needed to express a three-tensor as a sum. The key technical tool in the Ellenberg--Gijswijt resolution of the cap set problem.
+
+\item[\textbf{Sumset}] $A + B = \{a + b : a \in A, b \in B\}$. The $\ell$-fold sumset $\ell A = A + A + \cdots + A$ ($\ell$ times).
+\end{description}
+
+\section{Symbol Index}
+
+\begin{description}[leftmargin=0pt, itemsep=3pt]
+\item[$G$, $H$] Finite abelian groups; usually $\F_p^n$ or $\Z/N\Z$.
+\item[$\widehat{G}$] The Pontryagin dual; the group of characters.
+\item[$A, B$] Subsets of an abelian group.
+\item[$|A|$] Cardinality.
+\item[$\alpha$] Density $|A|/|G|$.
+\item[$A + B$] Sumset.
+\item[$\ell A$] $\ell$-fold sumset.
+\item[$K$] Doubling constant $|A + A|/|A|$.
+\item[$E(A)$] Additive energy.
+\item[$\sUFp(G)$] EGZ constant of $G$.
+\item[$r(\F_p^n)$] Maximum cap set size.
+\item[$\|f\|_{U^k}$] Gowers $U^k$ norm of $f$.
+\item[{$\dist[X; Y]$}] Entropic Ruzsa distance.
+\item[{$\entropy[X]$}] Shannon entropy.
+\item[{$D[X_1, \ldots, X_m]$}] Multidistance (GGMT bounded-torsion).
+\item[{$I[X : Y | Z]$}] Conditional mutual information.
+\item[$\widehat{f}(\xi)$] Fourier transform.
+\item[$\Spec_0(A)$] Large spectrum at threshold $\tau$.
+\item[$V \leq \widehat{G}$] Subgroup of dual.
+\item[$H = V^\perp$] Annihilator subgroup in $G$.
+\item[$\mu_H$] Uniform probability measure on $H$.
+\item[$\phi_h$, $\phi_v$] Horizontal/vertical difference operators (Hosseini--Lovett).
+\item[$\partial_a f$] Discrete derivative $f(x+a)\overline{f(x)}$.
+\end{description}
+
+\section{The original puzzle, formally proved}\label{app:proof-m3}
+
+This appendix gives the formal proof of the $m=3$ case introduced in
+Section~\ref{sec:intro} and revisited in
+Section~\ref{sec:from-puzzle-to-theorem}: any five integers contain
+three whose sum is divisible by $3$. The proof uses only the pigeonhole
+principle and the linearity of congruence modulo $3$. After the proof
+we walk through three worked examples --- two demonstrating each case,
+and one ``adversarial attempt'' showing why the construction cannot be
+broken.
+
+\subsection*{Statement and proof}
+
+\begin{theorem}[\EGZ, $m=3$ case]
+For every $S \subset \Z$ with $|S| = 5$, there exists $T \subseteq S$ with $|T| = 3$ such that $3 \mid \sum T$.
+\end{theorem}
+
+\begin{proof}
+Let $S = \{a_1, a_2, a_3, a_4, a_5\}$.
+
+For each $r \in \{0, 1, 2\}$, define the residue class
+\[
+B_r := \{a_i \in S : a_i \equiv r \pmod{3}\}.
+\]
+These partition $S$, so
+\begin{equation}\label{eq:partition}
+|B_0| + |B_1| + |B_2| = 5.
+\end{equation}
+
+\textbf{Key fact} (congruence is linear). For any $x, y, z \in \Z$,
+\[
+x + y + z \pmod{3} \equiv (x \bmod 3) + (y \bmod 3) + (z \bmod 3) \pmod{3}.
+\]
+So it suffices to find three elements whose residues sum to $0 \pmod 3$.
+
+\textbf{Case 1.} There exists $r$ such that $|B_r| \geq 3$.
+
+Choose any distinct $x, y, z \in B_r$. Their residues are $(r, r, r)$, summing to $3r \equiv 0 \pmod{3}$. \checkmark
+
+\textbf{Case 2.} For all $r$, $|B_r| \leq 2$.
+
+Suppose for contradiction that some $B_r = \emptyset$. Then by~\eqref{eq:partition} the other two buckets hold all $5$ elements between them, so one of them has at least $\lceil 5/2 \rceil = 3$ elements --- contradicting the Case~2 hypothesis. Hence $B_r \neq \emptyset$ for every $r$.
+
+Choose $x \in B_0$, $y \in B_1$, $z \in B_2$. Their residues sum to $0 + 1 + 2 = 3 \equiv 0 \pmod{3}$. \checkmark
+
+Cases~1 and~2 are exhaustive, so in either situation there exists $T \subseteq S$ with $|T| = 3$ and $3 \mid \sum T$.
+\end{proof}
+
+\subsection*{Worked examples}
+
+The proof above is short enough to feel almost suspicious. Three concrete examples should settle any unease about whether it actually delivers what it claims.
+
+\paragraph{Example A (Case~1 fires).}
+Take $S = \{7, 11, 4, 22, 100\}$. The residues mod $3$ are:
+\[
+7 \equiv 1, \quad 11 \equiv 2, \quad 4 \equiv 1, \quad 22 \equiv 1, \quad 100 \equiv 1.
+\]
+So $B_0 = \emptyset$, $B_1 = \{7, 4, 22, 100\}$, $B_2 = \{11\}$. Since $|B_1| = 4 \geq 3$, Case~1 applies. Picking any three from $B_1$, for instance $7, 4, 22$:
+\[
+7 + 4 + 22 = 33 = 3 \times 11. \quad \checkmark
+\]
+
+\paragraph{Example B (Case~2 fires).}
+Take $S = \{3, 8, 13, 2, 1\}$. The residues mod $3$ are:
+\[
+3 \equiv 0, \quad 8 \equiv 2, \quad 13 \equiv 1, \quad 2 \equiv 2, \quad 1 \equiv 1.
+\]
+So $B_0 = \{3\}$, $B_1 = \{13, 1\}$, $B_2 = \{8, 2\}$. All buckets have size $\leq 2$ and none is empty, so Case~2 applies. Picking one from each bucket --- say $3, 13, 8$:
+\[
+3 + 13 + 8 = 24 = 3 \times 8. \quad \checkmark
+\]
+
+\paragraph{Example C (an adversarial attempt).}
+Can we build a $5$-set that breaks the theorem? We would need every bucket size $\leq 2$ \emph{and} some bucket empty. Try $S = \{1, 4, 7, 2, 5\}$:
+\[
+1 \equiv 1, \quad 4 \equiv 1, \quad 7 \equiv 1, \quad 2 \equiv 2, \quad 5 \equiv 2.
+\]
+So $B_0 = \emptyset$, $B_1 = \{1, 4, 7\}$, $B_2 = \{2, 5\}$. But $|B_1| = 3$ --- which is exactly what the proof predicted would happen. Case~1 catches it:
+\[
+1 + 4 + 7 = 12 = 3 \times 4. \quad \checkmark
+\]
+The escape route is logically sealed: emptying a bucket forces another bucket to overflow into Case~1. There is nowhere to hide.
+
+\subsection*{The general $m$ case in outline}
+
+The same proof shape works for general $m$ but with more bookkeeping. One sketches:
+
+\begin{itemize}[leftmargin=2em]
+  \item Sort the $2m-1$ integers into $m$ residue classes mod~$m$.
+  \item If any class has $\geq m$ elements: pick $m$ of them, sum is $\equiv 0 \pmod m$. \checkmark
+  \item Otherwise every class has $\leq m-1$ elements, so all $m$ classes are non-empty by a pigeonhole argument analogous to the one above.
+  \item Conclude using the Cauchy--Davenport theorem applied iteratively, which forces the existence of an $m$-term zero-sum subsequence.
+\end{itemize}
+
+The Cauchy--Davenport step is what makes the general case substantively harder than $m=3$. For $m=3$ the four winning triples can be enumerated directly (Figure~\ref{fig:buckets-and-triples}); for $m \geq 4$ the analogous enumeration is too large to handle by hand, and Cauchy--Davenport provides the structural shortcut. The original 1961 paper of Erd\H{o}s--Ginzburg--Ziv carries out this argument in full. The same shape --- pigeonhole forces either crowding or spreading, and both turn out to be wins --- is what generalises.
+
+\subsection*{Why this proof feels mysterious}
+
+A natural question after reading the proof: where exactly did the number $5$ come from? The proof never seems to use it explicitly --- it just uses the partition into three classes, plus the observation that $5 > 2 \cdot 3 - 1$ would be too large and $5 < 2 \cdot 3 - 1$ would leave room for a counterexample.
+
+The answer is that $5 = 2m - 1$ for $m = 3$ is precisely the threshold where ``every class has $\leq m - 1$ elements'' forces ``every class is non-empty''. With $4$ elements (i.e., $2m - 2$), you can have two classes of size $2$ and one class empty --- which dodges both cases of the proof. With $5$ elements you cannot: either some class has $\geq 3$, or all three classes are non-empty.
+
+The threshold $2m - 1$ is therefore tight, not coincidental. The classical \EGZ\ statement (Theorem~\ref{thm:egz-classical}) is exactly the assertion that this threshold remains valid for all $m \geq 1$, with the proof requiring extra machinery (Cauchy--Davenport) only because the case analysis becomes too large to do by direct enumeration.
+
+\section{Reference List}
+
+This is an annotated reference list. References are organized thematically rather than alphabetically, matching the order in which they appear in the main text.
+
+\paragraph{Classical EGZ and Kemnitz.}
+
+\begin{thebibliography}{99}
+\bibitem{egz1961}
+P.~Erd\H{o}s, A.~Ginzburg, and A.~Ziv, ``Theorem in the additive number theory,'' \emph{Bull.\ Res.\ Council Israel}, 10F:41--43, 1961.
+
+\bibitem{kemnitz1983}
+H.~Kemnitz, ``On a lattice point problem,'' \emph{Ars Combin.}, 16:151--160, 1983.
+
+\bibitem{reiher2007}
+C.~Reiher, ``On Kemnitz' conjecture concerning lattice-points in the plane,'' \emph{Ramanujan J.}, 13:333--337, 2007.
+
+\paragraph{The slice rank era.}
+
+\bibitem{ellenberggijswijt2017}
+J.~S. Ellenberg and D.~Gijswijt, ``On large subsets of $\F_q^n$ with no three-term arithmetic progression,'' \emph{Ann.\ of Math.}, 185:339--343, 2017.
+
+\bibitem{crootleavpach2017}
+E.~Croot, V.~F. Lev, and P.~P. Pach, ``Progression-free sets in $\Z_4^n$ are exponentially small,'' \emph{Ann.\ of Math.}, 185:331--337, 2017.
+
+\bibitem{tao2016sliceblog}
+T.~Tao, ``A symmetric formulation of the Croot--Lev--Pach--Ellenberg--Gijswijt capset bound,'' blog post, May 2016.
+
+\paragraph{EGZ-specific.}
+
+\bibitem{naslund2020}
+E.~Naslund, ``Exponential bounds for the Erd\H{o}s--Ginzburg--Ziv constant,'' \emph{J. Combin.\ Theory Ser.\ A}, 174:105185, 2020.
+
+\bibitem{foxsauermann2018}
+J.~Fox and L.~Sauermann, ``Erd\H{o}s--Ginzburg--Ziv constants by avoiding three-term arithmetic progressions,'' \emph{Electron.\ J.\ Combin.}, 25(2):2.14, 2018.
+
+\bibitem{hegedus2018}
+G.~Heged\H{u}s, ``The Erd\H{o}s--Ginzburg--Ziv constant and progression-free subsets,'' arXiv:1803.06960, 2018.
+
+\bibitem{sauermann2021}
+L.~Sauermann, ``On the size of subsets of $\F_p^n$ without $p$ distinct elements summing to zero,'' \emph{Israel J.\ Math.}, 243:63--79, 2021. arXiv:1904.09560.
+
+\bibitem{zakharov2020}
+D.~Zakharov, ``Convex geometry and EGZ,'' preprint, 2020.
+
+\bibitem{sauermannzakharov2023}
+L.~Sauermann and D.~Zakharov, ``Bounds on the Erd\H{o}s--Ginzburg--Ziv constant of $\Z_m^n$,'' arXiv:2302.14737, 2023.
+
+\bibitem{bhowmikschlagepuchta2007}
+G.~Bhowmik and J.-C. Schlage-Puchta, ``Davenport's constant for groups of the form $\Z_3 \oplus \Z_3 \oplus \Z_{3d}$,'' in \emph{Additive Combinatorics}, CRM Proc.\ Lect.\ Notes 43, AMS, 2007.
+
+\bibitem{edel2008}
+Y.~Edel, ``Sequences in abelian groups $G$ of odd order without zero-sum subsequences of length $\exp(G)$,'' \emph{Des.\ Codes Cryptogr.}, 47:125--134, 2008.
+
+\bibitem{elsholtz2004}
+C.~Elsholtz, ``Lower bounds for multidimensional zero sums,'' \emph{Combinatorica}, 24:351--358, 2004.
+
+\paragraph{Generalised EGZ.}
+
+\bibitem{bitzgriffithhe2017}
+S.~Bitz, A.~Griffith, and X.~He, ``Exponential lower bounds for generalized Erd\H{o}s--Ginzburg--Ziv constants,'' preprint, 2017.
+
+\bibitem{geneson2020}
+J.~Geneson, ``Improved exponential lower bounds for generalized EGZ constants,'' preprint, 2020.
+
+\bibitem{sidorenko2020}
+A.~Sidorenko, ``Extremal Erd\H{o}s--Ginzburg--Ziv constants for $\F_2^n$,'' preprint, 2020.
+
+\bibitem{caroschmitt2022}
+Y.~Caro and J.~R. Schmitt, ``Higher degree Erd\H{o}s--Ginzburg--Ziv constants,'' arXiv:2207.08682, 2022.
+
+\bibitem{costadellafiore2022}
+S.~Costa and S.~Della Fiore, ``Improved bounds for the degree-$d$ EGZ constants of $\F_q^n$,'' arXiv:2211.03682, 2022.
+
+\bibitem{leung2025}
+M.~Leung, ``A faster algorithm for Erd\H{o}s--Ginzburg--Ziv,'' arXiv:2507.08139, 2025.
+
+\paragraph{Higher-order Fourier and inverse theorems.}
+
+\bibitem{gowers1998}
+W.~T. Gowers, ``A new proof of Szemer\'edi's theorem for arithmetic progressions of length four,'' \emph{Geom.\ Funct.\ Anal.}, 8:529--551, 1998.
+
+\bibitem{greentao2008}
+B.~Green and T.~Tao, ``An inverse theorem for the Gowers $U^3$ norm,'' \emph{Proc.\ Edinb.\ Math.\ Soc.}, 51:73--153, 2008.
+
+\bibitem{samorodnitsky2007}
+A.~Samorodnitsky, ``Low-degree tests at large distances,'' STOC 2007.
+
+\bibitem{greentaoziegler2012}
+B.~Green, T.~Tao, and T.~Ziegler, ``An inverse theorem for the Gowers $U^{s+1}[N]$-norm,'' \emph{Ann.\ of Math.}, 176:1231--1372, 2012.
+
+\bibitem{bergelsontao ziegler}
+V.~Bergelson, T.~Tao, and T.~Ziegler, ``An inverse theorem for the uniformity seminorms associated with the action of $\F_p^\infty$,'' \emph{Geom.\ Funct.\ Anal.}, 19:1539--1596, 2010.
+
+\bibitem{taoziegler2012}
+T.~Tao and T.~Ziegler, ``The inverse conjecture for the Gowers norm over finite fields in low characteristic,'' \emph{Ann.\ Comb.}, 16:121--188, 2012.
+
+\bibitem{gowersmilicevic2017}
+W.~T. Gowers and L.~Mili\'cevi\'c, ``A quantitative inverse theorem for the $U^4$ norm over finite fields,'' arXiv:1712.00241, 2017.
+
+\bibitem{manners2018}
+F.~Manners, ``Quantitative bounds in the inverse theorem for the Gowers $U^{s+1}$-norms over cyclic groups,'' arXiv:1811.00718, 2018.
+
+\bibitem{tidor2021}
+J.~Tidor, ``Quantitative bounds for the $U^4$-inverse theorem over low characteristic finite fields,'' arXiv:2109.13108, 2021.
+
+\bibitem{milicevic2024}
+L.~Mili\'cevi\'c, ``Quasipolynomial inverse theorem for the $U^4(\F_p^n)$ norm,'' arXiv:2410.08966, 2024.
+
+\bibitem{lengsahsawhney2024}
+J.~Leng, A.~Sah, and M.~Sawhney, ``Quasipolynomial bounds on the inverse theorem for the Gowers $U^{s+1}[N]$-norm,'' arXiv:2402.17994, 2024.
+
+\paragraph{Polynomial Freiman--Ruzsa.}
+
+\bibitem{ruzsa1999}
+I.~Z. Ruzsa, ``An analog of Freiman's theorem in groups,'' \emph{Ast\'erisque}, 258:323--326, 1999.
+
+\bibitem{sanders2012}
+T.~Sanders, ``On the Bogolyubov--Ruzsa lemma,'' \emph{Anal.\ PDE}, 5:627--655, 2012. arXiv:1011.0107.
+
+\bibitem{tao2010}
+T.~Tao, ``Sumset and inverse sumset theory for Shannon entropy,'' \emph{Combin.\ Probab.\ Comput.}, 19:603--639, 2010.
+
+\bibitem{ggmt2023}
+W.~T. Gowers, B.~Green, F.~Manners, and T.~Tao, ``On a conjecture of Marton,'' arXiv:2311.05762, 2023.
+
+\bibitem{ggmt2024}
+W.~T. Gowers, B.~Green, F.~Manners, and T.~Tao, ``Marton's conjecture in abelian groups with bounded torsion,'' arXiv:2404.02244, 2024.
+
+\bibitem{liao2024}
+L.~Liao, ``Improvements to the polynomial Freiman--Ruzsa constant,'' arXiv:2404.09639, 2024.
+
+\bibitem{tao2024abridged}
+T.~Tao, ``An abridged proof of Marton's conjecture,'' blog post, June 2024.
+
+\paragraph{Bilinear Bogolyubov.}
+
+\bibitem{bienvenule2017}
+P.-Y. Bienvenu and T.~H.~L\^e, ``A bilinear Bogolyubov theorem,'' arXiv:1711.05349, 2017.
+
+\bibitem{gowersmilicevic2017bilinear}
+W.~T. Gowers and L.~Mili\'cevi\'c, ``A bilinear version of Bogolyubov's theorem,'' arXiv:1712.00248, 2017.
+
+\bibitem{hosseinilovett2019}
+K.~Hosseini and S.~Lovett, ``A bilinear Bogolyubov--Ruzsa lemma with poly-logarithmic bounds,'' \emph{Discrete Analysis}, 2019:10, 1--14. arXiv:1808.04965.
+
+\bibitem{milicevic2021abelian}
+L.~Mili\'cevi\'c, ``A bilinear Bogolyubov argument in abelian groups,'' arXiv:2109.03093, 2021.
+
+\paragraph{Borenstein--Croot higher-uniformity BSG.}
+
+\bibitem{borensteincroot2011}
+E.~Borenstein and E.~Croot, ``On a certain generalization of the Balog--Szemer\'edi--Gowers theorem,'' \emph{SIAM J.\ Discrete Math.}, 25:685--694, 2011.
+
+\paragraph{The spectral stability claim.}
+
+\bibitem{kazemi2025}
+M.~T. Kazemi Moghadam, ``The polynomial Freiman--Ruzsa (Marton) conjecture in integers and finite fields via spectral stability,'' arXiv:2512.04433, 2025. \emph{Verification status uncertain as of May 2026; see Section~\ref{sec:spectral}.}
+
+\paragraph{Surveys and background.}
+
+\bibitem{taovu2006}
+T.~Tao and V.~H. Vu, \emph{Additive Combinatorics}, Cambridge University Press, 2006.
+
+\bibitem{taoblog}
+T.~Tao, blog \emph{What's New}, \url{https://terrytao.wordpress.com}. Multiple posts on PFR, Gowers norms, and slice rank are referenced.
+
+\end{thebibliography}
+
+\section{Suggested Reading Order for the Newcomer}
+
+The references above are listed thematically, not by difficulty. Here is a suggested order for someone entering the area fresh.
+
+\paragraph{Phase 1: Foundations (1--2 weeks).}
+\begin{enumerate}[leftmargin=2em]
+  \item Read Sections~\ref{sec:intro}--\ref{sec:from-puzzle-to-theorem} of this document, plus Appendix~\ref{app:proof-m3} for the worked $m=3$ proof. This gives concrete grounding before the abstractions.
+  \item Tao--Vu, \emph{Additive Combinatorics}~\cite{taovu2006}, Chapters 1--3. Covers sumsets, Freiman's theorem, Plünnecke--Ruzsa.
+  \item Original Erd\H{o}s--Ginzburg--Ziv paper~\cite{egz1961} for the classical setting.
+  \item Tao's blog post on slice rank~\cite{tao2016sliceblog} for the modern toolkit.
+\end{enumerate}
+
+\paragraph{Phase 2: The slice rank era (2--3 weeks).}
+\begin{enumerate}[leftmargin=2em]
+\setcounter{enumi}{4}
+  \item Ellenberg--Gijswijt~\cite{ellenberggijswijt2017} for the cap set bound.
+  \item Fox--Sauermann~\cite{foxsauermann2018} for the connection to EGZ.
+  \item Sauermann~\cite{sauermann2021} for the square root barrier.
+  \item Sauermann--Zakharov~\cite{sauermannzakharov2023} for the current state of the art.
+\end{enumerate}
+
+\paragraph{Phase 3: Polynomial Freiman--Ruzsa (2--3 weeks).}
+\begin{enumerate}[leftmargin=2em]
+\setcounter{enumi}{8}
+  \item Sanders~\cite{sanders2012} for the polylog Bogolyubov--Ruzsa.
+  \item Tao~\cite{tao2010} for entropic sumset theory.
+  \item GGMT~\cite{ggmt2023} for the proof of PFR in characteristic 2.
+  \item Tao's abridged proof blog post~\cite{tao2024abridged} for the cleanest exposition.
+  \item GGMT~\cite{ggmt2024} for the bounded-torsion extension.
+\end{enumerate}
+
+\paragraph{Phase 4: Inverse theorems (3--4 weeks).}
+\begin{enumerate}[leftmargin=2em]
+\setcounter{enumi}{13}
+  \item Green--Tao $U^3$~\cite{greentao2008}.
+  \item Gowers--Mili\'cevi\'c $U^4$~\cite{gowersmilicevic2017} (or skip directly to Mili\'cevi\'c 2024).
+  \item Mili\'cevi\'c~\cite{milicevic2024} for the quasipolynomial $U^4$ in $\F_p^n$. The abstract BSG framework is the main reading goal.
+  \item Hosseini--Lovett~\cite{hosseinilovett2019} for the bilinear Bogolyubov machinery used in Mili\'cevi\'c's Step 5.
+  \item Manners~\cite{manners2018} for cyclic groups. This is long; budget several weeks.
+  \item Leng--Sah--Sawhney~\cite{lengsahsawhney2024} for the quasipolynomial cyclic-group result.
+\end{enumerate}
+
+\paragraph{Phase 5: Open problems and directions.}
+\begin{enumerate}[leftmargin=2em]
+\setcounter{enumi}{19}
+  \item Re-read Sauermann--Zakharov~\cite{sauermannzakharov2023} with the toolkit of Phases 3 and 4 in mind. The bottleneck (Borenstein--Croot) should now be visible as the natural target.
+  \item Decide whether to pursue Route 1 (multilinear Bogolyubov in $\F_p^n$) or Route 2 (porting Leng--Sah--Sawhney to $\F_p^n$). Either project is a multi-year commitment.
+  \item Watch the spectral stability paper~\cite{kazemi2025}. If it gets validated, the landscape shifts.
+\end{enumerate}
+
+\section{Acknowledgements and Caveats}
+
+This document synthesises an extended discussion. The mathematical content reflects the published literature as cited; the framing, the identification of routes, the assessment of the spectral stability paper, and the overall narrative are the work of synthesis.
+
+\textbf{Specific caveats:}
+
+\begin{itemize}[leftmargin=2em]
+  \item The constants in the bounds quoted (e.g., $\log^{80}$ in Hosseini--Lovett, the doubling exponent $9$ in Liao's PFR refinement) are subject to ongoing optimisation. Quoted figures are correct as of the cited papers' publication.
+  \item The phrase ``current state of the art'' refers to mid-2026. Active areas like this evolve rapidly.
+  \item The two ``routes'' identified in Section 11 are our best reading of where progress is plausible. They are not the only possibilities, and the appearance of a third route (e.g., via spectral stability if it validates, or via methods we haven't anticipated) would not be surprising.
+  \item Where we have made assessments of specific papers' likelihood of validation (notably the Kazemi Moghadam paper), these are judgments based on sociological signals plus the inherent difficulty of the claim. They are not mathematical verdicts.
+  \item This document is not peer-reviewed and should not be treated as authoritative on contested points. Where it disagrees with the published literature, the published literature wins.
+\end{itemize}
+
+\textbf{Errata.} Any errors are not deliberate. The reader is invited to correct, refine, or extend this document as the field evolves.
+
+\vspace{2em}
+\begin{center}
+\textit{End of document.}
+\end{center}
+
+\end{document}
