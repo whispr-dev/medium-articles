@@ -1,0 +1,34 @@
+aye, here's the proof in proper notation, then i'll grind through actual numbers to show it ticks.
+Statement. ∀ S ⊂ ℤ with |S| = 5, ∃ T ⊆ S with |T| = 3 such that 3 ∣ ∑T.
+Proof. Let S = {a₁, a₂, a₃, a₄, a₅}.
+For each r ∈ {0, 1, 2}, define the residue class
+Bᵣ := { aᵢ ∈ S : aᵢ ≡ r (mod 3) }.
+These partition S, so
+|B₀| + |B₁| + |B₂| = 5.   ⟵ (∗)
+Key fact (congruence is linear): for any x, y, z ∈ ℤ,
+x + y + z (mod 3)  ≡  (x mod 3) + (y mod 3) + (z mod 3)  (mod 3).
+So it suffices to find three elements whose residues sum to 0 (mod 3).
+Case 1. ∃ r such that |Bᵣ| ≥ 3.
+Choose any distinct x, y, z ∈ Bᵣ. Their residues are (r, r, r), summing to 3r ≡ 0 (mod 3). ✓
+Case 2. ∀ r, |Bᵣ| ≤ 2.
+Suppose for contradiction that some Bᵣ = ∅. Then by (∗) the other two buckets hold all 5 elements between them, so one of them has ≥ ⌈5/2⌉ = 3 elements — contradicting the Case 2 hypothesis. Hence Bᵣ ≠ ∅ for every r.
+Choose x ∈ B₀, y ∈ B₁, z ∈ B₂. Their residues sum to 0 + 1 + 2 = 3 ≡ 0 (mod 3). ✓
+Cases 1 and 2 are exhaustive, so in either situation ∃ T ⊆ S with |T| = 3 and 3 ∣ ∑T. ∎
+
+now let's watch it actually work with numbers.
+Example A. Pick S = {7, 11, 4, 22, 100}.
+Residues mod 3:
+7 ≡ 1,  11 ≡ 2,  4 ≡ 1,  22 ≡ 1,  100 ≡ 1
+So B₀ = ∅,  B₁ = {7, 4, 22, 100},  B₂ = {11}.
+|B₁| = 4 ≥ 3 → Case 1 fires. Pick any three from B₁:
+7 + 4 + 22 = 33 = 3 × 11 ✓
+Example B. Pick S = {3, 8, 13, 2, 1}.
+Residues mod 3:
+3 ≡ 0,  8 ≡ 2,  13 ≡ 1,  2 ≡ 2,  1 ≡ 1
+So B₀ = {3},  B₁ = {13, 1},  B₂ = {8, 2}. All sizes ≤ 2, none empty → Case 2 fires. Pick one from each bucket:
+3 + 13 + 8 = 24 = 3 × 8 ✓
+Example C (an adversarial attempt). Can i build a 5-set that breaks the theorem? I'd need every bucket size ≤ 2 AND some bucket empty. Try S = {1, 4, 7, 2, 5}:
+1 ≡ 1,  4 ≡ 1,  7 ≡ 1,  2 ≡ 2,  5 ≡ 2
+B₀ = ∅,  B₁ = {1, 4, 7},  B₂ = {2, 5}. But |B₁| = 3 — the proof said this would happen! Case 1 catches it:
+1 + 4 + 7 = 12 = 3 × 4 ✓
+The escape route is logically sealed: emptying a bucket forces another bucket to overflow into Case 1. There's nowhere to hide. 🐺

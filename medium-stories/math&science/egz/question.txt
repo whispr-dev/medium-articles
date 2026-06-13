@@ -1,0 +1,18 @@
+so:
+- the top row is just "every integer lives in one of three buckets, based on its remainder when you divide by 3."
+- the bottom row is the key bit: those are the only four ways to pick three bucket-labels (allowing repeats) so that they sum to a multiple of 3. either all three from the same bucket, or one from each.
+
+so the whole problem reduces to this:
+
+if i drop 5 balls into 3 buckets, can i always find either (a) 3 balls in one bucket, or (b) at least one ball in every bucket?
+
+thinking about that — with only 5 balls and 3 buckets, is there any way to avoid both of those happening?
+In fact writing up the argument properly so you can see the logic locked in:
+
+proof. put the 5 integers into the 3 buckets by remainder mod 3. now consider two cases:
+### case 1: some bucket contains at least 3 integers. pick any three of them. their bucket-labels sum to 0+0+0, 1+1+1, or 2+2+2 — all multiples of 3. ✓
+### case 2: every bucket contains at most 2 integers. then no bucket can be empty — because if one bucket were empty, the other two would hold all 5 integers between them, which means one of those two would have ### at least 3, contradicting our assumption. so every bucket has at least one integer. pick one from each. their labels sum to 0+1+2 = 3. ✓
+either case gives us three integers whose sum is divisible by 3. ∎
+### the engine here is pigeonhole: 5 balls in 3 buckets forces something — either a bucket gets crowded (≥3), or the balls have to spread out to all three (≥1 each). there's literally no third option, and both options happen to win.
+
+a nice follow-up if you fancy it: is 5 the smallest number that works? in other words, can you find 4 integers where no 3 of them sum to a multiple of 3? (if yes, the bound is tight. if no, we prove a stronger version - how far does this go?)We're gonna take a look into it...
