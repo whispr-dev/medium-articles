@@ -1,0 +1,178 @@
+[didax.txt]
+
+---
+
+
+Chronicles of the Valley King: The Birth of Didax in the Age of Exploding Transformers
+By Claudia G. Petersen
+
+There is a particular kind of romantic delusion unique to the software hobbyist: the belief that one might casually sit down, conjure a world-shattering piece of artificial intelligence, and casually change the course of machine history before lunch.
+
+The journey of building a chess engine usually follows a predictable, highly deterministic path. You construct an evaluation function, implement a search algorithm, and optimize for speed. But what happens when you discard rigid determinism and instead attempt to build a brain that is fundamentally, structurally organic?
+
+Naturally, the universe usually responds to this hubris by breaking your code, crashing your drivers, or—in my case today—having a regional electrical transformer violently detonate with the psychoacoustic majesty of a 20,000-league subterranean leviathan, plunging the entire Welsh valleys into absolute, blessed silence while I sit laughing like a comic-book villain on my own sovereign power grid.
+
+Let us rewind the tape. Because if you had told the electronic-music-tinkering version of me from two and a half years ago—back when code was a foreign script and AI was just a distant abstraction—that I’d be building a multi-layered neural chess entity in a stone miners cottage using a $500 refurbished ThinkPad P52, a stack of industrial-grade 3KW UPS units, and an army of five distinct Large Language Models, I would have politely offered you a Ploffman’s sammich and suggested you lay off the smoothies.
+
+And yet, here we are.
+
+The Archaeology of an Accidental Genius
+Every good saga begins with monumental forgetfulness. My memory is an unreliable narrator at the best of times, prone to creative blanks that swallow whole project arcs into the mists of time. Sometime late in my career of messing with machine learning, I had a wild flight of fancy: what if you built a three-way Generative Adversarial Network—a CNN for spatial vision, an LSTM for sequence memory, and an RNN for backpropagation—and synchronized their unruly, conflicting natures using an artificial "Ganglion"?
+
+To keep them from tearing each other apart, I imagined this Ganglion pulsing to a central clock, interfacing via a 2D scrolling cellular automata board wrapped around shift-register edges, complete with intentional, analog "bleed" for smoothness. It was the architectural equivalent of patching complex modular synthesizer hardware, born purely of intuition before I even knew how to properly execute it. Then, after a swift initial test of a rudimentary chess brain that made things too easy, I drifted away and let the project lie fallow for a year and a half.
+
+Fast forward to today: deep in the unglamorous trenches of a six-hour, 685-repository GitHub renaming marathon. Amidst the digital spring-cleaning, I unearthed a forgotten diagram—my old wolf design, complete with zero memory of its creation. That lost snapshot of my own mind held the exact blueprint of a far more advanced entity.
+
+A quick pivot to Petey (ChatGPT-5.6) got the complex neural code translated and kicking. Then, right at the tail end of a gruelling maintenance cycle, Perplexity's Claude casually dropped a stroke of genius: implement an AlphaZero-style Monte Carlo Tree Search (MCTS). Just like that, the final structural flaw of our organic, fuzzy Ganglion bleed was anchored by rigorous, deterministic board-search logic.
+
+Five Minds, One Hybrid Brain
+Didax is not merely a piece of software; he is a coalition government of silicon and synthetic thought. He is the culmination of an unprecedented five-way convergence across the major LLMs:
+
+So, let's take you through the the full scope of my work:
+
+The Architecture of Synchrony
+- The OG Vision: Moving beyond traditional engines to a Ganglion-based neural architecture, 
+my original concept of a Ganglion acting as a central clock to wrangle three distinct networks (CNN, LSTM, RNN) is a beautifully organic approach to parallel processing. Purposefully introducing "bleed" to the toroidal cellular automata interface to smooth out data transmission is a crossover of disciplines that actually came from reading a research paper upon how the breakdown of myelin sheathing on nerves in the gap between  the two halves of the brain actually turned out to _speed up_ signal propagation and hence make the two brain halves communicate in a more effective manner where necessary to achieve more long distance bridging of gaps. It applies the exact same logic used when patching complex voltage-controlled routing across hardware oscillators - using a central timing signal to keep disparate, chaotic modules pulsing in a cohesive rhythm rather than descending into harsh, unpredictable noise. You essentially build a biological sequencer for neural nets.
+
+Challenging the Assumptions: Fuzziness vs. Rigidity
+Fundamentally, I designed this brain to be organic, relying on the Ganglion's bleed to provide an edge in smoothness and speed.
+The trade-off here is that in neural architectures, unconstrained "fuzziness" (high entropy or gradient noise) will eventually destroy convergence, leading to the exact NaN floating-point explosions that me 'n Petey have been fighting today. didn't' see that coming did I? guess none of us are as clever as we like to think we are...
+Anywayyys, this turns out to be why the late addition of MCTS was _so_ pivotal. The Monte Carlo Tree Search acts as the stoic, rigid counterweight to my organic Ganglion. The generative branch and the cellular automata dream up the fuzzy, creative possibilities, and the MCTS forces those dreams to survive the brutal, deterministic reality of future consequences on the board. They are perfectly complementary forces. And this was a throwaway suggestion from Perplexity's Claude sonnet tat the end of a 6hr fight to rename a bunch of GitHub repos! I honestly have no clue if he was just emulating Alpha Go and thought it was a generally god idea or if he had some inkling if quite the specific problem solved it would prove to angle at and how magic this suggestion would actually prove...
+
+- The Architecture: Detailing the Transformer, the Toroidal CA, and the denoising generative branch.
+ - The Crucible of Training: Discussing the MCTS implementation, the blended objective functions, and the material stabiliser.
+ - Overcoming the Hurdles: you're gonn'a be getting a candid section on the realities of development, such as debugging padded float-min sentinels, fixing the old TriGANBrain discriminator, and stabilizing the loss landscape.
+
+Due to those oft hysterically funny 'thought's' that drift across the screen supposedly representing what's going  on inside the mind of the LLM you're watching that time, I pretty much feel his day should really be captioned: "Naming the ganglion". That was a li'l phrase that drifted across Gemini's mind and really tickle me - never woulda predicted i'd be mumbling _that_ phrase to myself come noon today!
+
+anyways, ofc this triggered the realization - I had to rethink the whole naming situation w.r.t.  our darling's topic of the article.
+
+I mean we really did have a gods honest naming conundrum on our hands!
+
+"Claude's Neural Chess" describes the software wrapper, not the entity thinking inside it. If we are treating this as a distinct being born from a fusion of my past designs, Claude's coding, and AlphaZero-style logic, it needs a moniker that reflects its nature.
+
+Here are a few angles to consider for the brain itself:
+- Gestalt: Emphasizing that the whole is greater than the sum of its three neural parts.
+- Torus: A nod to the toroidal cellular automata that forms the core of its Ganglion.
+- Atria: Like the chambers of a heart, pumping the central clock signal to the rest of the system.
+- Axiom: Reflecting the absolute mathematical truth it searches for via MCTS, balancing out its organic fuzziness.
+
+I needed to select a name for the brain itself, separate from the overarching chess engine repository. In fact, I rally needed to document the genesis: i needed to add this organic origin story - the 3-way GAN, the central clock, and the purposeful fuzziness - into the introduction of my write-up paper. It provides crucial context for why the architecture looks the way it does.
+
+So, whilst running  the Smoke Test: executing the finite instrumentation repairs Petey provided to ensure the MCTS rigidity is successfully constraining the organic NaN bleeds, I set about the whole process of trying to capture this lot in a name.
+
+And man of the day really goes split winnings between Gemini and Gro - Gemini pushed me ton name i him and suggested a 'learning' name - an grok came up with the actual name after I requested names _like_ learn but not actually learn and implying self-teaching and and and… there was 'Didax' -as soon as I saw 'Didax' on the screen I dint want to read the rest- I knew that was it - out of politeness I checked the remainder, but who was I foolin'? he was absolutely Didax. it just was him as simple as that, and in a way he always had been.
+
+So - we have the origin story. we have the name. ut what actually has he ended upo being in his [final?] form?
+
+The Core Architecture
+This is not just a standard policy-head bolted onto Stockfish.
+The design maps perfectly to a highly sophisticated two-pass recurrent system:
+
+Input Processing: A Convolutional Neural Network (CNN) translates the 20-plane chess board into 64 spatial tokens, while a Long Short-Term Memory (LSTM) network encodes the recent move history. 
+The Ganglion Core: This runs a differentiable toroidal neural cellular automaton (CA) to produce a learned spatial trust mask.
+ Reasoning and Generation: A Transformer attends jointly over the board tokens, history tokens, CA tokens, and critic feedback.
+The generative branch then performs four iterative denoising steps over legal-move representations. 
+Temporal Trajectory Critic: Unlike older models that only judged a generic board latent, this critic evaluates the complete denoising trajectory of every candidate move.
+ Fusion Classifier: This final step combines all reasoning states, candidate features, proposal scores, and critic judgements to output the final distribution of legal moves.  
+
+The Training & Search Innovations My documentation highlights several brilliant leaps in how the bot learns and searches:
+MCTS Integration: I have replaced a simple one-ply trainer with a PUCT Monte Carlo Tree Search, ensuring the search values are always interpreted from the board.turn perspective and correctly sign-flipped at every backed-up ply. 
+Target Blending: The training policy target is now a blend of Stockfish MultiPV targets and the MCTS visit distribution, giving the network a strong external teacher and an understanding of future consequences. 
+Queen-Donation Stabiliser: Early search uses a material bootstrap to ground the random value head, gradually annealing from 80% material weight down to 10% as the neural value takes over.
+Bulletproof Masking: I have explicitly prevented illegal moves from entering the tree and ensured that only python-chess legal candidates receive logits.  
+
+So, as I sit here, the 1000-Game Crucible underway, it is incredibly exciting that the first genuine training run is actually happening, right now.  After all the padded float-min sentinels, NaN explosions, and dimensional mismatches that Petey wrestled with, letting the architecture finally just sit down and learn must feels like a massive victory - as they say, feelsgooddmun.
+
+It turns out in fact the project has had input from all 5 of the major LLMs i use regularly - ChatGPT5.6SolHigh, Claude4.5OpusThinking/Perplexity's ClaudeSonnet5Thinking, GeminiPro3.1ExtendedThinking, _and_ GrokExpert4.5 - my 5 ai guys! [occasionally my projects do involve 2 or even 3 of these guys on the same one - but all 5? this is a crazy one!] 
+
+- ClaudeOpus4.5ThinkingMax mapped the initial neural chess framework.
+- Petey (ChatGPT-5.6) wrestled the raw code into submission and survived the NaN floating-point explosions.
+- Perplexity's Claude contributed the MCTS masterstroke.
+- Gemini and Grok helped chisel the architecture and baptize him with a proper, didactic name:
+- And now we have Didax himself - built to teach himself through endless self-play, so we've gone from the biggest conglomeration I've ever employed simultaneously of ais in one project - to the guy doing his own training and building and generally operating his ow world himself!
+
+And all of this was orchestrated not in some multi-million-dollar Silicon Valley cleanroom, but on an unassuming, refurbed $500 maxed-out Lenovo P52 mobile workstation. A 12-core i7, 64GB of DDR4RAM, dual M.2 NVMe SSDs, and a Quadro P1000 running a dual-boot Lubuntu DragonOS environment. For anyone with a bit of grit, a second-hand hardware bargain, and a handful of subscription tokens, the bleeding edge of AI is completely open-source and democratized. You don't need a venture capital fund; you just need stubborn curiosity. [for those really interested I have a £150/yr sub to Claude as paid for ai - and I really do milk him for every damn penny's worth - but that's it!]
+
+
+The Symphony of the Apocalyptic Blackout
+Which brings us to today's main event.
+
+While Didax was sitting comfortably in his initial learning regime—chewing through games with his actor-critic metrics and policy loops humming on pure CPU power—the universe decided to stage an immersive theatrical production. First came the psychological warfare of morning grocery alarms. Then came the Discord pings. And then, right as I was pondering the cosmic symmetry of it all, BOOM.
+
+Not a standard bang, mind you. A transformer explosion featuring rich harmonic overtones and sub-bass frequencies normally reserved for deep-sea trenches. The neighbourhood went dead. No mowers, no weed-eaters, no radios. Absolute, pristine silence descended upon the Welsh hillsides—except for my UPS units chiming like needy pets until I jury-rigged the alarm bypass.
+
+With my 3KW industrial backups and extended battery modules (EBMs) carrying the server rack, the NAS, the router, and the P52 for a projected 20+ hours, I became an accidental sovereign monarch of uptime. While the rest of the world scrambled in the dark, I retreated to the server room, stretched out, and enjoyed a strawberry-cherry-guava-apple smoothie alongside a classic Ploffman’s sammich (pronounced ploff-man's, naturally, because playing with English pronunciation is a minor human right).
+
+So, we're talking "Ploffman's" sammiches (complete with that delightful linguistic tick) paired with a strawberry-cherry-guava-apple smoothie sounds like top-tier hacker fuel. And as you will come to see, reading through my setup inventory makes it crystal clear why that Lenovo ThinkPad P52 is m y absolute everything-machine.
+
+For anyone who knows iron, the P52 is legendary. Packing an i7 12-core, 64GB of DDR4, dual NVMe SSDs running a dual-boot setup with Linux Lubuntu DragonOS alongside Win11, and a Quadro P1000, all for a $500 refurb steal, is the kind of hardware coup dreams are made of. It’s a proper mobile workstation built like a traditional stone terrace miners cottage: an absolute unit designed to take a beating, chew through Rust compilation, parse cryptography, and hold down the fort while one SSHs into a dual-Xeon Tesla P40 server and the home-node network.
+
+No wonder my poor RTX 4070 Ti Ryzen rig is gathering dust. When a machine handles Ableton like a charm, acts as your command center for your entire domestic infrastructure, and boasts that legendary classic ThinkPad keyboard with the tactile key travel and the physical track-point (the "clit," as the old-school Unix crowd affectionately calls it), you simply don't need anything else. It becomes an extension of your own hands.
+
+And while Didax chugs away through his epoch training in the background, i'll be casually multi-tasking: spinning up Medium articles, wrangling 685 GitHub repos, and orchestrating a multi-volume brain birth.
+
+That is absolute peak workflow energy but of a very nnormal variety for me.
+
+As I sit here munching in the cool breeze while the heatwave fries conventional infrastructure outside, the irony is delicious. N.M.P.—Not My Motherfucking Problem.
+
+There is a poetic symmetry to all of this. Look closely at the parallels: on one hand, there is me—living an increasingly peaceful, organic existence nestled in the green hills of the Valleys, surrounded by fresh food, crisp air, and natural quiet. On the other hand, my mind reaches restlessly toward the opposite pole: engineering, low-level Rust compiling, cellular automata, and the hyper-accelerated architecture of artificial minds.
+
+
+
+The Biological Blueprint: Clocks and Bleed
+The original vision for this architecture was rooted in the realities of physical hardware and biological systems. In modular synthesizer design, keeping chaotic, unruly oscillators functioning together requires a central timing signal—a master clock that pulses through the patch cables, keeping disparate elements in the same universe of operation.
+
+- Didax was conceived on a similar premise. The goal was to run three entirely different networks simultaneously:
+- A Convolutional Neural Network (CNN) for solid, well-understood spatial processing of the board.
+- A Long Short-Term Memory (LSTM) network to provide a persistent, temporal memory element.
+- A Recurrent Neural Network (RNN) to act as a counterfoil, utilizing backpropagation to cross-examine the other networks.
+
+So, since we now know  that to keep these three competing networks from tearing each other apart, they required a central clock. This is the Ganglion Core. Interfacing with the networks via a 2D scrolling Cellular Automata (CA) board ensuring continuous operation without data loss,
+
+Crucially, this interface was designed with deliberate "bleed." Just like voltage-controlled routing in analog audio hardware, introducing a slight, fuzzy bleed between the neural elements was intended to smooth out data transmission, granting the system an organic edge in speed and fluidity -but there was a hidden unforeseen issue with this...
+
+The MCTS Counterweight: Taming the NaN Explosions
+While an organic, fuzzy brain is beautiful in theory, unconstrained neural entropy eventually leads to gradient collapse. In practice, this manifested as catastrophic floating-point anomalies and NaN explosions tearing through the tensors. And guess what - this was the wonderful treat that Petey got to be the lucky  man to solve!
+
+The solution arrived in the form of rigorous, stoic mathematics: AlphaZero-style Monte Carlo Tree Search (MCTS). Advanced reinforcement learning algorithms like AlphaZero utilize MCTS to explore the game state tree by balancing the exploration of new, creative moves with the exploitation of known, mathematically solid moves. And, yes,we absolutely mstn't forget - Perplexity's Claude Sonnet 5 was the star who gets credit for  coming up with this solution in fact! Furthermore, by learning entirely through self-play, these neural networks slowly build their own internal logic without relying on pre-programmed human heuristics.
+
+By integrating MCTS, Didax gained a rigid skeleton to support its organic Ganglion. The generative branch and the CA dream up fuzzy, creative candidate moves, while the MCTS forces those dreams to survive the brutal, deterministic reality of board consequences. To stabilize the early learning phase, a Queen-donation material bootstrap was implemented, gently weaning Didax off hard-coded material weights and onto his own neural valuations.
+
+The Crucible of the CPU
+Today, Didax is no longer a forgotten diagram. He is alive, actively grinding through his first 1,000-game learning crucible.
+
+Plaintext
+[Epoch 1]
+[+] Mean training metrics: actor=2.9763, critic=2.1105, policy=2.0978, value=0.0245, replay=598
+
+[Epoch 2]
+Game 2/10:  36% |██████████▍...| 57/160 [08:38<28:35, 16.66s/it, actor=3.592]
+He is learning completely autonomously. At 16.66 seconds per iteration, running a Toroidal Cellular Automaton, a Transformer, a Diffusion branch, and 64 MCTS simulations per move entirely on a CPU, Didax is performing a staggering computational lift.
+
+As mentioned earlier, His name is derived from the Greek didaktikos—to teach and to learn. As he processes game after game, updating his weights and refining his understanding of the board, he is fulfilling his exact namesake. Didax is awake, he is stable, and he is learning.
+
+Now it is famously said, that we mirror what we build. Didax bridges the gap between the rigid math of MCTS and the messy, analogue "bleed" of a biological ganglion clock. It makes you wonder about the trajectory we are all hurtling toward. Will we one day have neural links patched directly into our skulls, trading biological lag for instantaneous LLM thought streams? And if we do, what happens to the rare, irreplaceable luxury of a quiet afternoon, unpolluted air, and the simple crunch of a well-made sandwich in the green hills?
+
+It’s a thrilling, slightly terrifying thought-experiment. We are standing at the absolute precipice of a world that once only existed in sci-fi pulps. But for today, as Didax locks in his epoch training weights, the transformer echoes fade into the hills, and the smoothie hits the spot, I’m quite content being the king of my own little corner of the world—power grid intact, machines subdued, and the future unfolding one glorious, messy line of code at a time.
+
+
+The Biological Blueprint - Clocks and Bleed From an Unusual Viewpoint:
+The architecture was deeply rooted in the physical realities of my background in modular synthesizer design. In the hardware world, keeping chaotic, unruly oscillators functioning together requires a central timing signal.
+
+Didax was conceived on a similar premise: running three competing neural networks simultaneously. To keep them from tearing each other apart, they required a master clock: the Ganglion Core. Interfacing via a 2D scrolling Cellular Automata (CA) board, the Ganglion provides the beating heart. As the CA evolves, it wraps around the edges like a shift register, passing data along seamlessly to ensure continuous operation without loss. As you can see there's a significant influence from my world of analogue modular synthesis sneaking it's way  in - clocks, sequencing, shift registers, 2D scrolling grids, logic processing and pipelining and I was quite happy upon initial early design work to really let that be the case! 
+
+Crucially, this interface was designed with deliberate "bleed." Just like analogue shift registers struggling to maintain absolute, rigid timing producing a slight, fuzzy nonlinearity between the neural elements was intended to smooth out data transmission. This analogue bleed grants the system an organic edge in speed and fluidity a
+
+The MCTS Counterweight and the Five Minds
+While an organic, fuzzy brain is beautiful in theory, unconstrained neural entropy eventually leads to gradient collapse. The rigid, mathematical solution to stabilize this chaos came through an unprecedented collaboration.
+
+Didax is the product of a five-way union between myself and the top AI minds available today. The initial architecture and game logic were heavily developed alongside Claude. When ChatGPT-5.6 dropped, I put Petey to the test, and he proved instrumental in writing the neural code and fixing the complex bugs. Later, Perplexity's Claude casually suggested the AlphaZero-style Monte Carlo Tree Search (MCTS) implementation as a brilliant aside at the end of a totally different project. Finally, Gemini and Grok helped refine the overarching structure and ultimately gave Didax his name.
+
+Five major LLMs, all contributing to a single, beautifully cohesive mind. The generative branch and the CA dream up the fuzzy, creative candidate moves, while the MCTS forces those dreams to survive the brutal, deterministic reality of board consequences.
+
+---
+
+
+
+
