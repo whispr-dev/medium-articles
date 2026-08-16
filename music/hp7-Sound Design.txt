@@ -1,0 +1,81 @@
+This online discussion serves as a guide for aspiring music producers looking to recreate the distinctive, hyper-stylised sound associated with the PC Music aesthetic. The contributors move beyond simple software recommendations, arguing that while FL Studio is a functional tool, the genre’s essence is rooted in rigorous sound design and music theory rather than ready-made samples. Experienced users encourage a transition from basic subtractive synthesis to more complex techniques, such as FM and additive synthesis, to craft original textures that mimic the experimental work of artists like SOPHIE. Ultimately, the text defines the production process as a journey of persistent experimentation, advising newcomers to finish imperfect tracks and intentionally push technical parameters to their limits to achieve unique results.
+
+
+Help with producing.
+I'm relatively new to production and was wondering a few things. Which program is the best to make this kind of music, i'm currently using fl studio. Also, i'd be edging more toward artists like kkb, easyFUN or SOPHIE's lighter stuff. What are good sample packs to use. This is something that's really demotivating me because the style i'm going for and the samples i have the sound just doesn't mix right. Any more pointers are thoroughly appreciated thx.
+
+3
+·
+8
+Comments Section
+how_small_a_thought
+•
+9y ago
+The things you need to know for PC Music are music theory and sound design. These are essential, what someone else said is true, you won't stumble upon samples that sound right because a large part of what makes PC Music so interesting is the sound design.
+
+FL Studio is a good starting point, I used it for about 2 years. I'd suggest getting a keyboard of some sort, doesn't have to be an expensive one unless you're really serious about this, and learning basic music theory.
+
+Now the topic of sound design is where I'm a bit more comfortable. There are several different synthesis methods, or ways of making sounds and most of them overlap at points, however they all do different things in different ways. You should start by learning about subtractive synthesis. There are a lot of articles and websites to help you and hundreds of videos on YouTube but it's not too complicated so you'll definitely get it if you're willing to put in the time to learn. Learn how it works and why it works and you'll be on your way. I'd advise not to get into things like FM synthesis until you understand Subtractive really well, which is a good practice because subtractive synthesis is easier to grasp than FM and they share a lot of concepts. What a lot of people struggle with is conceptualizing the way synths shape sound, so watch as many tutorials as you need and try to find the way of thinking that makes the most sense to you, but make sure you understand how it works.
+
+I don't know what version of FL Studio you have but 3XOSC is a very simple subtractive synth and I see it recommended a lot, although I myself started with Sytrus but that can be a bit confusing so I suggest you start with 3xOSC. That is on synth that you certainly can and should learn the function of each parameter.
+
+This stuff is very fun but it's not a quick learning process so don't feel discouraged if you don't know something and try not to expect too much of yourself because that just kills creativity. Know that as long as you're doing something to advance your learning, you are improving and each day you'll be better than you were the day before.
+
+So to sum up:
+
+Basic music theory is too useful to be skipped. Learn about scales and chords, how to make them and how they work.
+
+Start learning sound design with subtractive synthesis. There are a lot of videos on the internet that do a great job of explaining it (and I'd be happy to help out if you want, just pm me)
+
+A good way to learn is to keep a diary and every day or maybe every week, depending on how busy you are, write down one new thing you learnt before you go to bed.
+
+There aren't any shortcuts unfortunately, it takes time to develop your understanding and manner of working with synthesis, but if you want to make electronic music, it's a bridge that will have to be crossed eventually. Samples are simply not enough.
+
+Some things may seem hard at first but honestly, you can learn anything if you really want to and are able to put the time into it. Good luck.
+
+12
+PerftH
+OP
+•
+9y ago
+Thank you v much, I understand what you mean somewhat and I know it's a matter of practice really. And ive tried out 3xosc a few times, but i've kinda changed from that to a dif one e.g sytrus which probs confused me a bit, but i appreciate the help, all taken on board.
+
+1
+how_small_a_thought
+•
+9y ago
+Honestly, while 3xosc is what's usually recommend for beginners I started with Sytrus and I liked it a lot, I still use it several years later. It's definitely one of the most powerful software synths there is, if you learn that you'll be able to make your own sounds really easily.
+
+Also another thing that might be good to point out, a lot of PC Music contains sounds that are pushed to their extreme. So maybe try turning some dials further than you're supposed to :)
+
+2
+
+1 more reply
+torsi-actis
+•
+9y ago
+The thing is that everyone in pc music experiments with sound design a lot, so you’re not just going to stumble upon samples that “sound like pc music”. Of course the only sample pack that I can recommend is the Sophie Splice pack, but that will only get you so far. If you’re serious about producing then I would suggest picking one synth (in FL - GMS or Sytrus, but that one is a bit more complicated) and learning how to use it properly and then learning some basic music theory. The main thing is to not have high expectations and to try to finish as many songs as possible even if they sound bad at first, that’s the only way you can truly learn. That’s my point of view.
+
+5
+PerftH
+OP
+•
+9y ago
+Yea i've been scrapping songs after finishing like 30 seconds of them so there's one mistake. thanks for the advice
+
+1
+mohrcore
+•
+9y ago
+Delve into synth hell, do some heavy sound processing and experiment as much as you can. KKB and EASYFUN use rather simple techniques. SOPHIE's stuff is more sophisticated and experimental when it comes to sound synthesis and processing. Things I would suggest if you are trying to achieve similar effects to what she does would be: master FM synthesis, master additive synthesis, processes samples as much as you can, exploit streching, warping and pitchshifting algorithms, use a lot of short delays/reverbs and don't be afraid of bass (a lot of people are for a good reason, there's a lot of stuff that can go wrong when dealing with it and you must first learn the rules in order to know how to break them).
+
+Also check out this other post, with my reply.
+
+4
+PerftH
+OP
+•
+9y ago
+I will try all that out, thanks for your help.
+
+1

@@ -1,0 +1,127 @@
+This article explores the technical foundations of A.G. Cook’s influential production style, detailing how specific software instruments and effects shape the unique aesthetic of hyperpop. By dissecting his use of diverse tools—ranging from the FM synthesis of the DX7 to the aggressive dynamics of multiband compression—the text reveals a philosophy that balances clinical precision with experimental chaos. The structure provides a curated list of essential plugins, explaining how each contributes to the glitchy textures and surreal vocal treatments found on landmark projects like Charli XCX's Brat. Ultimately, the source serves as both a gear guide and a deep dive into the creative sound design of a producer who has redefined the boundaries of modern pop music.
+
+These are the Plugins Behind A.G. Cook's Hyperpop Sound — Internet Tattoo
+INTERVIEWS REVIEWS + TOP VST DEALS + ABOUT NEWSLETTER
+INTERVIEWS REVIEWS+ TOP VST DEALS +
+ABOUT NEWSLETTER
+GEAR, VST, MUSIC PRODUCTION Mathias Pageau December 31, 2024 A.G. Cook plugins, Hyperpop production tools, Plugins for hyperpop, A.G. Cook music production, Hyperpop synths and effects, Best plugins for hyperpop, A.G. Cook sound design, Charli XCX production tools, How to make hyperpop music, Hyperpop VSTs, Music production tips for hyperpop, What plugins does A.G. Cook use?, Hyperpop sound design with VSTs, How A.G. Cook creates hyperpop tracks, Plugins to create hyperpop basslines, Hyperpop vocal processing plugins
+These are the Plugins Behind A.G. Cook's Hyperpop Sound
+GEAR, VST, MUSIC PRODUCTION Mathias Pageau December 31, 2024 A.G. Cook plugins, Hyperpop production tools, Plugins for hyperpop, A.G. Cook music production, Hyperpop synths and effects, Best plugins for hyperpop, A.G. Cook sound design, Charli XCX production tools, How to make hyperpop music, Hyperpop VSTs, Music production tips for hyperpop, What plugins does A.G. Cook use?, Hyperpop sound design with VSTs, How A.G. Cook creates hyperpop tracks, Plugins to create hyperpop basslines, Hyperpop vocal processing plugins
+Few producers have reshaped the sonic landscape of pop music quite like A.G. Cook. As the founder of PC Music and a driving force behind the hyperpop movement, Cook's distinct style blends polished pop hooks with glitchy, experimental textures. His work has left an indelible mark on modern music, from his collaborations with artists like Charli XCX to his ability to craft genre-defying productions that feel simultaneously chaotic and controlled. Cook's music embodies a bold ethos: pushing boundaries, embracing imperfection, and reimagining pop as a space for boundless creativity. Whether it's on Charli XCX's Brat or on his own ambitious 7G, Cook's meticulous sound design takes center stage, with plugins playing a key role in everything from his aggressive kick drums to surreal vocal treatments. On his recent appearances on the Tape Notes podcast, Cook opened up about his creative process, sharing detailed insights into his approach to sound design and the tools he relies on to achieve his signature sound. This post dives into the VSTs that power Cook's productions, showcasing how he transforms them into tools for innovation and inspiration. Whether you're a fan of his music or an aspiring producer, these plugins offer a glimpse into the creative engine behind one of pop's most daring producers.
+These are the Plugins Behind A.G. Cook's Hyperpop Sound
+1.
+Arturia DX7 + Razor by Native Instruments
+2.
+Spire by Reveal Sound
+3.
+Antares Auto-Tune
+4.
+Vocoder V by Arturia
+5.
+FilterFreak by Soundtoys
+6.
+MixBox by IK Multimedia
+7.
+Serum by Xfer
+8.
+Synplant 2 by Sonic Charge
+9.
+Kick 2 by Sonic Academy
+10.
+OTT by Xfer
+Tap to unmute
+Your browser can't play this video.
+Learn more
+Disclosure: This blog contains affiliate links, which means Internet Tattoo may receive a commission if you purchase through these links at no additional cost to you.
+Arturia DX7 + Razor by Native Instruments
+Cook's basslines often emerge from a blend of Arturia DX7 and Native Instruments Razor, two synths with wildly different personalities. The DX7 provides gritty, nostalgic FM tones with a lo-fi charm, while Razor's additive synthesis introduces sharp harmonics and a modern edge. On tracks like "Apple," the interplay between these synths creates a bassline that oscillates between warmth and clarity, mirroring the emotional tension of the record.
+Cook isolates and tweaks each layer to emphasize their quirks, resulting in basslines that feel both intentional and experimental. By pairing the vintage tones of the DX7 with the futuristic sheen of Razor, Cook pushes the boundaries of sound design, proving that bold contrasts often lead to the most striking results.
+Download here
+Tap to unmute
+Your browser can't play this video.
+Learn more
+Spire by Reveal Sound
+For precision and clarity, Cook turns to Spire, a synth known for its versatile oscillators and intuitive pitch envelope controls. Spire's ability to create clean, evolving tones allows Cook to craft elements that feel both harmonic and percussive. In his productions, subtle pitch modulations add movement, ensuring even simple sounds maintain a dynamic edge throughout a track.
+Cook's work with Spire exemplifies his mastery of balancing complexity with accessibility. By combining its lush synth tones with effects like chorus, he creates layers that grow organically within the mix. Whether he's designing sharp leads or atmospheric pads, Spire offers endless tweakability for producers seeking a polished yet flexible tool.
+Download here
+Tap to unmute
+Your browser can't play this video.
+Learn more
+Antares Auto-Tune
+Auto-Tune is more than just a pitch-correction tool in A.G. Cook's hands—it's a vehicle for emotional storytelling and sonic experimentation. Known for its ubiquity in modern pop, Auto-Tune takes on a unique role in Cook's productions, where it transforms vocal performances into integral elements of the overall sound design.
+When he works with Charli XCX, Cook employs Auto-Tune to craft vocal textures that teeter between raw emotion and polished surrealism. The robotic yet expressive vocal tones often carry a duality: they feel intimate while simultaneously pushing into hyperreal territory, amplifying the hyperpop ethos of exaggeration and reinvention.
+Download here
+Tap to unmute
+Your browser can't play this video.
+Learn more
+Vocoder V by Arturia
+Cook embraces the “messy” side of production with Vocoder V, using it as both a vocoder and a synth to create chaotic, noisy layers. By transforming vocals into gritty, experimental textures, the plugin adds a raw, unpredictable quality to his tracks. This creative approach highlights Cook's willingness to break conventions, as seen in tracks where the vocoder's noisy output contrasts sharply with polished elements.
+With Vocoder V, Cook explores dynamic tonal shaping, offsetting the plugin's chaotic tendencies with precise filtering. This balance between clean and experimental sounds adds depth to his productions, making Vocoder V an exciting tool for pushing boundaries.
+Download here
+Tap to unmute
+Your browser can't play this video.
+Learn more
+FilterFreak by Soundtoys
+Dynamic and endlessly tweakable, FilterFreak is one of Cook's go-to tools for shaping sounds. This adaptive filter plugin allows him to add movement and depth to static layers, from dynamic sweeps to subtle warmth. On Brat, Cook paired FilterFreak with aggressive plugins like MBitFunMB to refine chaotic textures, ensuring each sound felt deliberate yet organic.
+Cook's use of FilterFreak showcases his experimental side, balancing utility with creativity. Whether he's softening harsh layers or adding rhythmic modulation, the plugin's flexibility makes it invaluable for producers who thrive on sonic exploration.
+Download here
+Tap to unmute
+Your browser can't play this video.
+Learn more
+MixBox by IK Multimedia
+For quick experimentation and layering, Cook turns to MixBox, a modular effects rack that combines multiple plugins in one interface. Its drag-and-drop workflow makes it easy to stack filters, delays, and distortions, enabling Cook to test ideas and create complex effect chains in real-time.
+In his production process, MixBox serves as a sandbox for sonic exploration. By layering unconventional effects and tweaking parameters, Cook ensures that even the simplest sounds feel fresh and intentional. Whether you're a meticulous sound designer or a chaotic experimenter, MixBox provides the flexibility to refine and innovate.
+Download here
+Tap to unmute
+Your browser can't play this video.
+Learn more
+Serum by Xfer
+A.G. Cook's productions often exist on the edge of chaos, and Serum is a key tool in maintaining that delicate balance. Known for its versatility and intuitive design, Serum allows Cook to create shimmering, detuned synth pads that feel both ethereal and emotional. The modulation matrix is a playground for mapping LFOs to parameters like filter cutoff and reverb wet/dry levels, introducing dynamic movement that mirrors the bratty energy of tracks like "Apple."
+Serum's real strength lies in its ability to balance complexity with usability. Cook leverages its detuned oscillators and modulation tools to inject subtle movement into even the simplest sounds, making them feel alive and evolving. This evolving texture has become a hallmark of Cook's sound, providing an emotional core that anchors the more chaotic elements of his music.
+Download here
+Tap to unmute
+Your browser can't play this video.
+Learn more
+Synplant 2 by Sonic Charge
+Few plugins embody the spirit of experimentation like Synplant 2. For A.G. Cook, its organic sound-growing interface is a playground for unexpected creativity. By "planting" sounds and letting them evolve, Cook taps into Synplant's randomization features to craft textures that feel alive. On Brat, he recorded multiple variations of Synplant patches and transformed them into custom sampler instruments, adding layers of unpredictability to his tracks. This approach shines in moments like "Club Classics," where subtle textures bubble beneath sharper elements, adding depth and dimension.
+Synplant's real magic lies in its ability to turn accidents into art. Cook's use of the plugin to manipulate and reimagine percussive hits as organic, acoustic-like textures highlights its transformative potential. For producers willing to embrace chaos, Synplant 2 offers an entirely new way to think about sound design, one rooted in evolution rather than precision.
+Download here
+Tap to unmute
+Your browser can't play this video.
+Learn more
+Kick 2 by Sonic Academy
+A.G. Cook relies on Kick 2 to craft some of his most aggressive and dynamic kick sounds, making the plugin a key ingredient in his tracks. What sets Kick 2 apart is its visual editing interface, which lets Cook shape kicks with precision. On Brat, he used pitch envelope controls to create the signature tonal bends that add movement and character, making the kick a central element rather than just a rhythmic backbone. In tracks like "365," the kick becomes a statement, anchoring the low-end while contributing to the chaotic energy of the production.
+The ability to layer tonal qualities within the kick reflects Cook's knack for blending functionality and creativity. Whether he's reinforcing a bassline or adding a bold rhythmic moment, Kick 2 offers the perfect balance of control and chaos, making it essential for producers who want their drums to stand out.
+Download here
+Tap to unmute
+Your browser can't play this video.
+Learn more
+OTT by Xfer
+When it comes to achieving the hyper-polished intensity that defines his sound, OTT is an essential tool in Cook's arsenal. This multiband compressor adds aggressive dynamics, making every layer pop with vivid clarity. Cook uses OTT to add brightness and punch to his mixes, balancing chaotic textures with a controlled low-end. On Brat, the plugin's transformative power was crucial for creating moments of high-energy contrast, such as the shimmering highs and tight basslines in "Apple."
+The beauty of OTT lies in its simplicity—its settings can be pushed to extremes without losing musicality. Whether Cook is working with synths, drums, or vocals, OTT injects an unmistakable vibrancy that fits perfectly with his bratty and genre-defying sound.
+Download here
+Tap to unmute
+Your browser can't play this video.
+Learn more
+Need more crazy hyperpop synth plugins? Click here to expand your sound palette!
+Newsletter
+Sign up with your email address to receive news and updates.
+Email Address
+Sign Up
+We respect your privacy.
+Thank you!
+Cover credit: hredcliffe / @agcook404
+Disclosure: This blog contains affiliate links, which means Internet Tattoo may receive a commission if you purchase through these links at no additional cost to you.
+Mathias Pageau
+Facebook 0 Twitter LinkedIn 0 Reddit Tumblr Pinterest 0 0 Likes
+[
+Top 9 AI-Powered VST Plugins for Music Producers
+GEAR, VST, MUSIC PRODUCTION Mathias Pageau January 01, 2025 AI-powered VST plugins, best AI plugins for music production, AI music production tools, AI in music production, AI plugins 2024, best VST plugins with AI, AI-assisted music production, AI for sound design, AI music plugins for producers, top AI-powered VSTs, AI chord progression tools, AI drum machine plugins, AI mastering plugins, AI-enhanced synth plugins, creative AI music tools](https://www.internettattoo.com/blog/best-ai-music-vst-plugin-for-beats)
+[
+Trouble, Magic and Fun: The Coolest New DJ Tracks of the Week
+NEW MUSIC, PLAYLIST, CULTURE Mathias Pageau December 30, 2024 dance tracks, DJ playlist, club music, underground dance music, electronic music, new dance tracks, club-ready songs, peak-time bangers, DJ-friendly music, track recommendations, electronic remixes, cutting-edge dance music, energetic tracks, emotional techno, bass-heavy grooves, vocal remixes, experimental dance music](https://www.internettattoo.com/blog/the-coolest-new-dj-tracks-of-the-week-december-30-2024)
+NEWSLETTER DISCLOSURE ABOUT BLOG
+Powered by Squarespace.
+[
+Powered by Squarespace
+](https://www.squarespace.com?channel=word_of_mouth&subchannel=customer&source=badge&campaign=588b7aa846c3c45be3e8c430

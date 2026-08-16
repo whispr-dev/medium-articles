@@ -1,0 +1,480 @@
+This Reddit discussion explores the technical and stylistic benefits of using a clipper on a master bus to achieve professional loudness in modern music production. The primary consensus among contributors is that a clipper acts as an aggressive tool to transparently shave off transient peaks before they reach a limiter, thereby preventing the latter from "pumping" or creating audible artifacts. While limiters maintain cleanliness through gain reduction, clippers utilize controlled distortion to preserve the impact and punch of drums and electronic elements, which is especially vital in competitive genres like EDM and hip hop. The experts suggest a workflow where one hard-clips the signal until distortion is just barely audible, then backs off slightly to ensure the process remains imperceptible to the listener. Ultimately, the text serves as a practical guide for engineers seeking to balance maximal perceived volume with the preservation of a track's original energy and clarity.
+
+Clipper on the master? Advice for this? : r/audioengineering
+Skip to main content Clipper on the master? Advice for this? : r/audioengineering
+Open menu
+Open navigation
+Go to Reddit Home
+Ask
+Find anything
+Sign Up
+Sign up for Reddit
+Log In
+Log in to Reddit
+Expand user menu
+Open settings menu
+Skip to Sign up Skip to Right Sidebar
+Back
+Go to audioengineering
+r/audioengineering
+â€¢ 2y ago
+[deleted]
+Locked post
+Stickied post
+Archived post
+Award this post
+Language and translations
+Report
+Clipper on the master? Advice for this?
+When would you do this over a limiter? And what do I need to look out for when doing this? Would like to try it.
+Or would you even use a softclipper before a limiter?
+I have kclip and Standard clip, but have to admit I never used them cause I donâ€™t really know how to. If you could give me a rough â€žinstructionâ€œ on how you use it, would ve great!
+Hip hop or electronic genres
+Read more
+Archived post. New comments cannot be posted and votes cannot be cast.
+Upvote 12 Downvote 46 Go to comments
+Share
+Sort by: Best
+Open comment sort options
+Best
+Top
+New
+Controversial
+Old
+Q&A
+Search Comments Expand comment search
+Cancel
+Comments Section
+ItsMetabtw
+â€¢ 2y ago
+Both K Clip and Standard clip are great. They sound good and provide useful visual feedback to help you see what youâ€™re hearing. I find myself using standard clip a ton because itâ€™s so easy to dial in. Stick to hard clipping for now and just lower the Clip slider until you see it removing the transients, but not so low that it gets near the bulk of audio. It should be transparent. I also shut off oversampling when Iâ€™m controlling peaks like this, since the down sampling process usually eats up some of the headroom you just created by clipping. I use over sampling for soft clipping since that tends to be audible, but hard clipping transients happens so fast I donâ€™t see the point. I canâ€™t hear it and Iâ€™d rather have the extra headroom, but try both ways yourself and go with what sounds best.
+Upvote 13 Downvote Award
+Share
+Report
+Language and translations
+Award
+Share
+[deleted]
+OP â€¢ 2y ago
+Thx! Will try! You really only use the clip slider? That sounds like something I should be able to do
+Upvote 1 Downvote Award
+Share
+Report
+Language and translations
+Award
+Share
+1 more reply
+1 more reply
+3 more replies
+3 more replies
+aretooamnot
+â€¢ 2y ago
+Clipper before limiter for lots of level, however, increased distortion, and lots of overtone generation.
+This is a very common practice in mastering these days.
+However! If you are going to send this to a mastering engineer for propper mastering, DONT do this.
+ALso, its a shame that things have to be so fucking ridiculously loud these days.
+Source: pro mastering engineer.
+Upvote 13 Downvote Award
+Share
+Report
+Language and translations
+Award
+Share
+[deleted]
+OP â€¢ 2y ago
+Yeah, I would really wish that loudness would not be such a thing. Not that extreme
+Upvote 2 Downvote Award
+Share
+Report
+Language and translations
+Award
+Share
+stillshaded
+â€¢ 2y ago
+Itâ€™s all too loud.. and then there are all the guys who will call you and idiot for mastering to -14 LUFS because itâ€™s too quiet. Who cares?? itâ€™s not like youâ€™re going to make any money off of it anyway, might as well have it sound good. Granted LUFS is just a number, but I do feel like -14 is a pretty safe bet. Loud enough to where pretty much any playback device can handle it, but quiet enough to where itâ€™s pretty easy to not damage the audio to get it there.
+/rant
+Upvote 3 Downvote Award
+Share
+Report
+Language and translations
+Award
+Share
+ThatRedDot
+â€¢ 2y ago
+Yes and also too quiet to be competitive loudness wise. Your masters need to be equal to reference. If reference is -7, then you need to be at that ballpark too. Especially for any EDM genre which is a very over saturated market and -8 to -6 is the norm.
+How you feel about it doesnâ€™t matter, if you start mastering to -14 you do yourself or your customers a disservice. The vast majority of listeners canâ€™t give 2 fucks about dynamics
+2 more replies
+2 more replies
+More replies
+MarioIsPleb
+â€¢ 2y ago
+Clippers and (brickwall mastering) limiters are both loudness tools to set a brick wall threshold your signal canâ€™t exceed, but they do so in different ways.
+Limiters use gain reduction (like turning a fader down) to brickwall the signal, and they remain (mostly) clean but can make transients soft and dull and can pump when pushed too hard.
+Clippers use distortion to brickwall the signal, they preserve the sound of transients but can distort if pushed too hard.
+Generally you will run both, with the clipper first and the limiter second.
+The clipper will reduce the transient peaks to reduce the load on the limiter and preserve the transients better, and then the limiter can work more on the sustained signal without pumping and sucking out the transients.
+The general workflow is to turn the clipper up until you start hearing audible distortion and back it off until the distortion just stops, and then turn the limiter up until the mix starts pumping and falling apart and back it off until that stops.
+That will give you the maximum loudness your mix can handle without introducing artefacts.
+Upvote 9 Downvote Award
+Share
+Report
+Language and translations
+Award
+Share
+[deleted]
+OP â€¢ 2y ago
+Thx! I really have to learn how hard I can push a limiter (clipper too). I think Iâ€™m always too careful
+Upvote 1 Downvote Award
+Share
+Report
+Language and translations
+Award
+Share
+1 more reply
+1 more reply
+More replies
+DualLeeNoteTed
+â€¢ 2y ago
+Clipping into a limiter is one of the go-to ways to get a loud mix.
+Generally for the master, clip until you barely start to hear audible distortion, then back off a bit.
+How much you clip, and the style of clipping, is definitely genre and taste dependant.
+Experiment with it! That's the best way to learn.
+Upvote 8 Downvote Award
+Share
+Report
+Language and translations
+Award
+Share
+[deleted]
+OP â€¢ 2y ago
+Are you clipping individual tracks too?
+Upvote 2 Downvote Award
+Share
+Report
+Language and translations
+Award
+Share
+DualLeeNoteTed
+â€¢ 2y ago
+Sure, all the time! Clipping can sound great on drums, vocals, bass, anything really.
+Sometimes you want an edgier, crispier sound and so you drive a sound into a clipper pretty hard. Sometimes, you want to just lift a sound up a smidge, saturate it a little, and you might just barely kiss it with some soft clipping.
+Just experiment! Try hard clipping and different types of soft clipping. Try driving hard into clippers and using them more subtly. Try different levels of wet/dry.
+Upvote 5 Downvote Award
+Share
+Report
+Language and translations
+Award
+Share
+5 more replies
+5 more replies
+2 more replies
+2 more replies
+More replies
+ThoriumEx
+â€¢ 2y ago
+Top 1% Commenter
+Itâ€™s basically faster and more aggressive than a limiter, and in a lot of cases the added distortion helps compensating for the chopped transient, which can sound more transparent and less squashed.
+Upvote 4 Downvote Award
+Share
+Report
+Language and translations
+Award
+Share
+[deleted]
+OP â€¢ 2y ago
+Any advice on how to decide on how much to clip off?
+Upvote 1 Downvote Award
+Share
+Report
+Language and translations
+Award
+Share
+ThoriumEx
+â€¢ 2y ago
+Top 1% Commenter
+If itâ€™s a typical rock song, clip until the kick gets audibly distorted then back it off a little
+Upvote 4 Downvote Award
+Share
+Report
+Language and translations
+Award
+Share
+2 more replies
+2 more replies
+1 more reply
+1 more reply
+More replies
+deef1ve
+â€¢ 2y ago
+Clipper -> Limiter
+I use KClip, clip until itâ€™s audible and then dial back a little until itâ€™s transparent again. I then set Pro-L2 to 1:1, then switch to listening to the delta. I increase the input level of the limiter until the distortion gets audible, then I dial back a little until itâ€™s not noticeable anymore. Then I listen to the audio again and compare the quality between with and without the limiter. If Iâ€™m satisfied with the loudness (and target integrated LUFS), then Iâ€™m done. If thatâ€™s still not working then the loudness problem needs to addressed in the mix.
+Upvote 3 Downvote Award
+Share
+Report
+Language and translations
+Award
+Share
+[deleted]
+OP â€¢ 2y ago
+In Delta you shouldnâ€™t hear distortion?
+Upvote 1 Downvote Award
+Share
+Report
+Language and translations
+Award
+Share
+1 more reply
+1 more reply
+More replies
+superchibisan2
+â€¢ 2y ago
+If you want to distort the output
+Upvote 3 Downvote Award
+Share
+Report
+Language and translations
+Award
+Share
+[deleted]
+OP â€¢ 2y ago
+But thatâ€™s a common thing for many masters now, isnâ€™t it?
+Upvote 1 Downvote Award
+Share
+Report
+Language and translations
+Award
+Share
+superchibisan2
+â€¢ 2y ago
+Depends on whom you ask. People that just apply presets, yes. High level engineers understand that every song is unique and you only use what the track needs.
+Upvote 4 Downvote Award
+Share
+Report
+Language and translations
+Award
+Share
+More replies
+More replies
+SpencerAx
+â€¢ 2y ago
+Genres with already high auditory distortion like a lot of electronic bass music can hard clip a decent amount without it sounding different. The result is perceivably louder than limiting, which is also what they are going for. So basically if you are stylistically going for distortion + loudness than consider hard clipping.
+Upvote 3 Downvote Award
+Share
+Report
+Language and translations
+Award
+Share
+[deleted]
+OP â€¢ 2y ago
+Thank you! So no limiting, just hardclipping in the master Bus? Or individually clip tracks?
+Upvote 1 Downvote Award
+Share
+Report
+Language and translations
+Award
+Share
+1 more reply
+1 more reply
+More replies
+g_spaitz
+â€¢ 2y ago
+Top 1% Commenter
+Or get the free Vlad g limiter, or pay just a little for the newer limiter 6 by TDR, which has, among other things, clipping and limiting modules, and experiment what happens when you shuffle them around.
+Upvote 3 Downvote Award
+Share
+Report
+Language and translations
+Award
+Share
+tibbon
+â€¢ 2y ago
+If you want to try it; try it. I would not do this, and instead I just turn up everything on my mixer.
+Upvote 1 Downvote Award
+Share
+Report
+Language and translations
+Award
+Share
+[deleted]
+OP â€¢ 2y ago
+Turn up on the mixer?
+Upvote 1 Downvote Award
+Share
+Report
+Language and translations
+Award
+Share
+1 more reply
+1 more reply
+More replies
+rightanglerecording
+â€¢ 2y ago
+Top 1% Commenter
+Sometimes it sounds good, other times not.
+Soft clipping will generally change the mix a good bit, moreso than hard clipping will.
+For whatever reason, KClip seems to nudge things a little brighter, StandardClip a little more timbrally neutral.
+Oversampling will have its own sound, and in some cases (StandardClip), there are a good number of options for how to implement oversampling. It's not something to use by default, sometimes less (or no) oversampling sounds better.
+Upvote 2 Downvote Award
+Share
+Report
+Language and translations
+Award
+Share
+GravitalAudio
+â€¢ 2y ago
+I use it only when it is not my mix, so I don't have much control over the stems and it's too dynamic. If I only use a limiter, it would have too much artifact, so I first clip it a little bit before the limiter.
+Upvote 1 Downvote Award
+Share
+Report
+Language and translations
+Award
+Share
+alienrefugee51
+â€¢ 2y ago
+How much are you guys shaving off the top normally? For me, itâ€™s usually the snare that is still poking out come mastering, even though Iâ€™ve used a clipper on the snare bus.
+Upvote 1 Downvote Award
+Share
+Report
+Language and translations
+Award
+Share
+[deleted]
+â€¢ 2y ago
+THe clipper should and would go right before the limiter on the master bus.
+Gold Clip....K-Clip....Flatline VST plugins work well in this regard.
+Upvote 1 Downvote Award
+Share
+Report
+Language and translations
+Award
+Share
+People also ask about section
+People also ask about
+How to use standard clip in audio production
+Best soft clippers for audio mixing
+Comparison of soft clipper and limiter
+Best audio interfaces for home studios
+Essential plugins for mixing vocals
+More posts you may like
+Related posts
+Fellow whop clippers I'm in need of some help r/whop â€¢ 2mo ago [
+Fellow whop clippers I'm in need of some help
+](https://www.reddit.com/r/whop/comments/1u8fsjj/fellow_whop_clippers_im_in_need_of_some_help/) 3 9 upvotes Â· 9 comments
+Is the "Soft Clipper on the Master" trend finally dying? r/trapproduction â€¢ 6mo ago [
+Is the "Soft Clipper on the Master" trend finally dying?
+](https://www.reddit.com/r/trapproduction/comments/1qz565d/is_the_soft_clipper_on_the_master_trend_finally/) 51 upvotes Â· 76 comments
+Clipper Button Off r/fixit â€¢ 9mo ago [
+Clipper Button Off
+](https://www.reddit.com/r/fixit/comments/1oxsnor/clipper_button_off/) 2 6 upvotes Â· 6 comments
+Soft Clipper on the master r/FL_Studio â€¢ 3y ago [
+Soft Clipper on the master
+](https://www.reddit.com/r/FL_Studio/comments/15syzqt/soft_clipper_on_the_master/) 4 upvotes Â· 33 comments
+What does the design of this Clipper mean? r/WerWieWas â€¢ 10d ago [
+What does the design of this Clipper mean?
+](https://www.reddit.com/r/WerWieWas/comments/1vhcvrl/was_bedeutet_das_design_von_diesem_clipper/) 0:04 86 upvotes Â· 18 comments
+Anyone else carries the clipper ? r/IndianPreppers â€¢ 3mo ago [
+Anyone else carries the clipper ?
+](https://www.reddit.com/r/IndianPreppers/comments/1teolie/anyone_else_carries_the_clipper/) 2 29 upvotes Â· 27 comments
+Clipping on the master? Yes or no? Seeking a technical answer from long time mixing/mastering engineers. r/mixingmastering â€¢ 1y ago [
+Clipping on the master? Yes or no? Seeking a technical answer from long time mixing/mastering engineers.
+](https://www.reddit.com/r/mixingmastering/comments/1ka0ceh/clipping_on_the_master_yes_or_no_seeking_a/) 4 upvotes Â· 58 comments
+Why does clipper do this? r/Bart â€¢ 1mo ago [
+Why does clipper do this?
+](https://www.reddit.com/r/Bart/comments/1uq77si/why_does_clipper_do_this/) 31 upvotes Â· 16 comments
+FUCK CLIPCHAMP!!!!!! ðŸ¤¬ðŸ¤¬ðŸ¤¬ r/ClipChamp â€¢ 6mo ago [
+FUCK CLIPCHAMP!!!!!! ðŸ¤¬ðŸ¤¬ðŸ¤¬
+](https://www.reddit.com/r/ClipChamp/comments/1re0ean/fuck_clipchamp/) 2 45 upvotes Â· 24 comments
+Clipping vs Limiting on Master Bus - Why? r/audioengineering â€¢ 2y ago [
+Clipping vs Limiting on Master Bus - Why?
+](https://www.reddit.com/r/audioengineering/comments/1f5qfw5/clipping_vs_limiting_on_master_bus_why/) 6 upvotes Â· 12 comments
+Do you know what tool allows you to do this? r/ClipStudio â€¢ 2mo ago [
+Do you know what tool allows you to do this?
+](https://www.reddit.com/r/ClipStudio/comments/1txlyhe/do_you_know_what_tool_allows_you_to_do_this/) 0:19 558 upvotes Â· 44 comments
+Recommended minimalistic clipper plugins r/mixingmastering â€¢ 3y ago [
+Recommended minimalistic clipper plugins
+](https://www.reddit.com/r/mixingmastering/comments/17zrw57/recommended_minimalistic_clipper_plugins/) 6 upvotes Â· 41 comments
+Best clipper on the market r/audioengineering â€¢ 2y ago [
+Best clipper on the market
+](https://www.reddit.com/r/audioengineering/comments/1cr9btq/best_clipper_on_the_market/) 10 upvotes Â· 48 comments
+When I use a clipping program like StandardCLIP on my snare/kick, am i supposed to have any limiting done to them beforehand alongside being compressed? or should i only compress? r/audioengineering â€¢ 3y ago [
+When I use a clipping program like StandardCLIP on my snare/kick, am i supposed to have any limiting done to them beforehand alongside being compressed? or should i only compress?
+](https://www.reddit.com/r/audioengineering/comments/1awnfbp/when_i_use_a_clipping_program_like_standardclip/) 1 upvote Â· 6 comments
+Clippers gonna Clipper r/billsimmons â€¢ 4mo ago [
+Clippers gonna Clipper
+](https://www.reddit.com/r/billsimmons/comments/1smtnij/clippers_gonna_clipper/) 30 upvotes Â· 21 comments
+CLIPPING!! r/CarAV â€¢ 4mo ago [
+CLIPPING!!
+](https://www.reddit.com/r/CarAV/comments/1sq3is7/clipping/) 5 28 upvotes Â· 34 comments
+Question about Clippers, Saturators and Compressors r/mixingmastering â€¢ 3mo ago [
+Question about Clippers, Saturators and Compressors
+](https://www.reddit.com/r/mixingmastering/comments/1tbnmuo/question_about_clippers_saturators_and_compressors/) 29 upvotes Â· 53 comments
+What's the use of standard clip's "Soft clip saturator"? Do you use it? r/audioengineering â€¢ 2y ago [
+What's the use of standard clip's "Soft clip saturator"? Do you use it?
+](https://www.reddit.com/r/audioengineering/comments/1d5teb6/whats_the_use_of_standard_clips_soft_clip/) 1 upvote Â· 2 comments
+Why you need a clipper r/edmproduction â€¢ 2mo ago [
+Why you need a clipper
+](https://www.reddit.com/r/edmproduction/comments/1tyxjm8/why_you_need_a_clipper/) 116 upvotes Â· 135 comments
+How much is too much when using a clipper for mastering? r/mixingmastering â€¢ 3mo ago [
+How much is too much when using a clipper for mastering?
+](https://www.reddit.com/r/mixingmastering/comments/1tp4los/how_much_is_too_much_when_using_a_clipper_for/) 22 upvotes Â· 29 comments
+Buying clippers r/SelfBarber â€¢ 1mo ago [
+Buying clippers
+](https://www.reddit.com/r/SelfBarber/comments/1unqm2q/buying_clippers/) 2 12 upvotes Â· 36 comments
+Worked as a clipper for a month, got blocked instead of getting paid r/remoteworking â€¢ 1mo ago [
+Worked as a clipper for a month, got blocked instead of getting paid
+](https://www.reddit.com/r/remoteworking/comments/1unr56q/worked_as_a_clipper_for_a_month_got_blocked/) 62 upvotes Â· 30 comments
+What is your favorite clipper and why? r/mixingmastering â€¢ 10mo ago [
+What is your favorite clipper and why?
+](https://www.reddit.com/r/mixingmastering/comments/1ogw43e/what_is_your_favorite_clipper_and_why/) 25 upvotes Â· 98 comments
+Worked as a clipper for a month, got blocked instead of getting paid r/buhaydigital â€¢ 1mo ago [
+Worked as a clipper for a month, got blocked instead of getting paid
+](https://www.reddit.com/r/buhaydigital/comments/1uom1fl/worked_as_a_clipper_for_a_month_got_blocked/) 128 upvotes Â· 38 comments
+Sir audio Standard clip users: can you zoom waveform??? + threshold line? r/edmproduction â€¢ 2y ago [
+Sir audio Standard clip users: can you zoom waveform??? + threshold line?
+](https://www.reddit.com/r/edmproduction/comments/1g6i6ty/sir_audio_standard_clip_users_can_you_zoom/) 4 comments
+View Post in
+Ð ÑƒÑ Ñ ÐºÐ¸Ð¹
+æ—¥æœ¬èªž
+FranÃ§ais
+See more See fewer
+Ð'ÑŠÐ»Ð³Ð°Ñ€Ñ ÐºÐ¸
+Srpski
+í• œêµì–´
+Hindi (Latin)
+à¹„à¸—à¸¢
+ÄŒeÅ¡tina
+SlovenÄ ina
+Norsk (BokmÃ¥l)
+EspaÃ±ol (LatinoamÃ©rica)
+Ø§Ù„Ø¹Ø±Ø¨ÙŠØ©
+Ð£ÐºÑ€Ð°Ñ—Ð½Ñ ÑŒÐºÐ°
+Community Info Section
+r/audioengineering
+Join
+Profession of audio recording, editing, and producing
+Products, practices, and stories about the profession or hobby of recording, editing, and producing audio.
+Show more
+Public
+Anyone can view, post, and comment to this community
+Top Posts
+Reddit reReddit: Top posts of June 10, 2024
+Reddit reReddit: Top posts of June 2024
+Reddit reReddit: Top posts of 2024
+Home
+Popular
+News
+Explore
+Best of Reddit
+Best of Reddit in Portuguese
+Best of Reddit in German
+Reddit Rules
+Privacy Policy
+User Agreement
+Your Privacy Choices
+Accessibility
+Reddit, Inc. Â© 2026. All rights reserved.
+Join the most real place on the internet
+Continue with Apple
+ï£¿â€…Sign in with Apple
+Continue with Phone Number
+Continue with Email

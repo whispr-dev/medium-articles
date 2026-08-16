@@ -1,0 +1,236 @@
+This Reddit discussion serves as a collaborative technical guide for sound designers aiming to replicate the distinct textural palette of the artist Sophie using the Vital synthesiser. Contributors detail a variety of advanced synthesis methods, specifically highlighting Frequency Modulation (FM) and ring modulation as essential tools for crafting her trademark metallic impacts and rubbery, "balloon-like" squelches. The conversation also bridges the gap between digital and organic production, suggesting the use of physical modelling, comb filtering, and the manipulation of short delay times alongside processed field recordings of everyday objects. By exchanging these specific parameters and effects chains, the users aim to demystify the avant-garde sound design techniques used to create hyper-kinetic, tactile electronic music.
+
+Tips on how to make some of Sophie's metallic and brash “impact” like sounds, or her bubbly popping sounds? : r/VitalSynth
+Skip to main content Tips on how to make some of Sophie's metallic and brash “impact” like sounds, or her bubbly popping sounds? : r/VitalSynth
+Open menu
+Open navigation
+Go to Reddit Home
+Ask
+Find anything
+Sign Up
+Sign up for Reddit
+Log In
+Log in to Reddit
+Expand user menu
+Open settings menu
+Skip to Sign up Skip to Right Sidebar
+Back
+Go to VitalSynth
+r/VitalSynth
+•
+1y ago
+New_Butterfly8095
+Locked post
+Stickied post
+Archived post
+Award this post
+Report
+Tips on how to make some of Sophie's metallic and brash “impact” like sounds, or her bubbly popping sounds?
+Links to other videos or information on how to make these sounds would also be greatly appreciated. Otherwise, I'm open to hearing any advice. Thanks!
+Read more
+Upvote 3 Downvote 13 Go to comments
+Share
+Sort by: Best
+Open comment sort options
+Best
+Top
+New
+Controversial
+Old
+Q&A
+Search Comments Expand comment search
+Cancel
+Comments Section
+New_Butterfly8095
+OP
+• 1y ago
+The song HARD, it has a lot of interesting sounds such as popping bubbles, something sounding like someone making a balloon animal, some metallic impact sounds
+Upvote 2 Downvote Reply Award
+Share
+Report
+Award
+Share
+MapNaive200
+•
+1y ago
+I'm really annoyed because I finally stumbled upon how to get balloon squeak/rubber ducky squelches that you hear in psytrance, but I haven't been able to retrace the steps I took before I resynthesized the wavetable.
+I get my metallic sounds with FM, and sometimes with the help of internal or external ring modulation. MRingModulator can be pretty useful. Also wavetables that I make on the fly that have a complex harmonic structure. FM (or maybe it's actually phase modulation) can also be achieved by routing a keytrack LFO to oscillator phase. I find it particularly useful when I'm using note-on-random so the waveform shape stays intact when the pitch changes.
+Upvote 1 Downvote Reply Award
+Share
+Report
+Award
+Share
+New_Butterfly8095
+OP
+• 1y ago
+What exactly is ring modulation? I see it in my synth, I use it, but I don't know exactly what it does 🤣
+Let me know if you figure out how to make those noises! The squeaky rubber noises are fucking amazeballs
+1 more reply
+1 more reply
+More replies
+More replies
+scarletdawnredd
+•
+1y ago
+Physical modelling and FM. I don't have exact formulas but lots of comb filters and distortion.
+If you want to go the organic route, record empty cans getting smacked with a pencil (or experiment with other objects.) Kegs are also great. Then process with distortion and flanger, automate pitch, to taste. I've done this with Yerba cans field recordings with good results.
+Upvote 5 Downvote Reply Award
+Share
+Report
+Award
+Share
+tonal_states
+•
+1y ago
+and convolution
+Upvote 2 Downvote Reply Award
+Share
+Report
+Award
+Share
+scarletdawnredd
+•
+1y ago
+Oooo yes. Experimenting with different IRs is neat.
+More replies
+More replies
+xmplry
+•
+1y ago
+Get some drum samples and slap a delay on them. Set to 100% wet, and play around with varying levels of feedback and super short delay times, like 0.01 - 10 ms. This is good for creating metalic tones. Also play around with the corpus plug-in, if you have Ableton.
+Upvote 1 Downvote Reply Award
+Share
+Report
+Award
+Share
+thepinkpill
+•
+1y ago
+and automate the delays
+Upvote 2 Downvote Reply Award
+Share
+Report
+Award
+Share
+New_Butterfly8095
+OP
+• 1y ago
+Automate what about the delay? Like the dry/wet, delay time, etc?
+2 more replies
+2 more replies
+More replies
+More replies
+Scruffy032893
+•
+1y ago
+Examples?
+Upvote 1 Downvote Reply Award
+Share
+Report
+Award
+Share
+People also ask about section
+People also ask about
+Techniques for metallic impact sounds
+Methods to create bubbly popping effects
+Synthesis approaches for brash textures
+Sound design inspiration from Sophie
+Vital Synth community recommendations
+More posts you may like
+Related posts
+What poor creature is making this sound? 🔉 r/whatisit • 4mo ago [
+What poor creature is making this sound? 🔉
+](https://www.reddit.com/r/whatisit/comments/1su3xbp/what_poor_creature_is_making_this_sound/) 0:35 12 upvotes · 31 comments
+Medium Scale Bass r/warmoth • 4mo ago [
+Medium Scale Bass
+](https://www.reddit.com/r/warmoth/comments/1siqqxj/medium_scale_bass/) 5 30 upvotes · 16 comments
+Should I stay true to my 1-bit visuals and use similar basic sound effects? r/hobbygamedev • 4mo ago [
+Should I stay true to my 1-bit visuals and use similar basic sound effects?
+](https://www.reddit.com/r/hobbygamedev/comments/1sm07xa/should_i_stay_true_to_my_1bit_visuals_and_use/) 83 upvotes · 30 comments
+Soundbites r/KateMiddletonMissing • 6d ago [
+Soundbites
+](https://www.reddit.com/r/KateMiddletonMissing/comments/1vklffm/soundbites/) 6 58 upvotes · 47 comments
+Me when music 😂: r/mogeko • 3mo ago [
+Me when music 😂:
+](https://www.reddit.com/r/mogeko/comments/1tp22il/me_when_music/) 87 upvotes · 9 comments
+Trying to find my own unique voice in this medium r/lampwork • 3mo ago [
+Trying to find my own unique voice in this medium
+](https://www.reddit.com/r/lampwork/comments/1topj35/trying_to_find_my_own_unique_voice_in_this_medium/) 0:09 227 upvotes · 14 comments
+Most bass players don't need to be audible r/BassCirclejerk • 11d ago [
+Most bass players don't need to be audible
+](https://www.reddit.com/r/BassCirclejerk/comments/1vgofbq/most_bass_players_dont_need_to_be_audible/) 31 upvotes · 16 comments
+Making some really loud music r/lobo • 4mo ago [
+Making some really loud music
+](https://www.reddit.com/r/lobo/comments/1sulyve/making_some_really_loud_music/) 3 74 upvotes · 7 comments
+Sound design r/domekeeper • 5mo ago [
+Sound design
+](https://www.reddit.com/r/domekeeper/comments/1s0caw2/sound_design/) 32 upvotes · 7 comments
+YouTube sound effects. Stop it. r/misophonia • 6mo ago [
+YouTube sound effects. Stop it.
+](https://www.reddit.com/r/misophonia/comments/1r3v7gi/youtube_sound_effects_stop_it/) 35 upvotes · 7 comments
+How do i add more locking and unlocking sound effects? r/Zeekr • 4mo ago [
+How do i add more locking and unlocking sound effects?
+](https://www.reddit.com/r/Zeekr/comments/1skv535/how_do_i_add_more_locking_and_unlocking_sound/) 6 upvotes · 10 comments
+Currently learning Japanese - what are the most popular groups or solo artist these days? r/jpop • 1y ago [
+Currently learning Japanese - what are the most popular groups or solo artist these days?
+](https://www.reddit.com/r/jpop/comments/1jyqujg/currently_learning_japanese_what_are_the_most/) 16 upvotes · 30 comments
+Sound Effects r/ironlungmovie • 4mo ago [SPOILER
+Sound Effects
+](https://www.reddit.com/r/ironlungmovie/comments/1slhyjb/sound_effects/) 38 upvotes · 10 comments
+How I look playing bass as a guitarist r/bothkisser • 2mo ago [
+How I look playing bass as a guitarist
+](https://www.reddit.com/r/bothkisser/comments/1tx1xj7/how_i_look_playing_bass_as_a_guitarist/) 2 30 upvotes · 12 comments
+Can anyone here share their experiences on seroquel? r/insomnia • 1y ago [
+Can anyone here share their experiences on seroquel?
+](https://www.reddit.com/r/insomnia/comments/1k07tv9/can_anyone_here_share_their_experiences_on/) 11 upvotes · 52 comments
+Need you opinions on my new speaker, please r/Bluetooth_Speakers • 1y ago [
+Need you opinions on my new speaker, please
+](https://www.reddit.com/r/Bluetooth_Speakers/comments/1jyv72c/need_you_opinions_on_my_new_speaker_please/) 1 upvote · 4 comments
+How to improve my bass r/UpdatesHymnsOfINC • 5mo ago [
+How to improve my bass
+](https://www.reddit.com/r/UpdatesHymnsOfINC/comments/1rnpi6j/how_to_improve_my_bass/) 0:55 8 upvotes · 12 comments
+sounds dope but it's in the wrong key r/rolandaira • 2mo ago [
+sounds dope but it's in the wrong key
+](https://www.reddit.com/r/rolandaira/comments/1u2vd2m/sounds_dope_but_its_in_the_wrong_key/) 32 upvotes · 8 comments
+Softly (or how to spam the blues scale while keeping a bassline going) r/jazzguitar • 24d ago [
+Softly (or how to spam the blues scale while keeping a bassline going)
+](https://www.reddit.com/r/jazzguitar/comments/1v4dtgj/softly_or_how_to_spam_the_blues_scale_while/) 3:27 65 upvotes · 21 comments
+Would this microphone be a good (starter?) option? r/VoiceActing • 1y ago [
+Would this microphone be a good (starter?) option?
+](https://www.reddit.com/r/VoiceActing/comments/1jz3xb6/would_this_microphone_be_a_good_starter_option/) 19 upvotes · 36 comments
+Some jazzy chops r/sp404mk2 • 5mo ago [
+Some jazzy chops
+](https://www.reddit.com/r/sp404mk2/comments/1rxtlhr/some_jazzy_chops/) 0:29 40 upvotes · 9 comments
+how useful the breathing forms that only slash once are r/DemonSlayerMemes • 26d ago [
+how useful the breathing forms that only slash once are
+](https://www.reddit.com/r/DemonSlayerMemes/comments/1v31wqb/how_useful_the_breathing_forms_that_only_slash/) 61 upvotes · 7 comments
+How to make bass reliably pop in your mixes? r/mixingmastering • 17d ago [
+How to make bass reliably pop in your mixes?
+](https://www.reddit.com/r/mixingmastering/comments/1vaw28u/how_to_make_bass_reliably_pop_in_your_mixes/) 57 upvotes · 57 comments
+Bass music r/modular • 10d ago [
+Bass music
+](https://www.reddit.com/r/modular/comments/1vh4fm1/bass_music/) 0:32 302 upvotes · 24 comments
+new to widow; any tips? r/WidowmakerMains • 1y ago [
+new to widow; any tips?
+](https://www.reddit.com/r/WidowmakerMains/comments/1k08t0i/new_to_widow_any_tips/) 9 upvotes · 5 comments
+View Post in
+Русский
+日本語
+繁體中文
+Tiếng Việt
+See more See fewer
+Polski
+Nederlands
+Svenska
+العربية
+한국어
+Türkçe
+Čeština
+Português (Portugal)
+Magyar
+Română
+Community Info Section
+r/VitalSynth
+Join
+VitalSynth
+https://vital.audio This is the place for sharing anything related to Vital. All rights belong to Matthew Tytel.

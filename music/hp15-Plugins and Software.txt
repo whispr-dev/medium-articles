@@ -1,0 +1,266 @@
+This news article from Sound On Sound details the release of Super*Saw, a new software synthesiser developed through a two-year partnership between Native Instruments and acclaimed producer A. G. Cook. The instrument is designed to replicate Cook’s trademark sonic palette, specifically focusing on the dense, layered sawtooth waves that characterise his influential work in modern pop. Key technical features include dual oscillator banks, a unique X-Y pad for blending different patch states, and integrated tools for managing chords and scales. Priced at $99, the plugin aims to provide musicians with a versatile library of high-energy leads and metallic textures that are fully compatible with modern hardware and digital audio workstations.
+
+Native Instruments announce Super*Saw
+Home
+SOS For Artists
+Advertise
+Information
+Readers' Ads
+Competitions
+Videos
+Podcasts
+Case Studies
+eBooks +
+News
+Latest
+All News
+Search
+Podcasts
+Case Studies
+Readers Ads +
+Forum
+Latest Posts
+Search
+SOS For Artists
+Readers Ads
+FAQ
+Glossary
+Rules +
+Magazine
+Latest issue
+All issues
+Publication Dates
+Subscribe
+Advertise
+Write for SOS
+Search +
+Reviews
+Articles
+Search
+Podcasts
+Glossary
+Case Studies +
+Techniques
+Articles
+Series
+Search
+Podcasts
+Glossary
+Case Studies +
+People
+Articles
+Search
+Podcasts
+Glossary
+Case Studies +
+Sound Advice
+Articles
+Search
+Podcasts
+Glossary
+Case Studies +
+Music Business
+Articles
+Search
+Podcasts
+Glossary
+Case Studies +
+More...
+Register
+Subscribe
+Shop
+Help +
+0 items
+Search Search
+Log in
+Skip to main content
+SOUND ON SOUND
+Home
+SOS For Artists
+Advertise
+Information
+Readers' Ads
+Competitions
+Videos
+Podcasts
+Case Studies
+eBooks
+News
+Latest
+All News
+Search
+Podcasts
+Case Studies
+Readers Ads
+Forum
+Latest Posts
+Search
+SOS For Artists
+Readers Ads
+FAQ
+Glossary
+Rules
+Magazine
+Latest issue
+All issues
+Publication Dates
+Subscribe
+Advertise
+Write for SOS
+Search
+Reviews
+Articles
+Search
+Podcasts
+Glossary
+Case Studies
+Techniques
+Articles
+Series
+Search
+Podcasts
+Glossary
+Case Studies
+People
+Articles
+Search
+Podcasts
+Glossary
+Case Studies
+Sound Advice
+Articles
+Search
+Podcasts
+Glossary
+Case Studies
+Music Business
+Articles
+Search
+Podcasts
+Glossary
+Case Studies
+More...
+Register
+Subscribe
+Shop
+Help
+0 items
+Search Search
+Set us as a Google preferred source preferred
+facebook
+twitter
+email
+print
+You are here
+Home
+News
+Native Instruments announce Super*Saw
+Published 16/7/26
+Created in collaboration with A. G. Cook
+The newest addition to Native Instruments' software collection introduces a new synth created by A. G. Cook, a Grammy-winning British producer best known for his work with Charli XCX. Named Super*Saw — and pronounced 'Super Star Saw', apparently — the instrument has been built around the stacked sawtooth patches that have defined Cook's signature sound.
+The producer's work with the likes of Charli XCX, Beyoncé, Caroline Polachek and Oklou has relied heavily on 'supersaws' — stacks of sawtooth waves that are layered and slightly detuned to create wide, harmonically dense sounds. Over the course of a two-year collaboration, the NI team have crafted the new instrument from Cook's own patches, creating a library of presets that cover “blissed-out harmonies, metallic dissonance, ravey leads and impossible glides”.
+Super*Saw has been built around a pair of independent 16-saw oscillator banks, and features a central Y-Y pad that captures four distinct patch states and allows users to blend seamlessly between them. Per-voice Glide and Offset controls deliver the tonal variations that are central to Cook's sound-design approach, while Chord, Scale and Quantize functions help to keeps things in time and in tune! Onboard effects include a chorus, delay and reverb, and the instrument is also kitted out with a high-pass filter that offers two- and four-pole slope options.
+As you might expect, Super*Saw integrates seamlessly with Native Instruments' Komplete Kontrol keyboards and Maschine hardware.
+Tap to unmute
+Your browser can't play this video.
+Learn more
+Compatibility
+Super*Saw is supported on PCs running Windows 10 or above, and Macs running macOS 14 and later. VST3, AU and AAX plug-in versions are available.
+Pricing & Availability
+Super*Saw is available now, priced at $ € 99.
+www.native-instruments.com/en/products/komplete/synths/superstarsaw
+Previous story Next story
+Did you miss this News?
+link
+Gospel Musicians release Gospel Drums
+link
+JH Audio expand Universal-Fit range
+link
+Yorkville launch the EL24S
+link
+UJAM introduce Virtual Drummer Neon
+link
+Ravine DSP update Inter::State
+link
+VAEMI announce the Synterra
+link
+AudioRoute from Arvital Audio
+link
+Triton Audio launch the Tilt EQ
+link
+SSL 360° gets a major update
+All News
+Readers' Ads
+View all ads
+Create free ad
+Other manufacturer news
+Native Instruments to be acquired by inMusic 8/5/26
+Native Instruments release Komplete 26 5/5/26
+Native Instruments CEO Statement 19/3/26
+A statement from Native Instruments 29/1/26
+Native Instruments launch Absynth 6 8/12/25
+News - same subject
+Gospel Musicians release Gospel Drums 14/8/26
+Yorkville launch the EL24S 14/8/26
+JH Audio expand Universal-Fit range 13/8/26
+UJAM introduce Virtual Drummer Neon 13/8/26
+Ravine DSP update Inter::State 13/8/26
+Sign Up TO SOS Newsletters
+Discover more
+Magazine Subscription Service
+synth
+Audio Equipment
+Latest SOS Videos
+Designing The Focusrite ISA C8X Audio Interface
+GearExpo UK 2026
+Trinnov NOVA User Report - PresentDayProduction
+New forum posts
+Re: Mac Mini 24G/512G or combo with Windows Mini PC? BigRedX > 16 Aug 2026, 15:48 Mac Music
+Re: How many guitars are too many? BigRedX > 16 Aug 2026, 15:34 Guitar Technology
+Re: UAD Plugins some thoughts hz37 > 16 Aug 2026, 13:29 Mixing | Mastering | Post Production
+Fifty quid boxes The Elf > 16 Aug 2026, 13:29 Recording: Gear+Techniques
+Re: UAD Plugins some thoughts johnny h > 16 Aug 2026, 12:56 Mixing | Mastering | Post Production
+Active topics
+Fifty quid boxes
+Forum looks different?
+UAD Plugins some thoughts
+Korg SQ1 sync problems
+Triton Audio FetHead Germanium
+Stereo Ribbon Mic for under £500?
+The fate of Roli
+Would anyone mind replying to this?
+Mother - new collaboration
+Acoustic guitar care in this heat
+Recently active forums
+Recording: Gear+Techniques
+Mixing | Mastering | Post Production
+Keyboards+Synthesizers
+Guitar Technology
+NEW PRODUCTS [Paid Posts Only]
+Windows Music
+Mac Music
+Apps | Other Computers/OS
+Live Sound | Performance
+DIY | Electronics | Studio Design
+Music Business
+Music Theory | Songwriting | Composition
+User Reviews
+Remote Collaboration
+Self-Promotion
+Feedback
+SOS Support Forum
+Login
+You may login with either your assigned username or your e-mail address.
+The password field is case sensitive.
+Request new password
+Create an account Log in
+About
+Contact Us
+Cookie Policy
+Help
+Privacy Policy
+Terms of Use
+All contents copyright © SOS Publications Group and/or its licensors, 1985-2026. All rights reserved.
+The contents of this article are subject to worldwide copyright protection and reproduction in whole or part, whether mechanical or electronic, is expressly forbidden without the prior written consent of the Publishers. Great care has been taken to ensure accuracy in the preparation of this article but neither Sound On Sound Limited nor the publishers can be held responsible for its contents. The views expressed are those of the contributors and not necessarily those of the publishers.
+Web site designed & maintained by PB Associates & SOS
+Back to top

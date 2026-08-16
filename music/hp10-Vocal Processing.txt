@@ -1,0 +1,249 @@
+This Reddit discussion serves as a technical guide for music producers aiming to replicate the distinctive hyperpop vocal aesthetic pioneered by the PC Music record label. Experienced commenters identify the genre’s signature sound as a combination of extreme pitch correction and dramatic formant shifting, which allows a human voice to adopt an artificial, synthetic quality. To achieve these "vocal guitar" or instrument-like effects, the text recommends using specialized tools such as Melodyne, Antares Autotune, or Manipulator to warp the audio's texture and tonal character. Beyond simple tuning, the contributors suggest advanced workflows like sampling vocal chops and processing them through distortion, amp simulators, and vocoders to blur the line between organic singing and electronic synthesis. The primary purpose of the thread is to offer a collaborative repertoire of plugins and techniques that transform traditional vocals into the glossy, high-energy textures typical of modern experimental pop.
+
+How to do PC Music vocal effects? : r/pcmusic
+Skip to main content How to do PC Music vocal effects? : r/pcmusic
+Open menu
+Open navigation
+Go to Reddit Home
+Ask
+Find anything
+Sign Up
+Sign up for Reddit
+Log In
+Log in to Reddit
+Expand user menu
+Open settings menu
+Skip to Sign up Skip to Right Sidebar
+Back
+Go to pcmusic
+r/pcmusic
+â€¢ 6y ago
+[deleted]
+Locked post
+Stickied post
+Archived post
+Award this post
+Report
+How to do PC Music vocal effects?
+Question
+I'm very new to music production and was wondering if anyone knows how to make vocal effects that sound like something from PC music? I'm thinking something along the lines of 'Superstar' by A.G. Cook.
+Right now I'm using Pro Tools First but realise I might have to get a better DAW some day in order to make this kinda stuff.
+Read more
+Upvote 12 Downvote 11 Go to comments
+Share
+Sort by: Best
+Open comment sort options
+Best
+Top
+New
+Controversial
+Old
+Q&A
+Search Comments Expand comment search
+Cancel
+Comments Section
+faustermusic
+â€¢ 6y ago
+Superstar sounds to be an autotuner with a super fast response, and then formant shifting via melodyne or something (i.e. using melodyne as intended [pitch correction] and then shifting the formant wayy far up for certain slides
+theres also some octave pitch shifting and distortion
+you can do all that in protools with third party plug ins (i recommend wavves if you're on a budget).
+Logic pro also has all of the effects I mentioned built-in ("flex pitch" instead of melodyne, "pitch correction" instead of autotune)
+Hope that helps! sorry if it was rambly
+Upvote 6 Downvote Reply Award
+Share
+Report
+Award
+Share
+[deleted]
+OP â€¢ 6y ago
+Sounds great, I'll try this out. Thank you so much!
+Upvote 2 Downvote Reply Award
+Share
+Report
+Award
+Share
+[deleted]
+â€¢ 6y ago
+I have logic and I was wondering if you know how AG turns voices seemingly into instruments. Like in the bridge of Hannah Diamondâ€™s make believe or in the end of Charliâ€™s Lucky. Would it still be the same process?
+Upvote 2 Downvote Reply Award
+Share
+Report
+Award
+Share
+faustermusic
+â€¢ 6y ago
+you can run parallel versions vocal lines through amp sims, pitch shifting and correction, filters, and even the vocoder synth in logic
+you can also play the vocal line on a separate synth at the same time, or even resample the vocals in the built in sampler to create an instrument out of vocal chops
+youtube has great tutorials for everything i just mentioned
+eth3realities
+â€¢ 6y ago
+iâ€™d say for the vocal guitar effect, you might be able to use autotune and modify it with distortion?
+More replies
+More replies
+utalkway2much
+â€¢ 6y ago
+Superstar ðŸ¤¤
+Upvote 2 Downvote Reply Award
+Share
+Report
+Award
+Share
+[deleted]
+â€¢ 6y ago
+r/wearethemusicmakers can prob help
+Upvote 1 Downvote Reply Award
+Share
+Report
+Award
+Share
+Ramchan0
+â€¢ 6y ago
+Hi! Also want to know this :v
+Upvote 1 Downvote Reply Award
+Share
+Report
+Award
+Share
+StrangeSniper
+â€¢ 6y ago
+Antares Autotune
+Manipulator
+Antares harmony engine
+Vocal synth 2
+Little alter boy
+Upvote 1 Downvote Reply Award
+Share
+Report
+Award
+Share
+AmbassadorOfMorning
+â€¢ 6y ago
+I usually use Manipulator, MAutoPitch and Mfreqshifter. Manipulator costs money but itâ€™s totally worth it. the other two are Melda production plugins which are great and free!
+Upvote 1 Downvote Reply Award
+Share
+Report
+Award
+Share
+Fezsarecool
+â€¢ 6y ago
+What I tend to do to get that PC sound is pitch shifting and formant shifting using polytronix manipulator. Example
+https://soundcloud.com/old-pup/heavy
+Another thing to use is a good chorus Valhalla space modulator is free and amazing for that kinda thing. Lmk if you have any qs or want a full vocal chain for some of my tracks.
+Upvote 1 Downvote Reply Award
+Share
+Report
+Award
+Share
+People also ask about section
+People also ask about
+How to create PC Music style vocal effects
+Vocal processing techniques in PC Music
+PC Music vocal effect plugins
+PC Music vocal layering methods
+PC Music vocal distortion techniques
+More posts you may like
+Related posts
+Vocal Preset r/prettifun â€¢ 8mo ago [
+Vocal Preset
+](https://www.reddit.com/r/prettifun/comments/1plndf8/vocal_preset/) 6 upvotes Â· 8 comments
+I didn't realize how difficult Audio design actually is... r/gamedev â€¢ 9mo ago [
+I didn't realize how difficult Audio design actually is...
+](https://www.reddit.com/r/gamedev/comments/1ov2521/i_didnt_realize_how_difficult_audio_design/) 117 upvotes Â· 38 comments
+Need more music with funny textures. r/evilautism â€¢ 6mo ago [
+Need more music with funny textures.
+](https://www.reddit.com/r/evilautism/comments/1r5zwsq/need_more_music_with_funny_textures/) 49 upvotes Â· 42 comments
+Any tips for making a fac like this? r/foxhole â€¢ 2mo ago [
+Any tips for making a fac like this?
+](https://www.reddit.com/r/foxhole/comments/1u83ft2/any_tips_for_making_a_fac_like_this/) 47 upvotes Â· 18 comments
+Are you an electronic music producer? r/lapfoxtrax â€¢ 4mo ago [
+Are you an electronic music producer?
+](https://www.reddit.com/r/lapfoxtrax/comments/1sgdp3a/are_you_an_electronic_music_producer/) 27 upvotes Â· 71 comments
+I been playing with the chop ft but was feeling it just wanted that vintage mpc feel and more control over individual chops so I made a video of what I found to fit my play style hope this helps anyone r/mpcsample â€¢ 3mo ago [
+I been playing with the chop ft but was feeling it just wanted that vintage mpc feel and more control over individual chops so I made a video of what I found to fit my play style hope this helps anyone
+](https://www.reddit.com/r/mpcsample/comments/1td76kn/i_been_playing_with_the_chop_ft_but_was_feeling/) 1:54 65 upvotes Â· 14 comments
+MF & MPC Sample? r/MicroFreak â€¢ 3mo ago [
+MF & MPC Sample?
+](https://www.reddit.com/r/MicroFreak/comments/1toettd/mf_mpc_sample/) 31 upvotes Â· 32 comments
+Is this enough to finally finish a track? /s r/dawless â€¢ 8mo ago [
+Is this enough to finally finish a track? /s
+](https://www.reddit.com/r/dawless/comments/1pmovw3/is_this_enough_to_finally_finish_a_track_s/) 40 upvotes Â· 19 comments
+Making some ambient music while I work r/modular â€¢ 2mo ago [
+Making some ambient music while I work
+](https://www.reddit.com/r/modular/comments/1uksfz3/making_some_ambient_music_while_i_work/) 28 upvotes Â· 12 comments
+What's the best EDM / Bass sample pack with actually great sound design either on splice or outside of it? r/Splice â€¢ 5mo ago [
+What's the best EDM / Bass sample pack with actually great sound design either on splice or outside of it?
+](https://www.reddit.com/r/Splice/comments/1s0l5b7/whats_the_best_edm_bass_sample_pack_with_actually/) 4 upvotes Â· 13 comments
+This is the most satisfying 10 seconds in my studio right now. r/PlotterArt â€¢ 4mo ago [
+This is the most satisfying 10 seconds in my studio right now.
+](https://www.reddit.com/r/PlotterArt/comments/1scz5ho/this_is_the_most_satisfying_10_seconds_in_my/) 0:10 40 upvotes Â· 9 comments
+How to make beat like Pretti r/prettifun â€¢ 5mo ago [
+How to make beat like Pretti
+](https://www.reddit.com/r/prettifun/comments/1sa4f2e/how_to_make_beat_like_pretti/) 11 upvotes Â· 9 comments
+Thoughts on some Melodic IDM with a 303? r/idm â€¢ 5mo ago [
+Thoughts on some Melodic IDM with a 303?
+](https://www.reddit.com/r/idm/comments/1rq9ben/thoughts_on_some_melodic_idm_with_a_303/) 1:45 37 upvotes Â· 9 comments
+Making my first electro/idm album r/electro â€¢ 1mo ago [
+Making my first electro/idm album
+](https://www.reddit.com/r/electro/comments/1uo61l6/making_my_first_electroidm_album/) 0:30 45 upvotes Â· 8 comments
+Do u think i could make a pluggnb track with this plugin ? r/PluggnB â€¢ 5mo ago [
+Do u think i could make a pluggnb track with this plugin ?
+](https://www.reddit.com/r/PluggnB/comments/1s38scr/do_u_think_i_could_make_a_pluggnb_track_with_this/) 33 upvotes Â· 7 comments
+Emotion/facial control synth Iâ€™m making r/eurorack â€¢ 6mo ago [
+Emotion/facial control synth Iâ€™m making
+](https://www.reddit.com/r/eurorack/comments/1r57i5h/emotionfacial_control_synth_im_making/) 0:09 62 upvotes Â· 13 comments
+Trying to make chiptune sound as full as possible while remaining chiptune. r/chiptunes â€¢ 5mo ago [
+Trying to make chiptune sound as full as possible while remaining chiptune.
+](https://www.reddit.com/r/chiptunes/comments/1s7woi0/trying_to_make_chiptune_sound_as_full_as_possible/) 0:47 55 upvotes Â· 9 comments
+Help, how do you make the line tool look good? r/ToonBoomHarmony â€¢ 1mo ago [
+Help, how do you make the line tool look good?
+](https://www.reddit.com/r/ToonBoomHarmony/comments/1uturmx/help_how_do_you_make_the_line_tool_look_good/) 2 29 upvotes Â· 11 comments
+Making my first electro/idm album r/ElectroProduction â€¢ 1mo ago [
+Making my first electro/idm album
+](https://www.reddit.com/r/ElectroProduction/comments/1uo5tt8/making_my_first_electroidm_album/) 0:30 64 upvotes Â· 16 comments
+Finished a new track, what are people's processes for getting a recording to the final stage? r/modular â€¢ 3mo ago [
+Finished a new track, what are people's processes for getting a recording to the final stage?
+](https://www.reddit.com/r/modular/comments/1ttdhms/finished_a_new_track_what_are_peoples_processes/) 4:06 51 upvotes Â· 18 comments
+should my waveform look like this after I export it ? r/edmprodcirclejerk â€¢ 6mo ago [
+should my waveform look like this after I export it ?
+](https://www.reddit.com/r/edmprodcirclejerk/comments/1rjrq0r/should_my_waveform_look_like_this_after_i_export/) 33 upvotes Â· 7 comments
+should my waveform look like this after I export it ? r/edmprodcirclejerk â€¢ 6mo ago [
+should my waveform look like this after I export it ?
+](https://www.reddit.com/r/edmprodcirclejerk/comments/1rjayzq/should_my_waveform_look_like_this_after_i_export/) 47 upvotes Â· 15 comments
+i wanted to learn how to use a daw so i tried to make a simple angelcore track with only default sounds and this is what came out r/lmms â€¢ 5mo ago [
+i wanted to learn how to use a daw so i tried to make a simple angelcore track with only default sounds and this is what came out
+](https://www.reddit.com/r/lmms/comments/1rkwtq6/i_wanted_to_learn_how_to_use_a_daw_so_i_tried_to/) 1:54 37 upvotes Â· 6 comments
+How to properly use tone generators? r/oratory1990 â€¢ 19d ago [
+How to properly use tone generators?
+](https://www.reddit.com/r/oratory1990/comments/1v98dlb/how_to_properly_use_tone_generators/) 4 upvotes Â· 11 comments
+Sampler plugins to match mid to late 90s sampler sounds? r/VSTi â€¢ 3mo ago [
+Sampler plugins to match mid to late 90s sampler sounds?
+](https://www.reddit.com/r/VSTi/comments/1tmct41/sampler_plugins_to_match_mid_to_late_90s_sampler/) 5 upvotes Â· 16 comments
+Community Info Section
+r/pcmusic
+Join
+PC Music
+Public
+Anyone can view, post, and comment to this community
+Top Posts
+Reddit reReddit: Top posts of June 20, 2020
+Reddit reReddit: Top posts of June 2020
+Reddit reReddit: Top posts of 2020
+Home
+Popular
+News
+Explore
+Best of Reddit
+Best of Reddit in Portuguese
+Best of Reddit in German
+Reddit Rules
+Privacy Policy
+User Agreement
+Your Privacy Choices
+Accessibility
+Reddit, Inc. Â© 2026. All rights reserved.
+Join the most real place on the internet
+Continue with Apple
+ï£¿â€…Sign in with Apple
+Continue with Phone Number
+Continue with Email
+By continuing, you agree to our User Agreement and acknowledge that you understand the Privacy Policy.

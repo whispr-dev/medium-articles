@@ -1,0 +1,417 @@
+This article serves as a technical retrospective and celebration of Scritti Politti’s 1985 album, Cupid & Psyche 85, examining its profound impact on pop production and music technology. The author explores how the band utilised a sophisticated array of early digital and analogue instruments, such as the Fairlight CMI, Yamaha DX7, and Roland Jupiter 8, to achieve the record’s signature pristine sound and rhythmic precision. Beyond its historical analysis, the text provides a guide for modern musicians to recreate these iconic textures using contemporary hardware and software alternatives. Ultimately, the piece highlights the album's enduring legacy as a masterpiece of arrangement, coinciding with a 2026 deluxe reissue and commemorative live performances.
+
+Cupid & Psyche 85: Scritti Politti's Triumphant Classic, Synth by Synth - gearnews.com
+Home
+Guitar
+Synths
+Studio
+Drums
+Live
+Tech
+Other
+Deals 9
+LinkedIn
+Instagram
+Facebook
+Twitter
+RSS
+EN
+DE
+EN
+ES
+FR
+IT
+About us
+Privacy Policy
+Imprint
+Contact
+Cookie Settings
+gearnews
+Guitar
+Synths
+Studio
+Drums
+Live
+Tech
+Other
+Deals 9
+Search
+LinkedIn
+Instagram
+Facebook
+Twitter
+RSS
+Search
+EN
+DE
+EN
+ES
+FR
+IT
+Cupid & Psyche 85: Scritti Politti's Triumphant Classic, Synth by Synth
+28 Jun by Rob Puricelli | |
+| 4,8 / 5,0 | Reading time: 11 min
+Scritti Politti Cupid & Psyche 85 · Source: Rough Trade
+Previous Next
+ADVERTISEMENT
+Often referenced as hugely influential, Cupid & Psyche 85 is a masterpiece of composition, arrangement and production. But what synths did Green, Gamson & Maher use?
+ADVERTISEMENT
+July sees the reissue of Cupid & Psyche 85 on both CD & Vinyl, both versions coming with some new bonus tracks, as well as the original four bonus tracks from back in the day. Cupid & Psyche 85 is incredibly important to me personally, soundtracking my mid-teens as it did. It inspired my love of precision music arrangement and production, and it remains an album I can listen to a million times and never tire of.
+With this new release in mind, I thought it would be interesting to investigate the synths used on this seminal album and look at how we can replicate that kit list today, using hardware or software. Let's get into it…
+Cupid & Psyche 85 – Synth by Synth
+A New Direction
+The Heady Days of 80s Technology
+The Synths
+The Fairlight CMI IIx
+Roland Jupiter 8
+PPG Wave
+Yamaha DX7
+Moog Minimoog Model D
+Those That Also Served on Cupid & Psyche 85
+In Conclusion
+More Information
+A New Direction
+Scritti Politti's second long player, released in June of 1985, saw the band change both personnel and musical direction after 1982's sublime debut, 'Songs to Remember', itself a huge diversion from the self-described “scratchy collapsy” efforts that had preceded it.
+Often cited as being influential, not only to musicians at the time, but also to much more modern artists who have discovered the pristine perfection contained within Cupid & Psyche 85 via social media and the likes of YouTube, the nine songs were recorded over a period of around two years.
+The Heady Days of 80s Technology
+Between 1983 and 1985, music technology was advancing at an alarming rate, not least with the advent of MIDI, sampling and digital synthesis. Taking advantage of all of these new toys, along with a long line of superb session musicians, engineers and producers, Green Gartside and the new additions of David Gamson and Fred Maher fashioned Cupid & Psyche 85, a piece of the sweetest and most delicious pop confectionery.
+ADVERTISEMENT
+But what pieces of technology allowed them to write, shape and mould these songs, and can we replicate them today? Let's take a look at the instruments used and some of their modern-day counterparts in both hardware and software.
+You are currently viewing a placeholder content from YouTube. To access the actual content, click the button below. Please note that doing so will share data with third-party providers.
+More Information
+Unblock content Accept required service and unblock content
+The Synths
+The Fairlight CMI IIx
+It's almost a given that an 80s synth-pop album used a Fairlight in its production, but contrary to popular belief, Scritti used the Fairlight more as an embellishment rather than the backbone of the recording and production of Cupid & Psyche 85.
+Scritti Politti at the Fairlight Studio in Sydney, Australia · Source: Peter Vogel
+The vast majority of Cupid & Psyche 85 was sequenced using a Roland MSQ-700, one of the first hardware MIDI sequencers, alongside Yamaha's QX1. As MIDI was still very new and somewhat unreliable, this wasn't an easy task, with a lot of the sequencing done in step time due to the odd behaviour of the quantise feature.
+Roland MSQ-700 · Source: Roland
+The goal was never to be rigidly locked to a sequencer, with Gamson adamant that the whole album should have groove and feel. Unable to afford their own Fairlight at the time, they rented them in, along with programmers to take care of the complexities of these powerful machines.
+Aside from the legendary Fairlight maestro, J.J. Jeczalik of the Art of Noise, who, along with fellow AoN member Gary Langan, did virtually all the Fairlight stuff on 'Absolute' and 'Hypnotize', both incredibly obvious Fairlight-based tracks, Scritti used Simon Climie, he of Climie Fisher fame, and ĒBN aka Ned Liben.
+ĒBN was a true Fairlight pioneer, using it extensively in his band ĒBN-ŌZN, whose track “ AEIOU Sometimes Y” was a huge hit on both radio and MTV in 1983. He worked on more than half the tracks, with Simon's main contribution on 'Small Talk'.
+Arturia CMI V · Source: Arturia
+Today, used Fairlights still change hands at hefty prices, but there are plenty of ways to indulge in the gritty 8-bit glory of the CMI. Arturia's CMI V is probably the best plugin out there, giving you access to the factory library and much more besides. Standalone apps like Qasarbeach faithfully replicate the CMI experience, and there's Peter Vogel's own iOS instrument.
+Affiliate Links
+Arturia CMI V Download
+Customer rating:
+(1)
+$91.00 / £74.00 / 86.00€ atThomann
+Roland Jupiter 8
+You'd better get used to all the 'usual suspect' synths being listed off here, and the Roland Jupiter 8 was definitely used across a number of the tracks on Cupid & Psyche 85. Less obvious to spot sonically than, say, a Fairlight, its status as a powerful analogue polysynth meant it was going to be used somewhere.
+The Roland Jupiter-8 was introduced back in 1981. · Source: Retro Synth Ads
+Of course, there is no end to the number of Jupiter 8 options today, not least with Roland's own cloud-based version, as well as their hardware synths that can host modelled versions. Arturia do a very decent version too, as do Cherry Audio with their Mercury 8, the latter of which can even import SysEx from a modified Jupiter 8 synth.
+Black Corporation ISE-NIN · Source: Black Corporation
+If you're feeling flush, Black Corporation's ISE-NIN is a noteworthy hardware replica. With Roland's recent return to analogue synthesis with their TR-1000, hopes have been raised that the Japanese giant may themselves resurrect the Jupiter 8 in hardware form one day!
+Affiliate Links
+Roland Jupiter-X
+Customer rating:
+(29)
+$2,245.00 / £2,050.00 / 2,349.00€ atThomann
+Roland Jupiter-Xm
+Customer rating:
+(25)
+$1,479.00 / £1,350.00 / 1,549.00€ atThomann
+Roland Cloud JUPITER-8 Download No customer rating available yet
+$218.00 / £86.00 / 99.00€ atThomann
+Cherry Audio Mercury-8 Download No customer rating available yet
+$66.00 / £60.00 / 69.00€ atThomann
+Arturia Jup-8 V Download
+Customer rating:
+(1)
+$91.00 / £74.00 / 86.00€ atThomann
+Black Corporation ISE-NIN No customer rating available yet
+$4,969.00 / £4,499.00 / 5,190.00€ atThomann
+You are currently viewing a placeholder content from YouTube. To access the actual content, click the button below. Please note that doing so will share data with third-party providers.
+More Information
+Unblock content Accept required service and unblock content
+PPG Wave
+Given that Cupid & Psyche 85 straddles a very important time in music technology, with the emergence of MIDI and digital synthesis, it is fair to say that the album really is a hybrid of these techniques with much of the production benefitting from the crystaline sheen of FM and wavetables!
+Of course, those wavetable contributions came from a PPG Wave, although I can't be sure which revision and whether a WaveTerm was involved, but the PPG Wave was capable of adding shining bell tones, as well as digital grit where necessary.
+Like the Fairlight, it had a very powerful bottom end to its sound and it would have been a very useful instrument for both pads, basses and the numerous syncopated embellishments that Gamson used. A self-confessed Bach nerd, he employed counterpoint throughout his time with Scritti and beyond, to great effect!
+Thankfully, getting a PPG sound into your productions isn't reliant on just sample libraries. When it comes to hardware, the Behringer Wave does an excellent job of recreating the sound and programming experience, some say too well! It's almost as impenetrable to use as the original!
+Behringer Wave · Source: Bonedo.de
+Then, of course, there's the mighty 3rd Wave from Groove Synthesis, which takes the PPG Wave concept and runs with it into huge, new territories. And we mustn't forget Waldorf, who picked up the PPG flag and delivered numerous wavetable classics, including the PPG Wave 3V plugin.
+Their Protein desktop unit is a fine and very affordable example of keeping the PPG sound alive, and their Microwave plugin is a faithful recreation of their own hardware that drew heavily from the PPG Wave's library of wavetable content.
+Affiliate Links
+Behringer Wave
+Customer rating:
+(39)
+$495.00 / £439.00 / 519.00€ atThomann
+Groove Synthesis 3rd Wave
+Customer rating:
+(3)
+$5,444.00 / £4,899.00 / 5,689.00€ atThomann
+Groove Synthesis 3rd Wave Desktop Module
+Customer rating:
+(7)
+$3,799.00 / £3,444.00 / 3,990.00€ atThomann
+Waldorf Protein
+Customer rating:
+(19)
+$299.00 / £277.00 / 319.00€ atThomann
+Waldorf Microwave 1 Download
+Customer rating:
+(10)
+$139.00 / £127.00 / 145.00€ atThomann
+Waldorf PPG 3.V Version 2 Download
+Customer rating:
+(1)
+$138.00 / £126.00 / 145.00€ atThomann
+You are currently viewing a placeholder content from YouTube. To access the actual content, click the button below. Please note that doing so will share data with third-party providers.
+More Information
+Unblock content Accept required service and unblock content
+Yamaha DX7
+The ubiquitous Yamaha DX7 can be found all over Cupid & Psyche 85. I'd go as far as to say that this album, and its follow-up, 'Provision', are responsible for my fascination with FM synthesis and the DX range as a whole.
+Gamson heard a DX7 being used in the studio next door to theirs whilst recording tracks for Cupid & Psyche 85, and had to find out what it was. It, and its sound, became a large part of Scritti's work during the 1980s, but not always in a purely musical way. Gamson would use its blisteringly fast attack and layer it with an analogue bass, primarily from the Minimoog.
+Yamaha DX7 · Source: Yamaha
+This is why the bass on Scritti's records was always punchy and cut through the mix. Gamson even came up with a name for the technique, 'Poke Bass'. You should try it! Find or create a patch on an FM synth that has a very percussive attack and dial everything else down so all you hear is little more than a click.
+Now, layer it up with a big, fat bass sound and there you have it! A bass sound that is punchy, cutting, but also big, round and solid. Of course, the classic E.PIANO1 sound can be found throughout Cupid & Psyche 85. It wouldn't be an 80s album if it wasn't!
+Plogue Chipsynth OPS7 · Source: Plogue
+FM has enjoyed a huge resurgence in recent years and can be found in hardware and software synths alike. Yamaha still features FM synthesis in their Montage M and MODX M ranges in the form of FM-X, and at the other end of the scale, you have KORG with their opsix and Volca FM2.
+In my very humble opinion, the best software interpretation is Plogue's OPS7, but Arturia's DX7 V does a very credible job. And we can't forget the mighty DEXED which is still free and one of the most popular software FM synths out there.
+Affiliate Links
+Arturia DX7 V Download
+Customer rating:
+(1)
+$91.00 / £74.00 / 86.00€ atThomann
+Korg opsix MKII
+Customer rating:
+(6)
+$529.00 / £479.00 / 555.00€ atThomann
+Korg opsix Module
+Customer rating:
+(11)
+$522.00 / £475.00 / 545.00€ atThomann
+Korg Volca FM2
+Customer rating:
+(40)
+$148.00 / £133.00 / 154.00€ atThomann
+You are currently viewing a placeholder content from YouTube. To access the actual content, click the button below. Please note that doing so will share data with third-party providers.
+More Information
+Unblock content Accept required service and unblock content
+Moog Minimoog Model D
+The Minimoog was always a favourite of David Gamson's and it covered bass duties on much of Cupid & Psyche 85, paired up with, as mentioned above, the DX7 for that extra punchiness. There's not much else to say here about this classic, but it did the small job it had to do very well indeed.
+Bob Moog Tribute Edition Minimoog Model D · Source: Moog
+Moog Music are still producing the Minimoog in various editions, but Behringer's effort is lauded by many as being a hugely affordable alternative. There are software versions made by Moog Music, Cherry Audio and Arturia too, and the Softube 72 has been praised as an incredibly faithful emulation.
+Affiliate Links
+Moog Geddy Lee Minimoog Model D
+Customer rating:
+(10)
+$4,977.00 / £4,499.00 / 5,190.00€ atThomann
+Moog Minimoog Bob Moog Tribute Ed.
+Customer rating:
+(4)
+$4,590.00 / £4,185.00 / 4,799.00€ atThomann
+Universal Audio Moog Minimoog Native Download
+Customer rating:
+(11)
+$27.00 / £128.00 / 147.00€ atThomann
+Behringer Model D
+Customer rating:
+(355)
+$189.00 / £168.00 / 199.00€ atThomann
+Cherry Audio Miniverse Synthesizer Download
+Customer rating:
+(10)
+$41.00 / £37.00 / 43.00€ atThomann
+You are currently viewing a placeholder content from YouTube. To access the actual content, click the button below. Please note that doing so will share data with third-party providers.
+More Information
+Unblock content Accept required service and unblock content
+Those That Also Served on Cupid & Psyche 85
+The rest of the instruments that we know appeared on Cupid & Psyche 85 include the likes of the Roland JX-8P and Fender Rhodes (I guess the DX7 hadn't made it into the studio at that point?!), and they made use of the classic Oberheim System, including the OB-X or OB-Xa, DMX drum machine and the DSX sequencer.
+Drum machines were used extensively across Cupid & Psyche 85, although the three tracks they did with the legendary Arif Mardin, namely 'Wood Beez', 'Absolute' and 'Don't Work That Hard', were hybrids of live drums and drum machines.
+Talking of drum machines, they also used a TR-808, although you're probably not hearing the 808 sounds themselves. I reached out to David Gamson, and he said this to say about the use of drum machines and early forms of digital sampling…
+AMS DMX 15-80 S · Source: Universal Audio
+“One technique for drums, which was pretty popular at the time, was to load your own samples into an AMS DMX delay unit and trigger the sample from a drum machine. Memory was volatile, so if you turned the AMS off, you needed to reload. BUT… the AMS was 16-bit and full bandwidth, unlike the 8-bit drum machines.
+I remember pretty clearly on Cupid & Psyche 85, with the Potoker 'Perfect Way' mix, we recorded drum samples with him and then used them for the mix. Dry snare in one AMS/snare ambience in another AMS/dry kick in another AMS/kick ambience in another, etc. I think a lot of the later Martin Rushent Human League stuff was done this way.
+My understanding was that each note of the '(Keep Feeling) Fascination' bass line was in a different AMS unit. If memory serves, there are only 3 or 4 notes in that bass line! The Publison (Infernal Machine) was also used for this. It had the benefit of having a MIDI input for triggering, if I'm remembering correctly.”
+Savant IM90 · Source: Savant Audio Labs
+As you'd expect, AMS DMX units and Publison's Infernal Machine are not easy to come by these days, although Universal Audio have recreated the AMS DMX as a plugin, and Savant Audio have their IM90, a superb recreation of the Infernal Machine.
+Cupid & Psyche 85's follow-up, the pristine 'Provision', extended the gear list with the likes of the Synclavier, Oberheim Matrix 12, Yamaha TX-816, with sequencing duties painstakingly programmed into a Yamaha QX1! But that's for another time.
+Affiliate Links
+Oberheim OB-X8
+Customer rating:
+(9)
+$4,690.00 / £4,269.00 / 4,899.00€ atThomann
+Oberheim OB-X8 Desktop
+Customer rating:
+(4)
+$3,290.00 / £2,999.00 / 3,442.00€ atThomann
+GForce OB-X Download
+Customer rating:
+(16)
+$75.00 / £99.00 / 115.00€ atThomann
+GForce Oberheim DMX Download
+Customer rating:
+(13)
+$35.00 / £65.00 / 75.00€ atThomann
+Behringer BMX
+Customer rating:
+(9)
+$354.00 / £311.00 / 369.00€ atThomann
+Behringer RD-8 MKII
+Customer rating:
+(63)
+$229.00 / £199.00 / 239.00€ atThomann
+Roland TR-1000
+Customer rating:
+(16)
+$2,555.00 / £2,333.00 / 2,699.00€ atThomann
+Roland TR-08
+Customer rating:
+(86)
+$381.00 / £348.00 / 399.00€ atThomann
+Roland Cloud TR-808 Download
+Customer rating:
+(5)
+$151.00 / £48.00 / 55.00€ atThomann
+Arturia Stage-73 V Download No customer rating available yet
+$63.00 / £53.00 / 61.00€ atThomann
+Rhodes Mk 8-73 FX Deluxe MIDI
+Customer rating:
+(1)
+$15,890.00 / £14,490.00 / 16,599.00€ atThomann
+Rhodes V8 Pro Download
+Customer rating:
+(2)
+$248.00 / £225.00 / 259.00€ atThomann
+Roland Cloud JX-8P Model Expansion Download No customer rating available yet
+$161.00 / £147.00 / 169.00€ atThomann
+You are currently viewing a placeholder content from YouTube. To access the actual content, click the button below. Please note that doing so will share data with third-party providers.
+More Information
+Unblock content Accept required service and unblock content
+In Conclusion
+Cupid & Psyche 85 remains a seminal and hugely influential album to this day. Just a quick Google search will offer up numerous bands and artists between 1985 and 2026 who still cite it as inspirational in terms of songwriting, arrangement and composition.
+Meanwhile, Green Gartside still performs as Scritti Politti and is scheduled to play the Queen Elizabeth Hall on London's Southbank on July 18th, 2026 as part of Rough Trade's 50th anniversary celebrations. The newly remastered deluxe edition of Cupid & Psyche 85 is released on Rough Trade Records on July 10th, 2026.
+More Information
+Scritti Politti Bandcamp Page
+Scritti Politti at the Queen Elizabeth Hall, July 18th 2026
+Interview with David Gamson by GForce Software
+You are currently viewing a placeholder content from YouTube. To access the actual content, click the button below. Please note that doing so will share data with third-party providers.
+More Information
+Unblock content Accept required service and unblock content
+*Note: This article contains advertising links that help us pay for this site. Don't worry: the price for you will always be the same! If you buy something through these links, we will receive a small commission. Thank you for your support!
+How do you like this post?
+Rating: Yours: | ø:
+Tags from this post [](https://twitter.com/intent/tweet?source=webclient&text=Cupid%20%26amp%3B%20Psyche%2085%3A%20Scritti%20Politti%26%238217%3Bs%20Triumphant%20Classic%2C%20Synth%20by%20Synth https%3A%2F%2Fwww.gearnews.com%2Fcupid-psyche-85-scritti-politti-synths%2F)
+Columns Synths Behringer Black Corporation Cherry Audio Fairlight GForce Software Oberheim PPG Rhodes Music Roland Softube Togu Audio Line Waldorf Yamaha dmx DX7 Fairlight CMI Jupiter 8 JX-8P Mercury-8 Minimoog Model D OB-X OB-X8 OB-Xa PPG Wave rd-8 Synth Synthesizer TR-808 Wave
+ADVERTISEMENT
+This might also interest you
+The 5 Most Important Synths of Welcome to the Pleasuredome
+How To Use Roland Jupiter-8 Plugins in your DAW
+Why Do We Still Use 1980s Reverb?
+New Update Adds More Features. Behringer Wave Review: Wave Surfing Like It's 1981 – Available Now!
+One response to “Cupid & Psyche 85: Scritti Politti's Triumphant Classic, Synth by Synth”
+Roland Korg says:
+1
+29 June 2026 at 20:09
+This release coincided with my college freshman year, and this cassette>cd was vividly prominent in my university experience. I still play three or four songs from it. Fantastic and unique.
+Reply
+Leave a Reply Cancel reply
+To keep the discussion fair and transparent, we only approve comments submitted with a real name and a valid email address.
+Your email address will not be published. Required fields are marked *
+Comment *
+Name *
+Email *
+Website Post Comment
+ADVERTISEMENT
+Hot Picks
+pittsburgh-modular-lifeforms-sv-2-t4 Pittsburgh Modular Lifeforms SV-2: Analog Synth Taking East Coast Into the Future
+1010music blackbox 2 1010music blackbox 2 now Shipping: More Power, more Possibilities, more Fun?
+Manley Dual Channel EQ Series: The Return of the Passive Tube EQs Manley Dual Channel EQ Series: The Return of the Passive Tube EQs
+deadmau5's AUTO/PILOT Just Landed in Public Beta: A New Power Tool for DJs and Live Performers? deadmau5's AUTO/PILOT Just Landed in Public Beta: A New Power Tool for DJs and Live Performers?
+Purchase Advisor
+SSL SL 4000 E Series 5 Pieces of Studio Gear That Changed Music
+Best Spring Reverb Pedals: Sunny Sounds for Surf Rock and Skate Punk Best Spring Reverb Pedals 2025: Sunny Sounds for Surf Rock and Skate Punk
+Public Enemy Bring The Noise: How To Sound Like Public Enemy
+best dj headphones T 5 of the Best DJ Headphones for 2026
+Polyphonic Paradise: Prophet 5 Alternatives Polyphonic Paradise: Prophet 5 Alternatives
+Best-Selling Synths of 2025 Top 10 Best-Selling Synths of 2025
+Hercules DJControl Inpulse T7 best DJ gear Best DJ Gear For Beginners
+Jared James Nichols Jared James Nichols Interview: From SRV and Zakk Wylde to Advice from Billy Gibbons
+Best Electric Guitars for Beginners Best Electric Guitar for Beginners: Which one should you buy?
+The Best LA-2A Alternatives for Home Recording The Best LA-2A Alternatives for Home Recording
+The Best Budget Effects Pedals for Electronic Music Production The Best Budget Effects Pedals for Electronic Music Production
+How to find the best digital piano Buyer's Guide: How to Find the Best Digital Piano
+Equalizer Shootout: The Best Fabfilter Pro-Q Alternatives FabFilter Pro-Q Alternatives: Dynamic EQ Plugins
+The Most Unique-Sounding Synths teaser 5 of the Most Unique-Sounding Synths
+Best Loop Pedals The Best Loop Pedals for Music Production and Live Performance
+Top 5 Best Amp Modellers for live and studio Top 5 Best Amp Modellers for live and studio
+The History Of Neumann The History Of Neumann: A Legacy of Recording Ingenuity
+Ableton Live Alternatives for Electronic Music Production Ableton Live Alternatives for Electronic Music Production
+The Best Vocal Plugins for Music Production The History Of The 1176 Limiting Amplifier
+How To Sound Like Jungle Soul Brothers: How To Sound Like Jungle
+ADVERTISEMENT
+Current Deals
+Roland Cloud JUPITER-8, Universal Audio Lexicon 224, Baby Audio Crystalline: 3 Strong Plugin Deals for Vintage Synth, Vintage Reverb, and Modern Hall 15 days left Roland Cloud JUPITER-8, Universal Audio Lexicon 224, Baby Audio Crystalline: 3 Strong Plugin Deals for Vintage Synth, Vintage Reverb, and Modern Hall
+IK Multimedia ARC ON-EAR 1.5: Now with In-Ear Monitor Support 15 days left IK Multimedia ARC ON-EAR: T-RackS 6 Pro Worth $199 Now Comes Free
+Roland Cloud TR-808, Eventide SplitEQ, UVI Drum Replacer: 3 Strong Plugin Deals for Fat Beats, EQ, and Smart Drum Triggering 14 days left Roland Cloud TR-808, Eventide SplitEQ, UVI Drum Replacer: 3 Strong Plugin Deals for Fat Beats, EQ, and Smart Drum Triggering
+Popular Tags
+Video YouTube Windows Synthesizer Synth VST AU Pedal MacOS Modular AAX Eurorack Plugin Software plug-in Recording DAW Hotpicks MIDI Mixing Effect deal
+Popular Brands
+Fender 840
+Behringer 617
+Gibson 583
+Roland 511
+Korg 409
+Arturia 362
+IK Multimedia 292
+Native Instruments 229
+Yamaha 226
+Izotope 163
+Most Recent Comments
+KORG Poly-800: Classic Gear - The Affordable '80s Poly
+Yesterday, 06:15 am
+· Cherry audio.
+5 of the Best DJ Headphones for 2026
+15 Aug
+· It's really not the deciding factor regarding their rating. Neither, honestly, a problem on the Pioneer side.
+Suno Studio 2.0: MIDI, a Chat Bar, and Custom Plugins Land in the Browser-Based DAW
+14 Aug
+· Suno and AI do not belong in art and music. Stop pushing this.
+· About us
+· Privacy Policy
+· Imprint
+· Contact
+· Cookie Settings
+Home
+Guitar
+Synths
+Studio
+Drums
+Live
+Tech
+Other
+Deals 9
+LinkedIn
+Instagram
+Facebook
+Twitter
+RSS
+About us
+Privacy Policy
+Imprint
+Contact
+Cookie Settings
+ADVERTISEMENT
+X
+ADVERTISEMENT X
+ADVERTISEMENT X
+Proceed
+Cookies and their valuable contribution.
+Our cookies make an important contribution to providing you with an optimal website experience. Some of these cookies are essential for operating this site, while others help us ensure that our site runs reliably and to show you relevant content and personalized advertising. If this is okay with you, please agree to the use for statistics, marketing, and external media by clicking on "Accept".
+We need your consent for us and our 13 partners to use cookies and other technologies to deliver relevant content and advertising to you. This is how we finance and optimize our website.
+This is done to measure and analyze the use of our website and to display advertising on it.
+Some of our 13 partners process your data (revocable at any time) on the basis of a legitimate interest.
+You can find more information about the use of your data and about our partners under Settings or in our privacy policy.
+The following is a list of purposes of the IAB Transparency and Consent Framework (TCF) for which consent can be given. The TCF was created to help publishers, technology providers and advertisers comply with the EU GDPR and ePrivacy Directive.
+[-] Store and/or access information on a device (5 Vendors) [-] Personalised advertising and content, advertising and content measurement, audience research and services development (5 Vendors) [-] Use precise geolocation data (1 Vendor) [-] Identify devices based on information actively requested (1 Vendor)
+The following is a list of service groups for which consent can be given. The first service group is essential and cannot be unchecked. These service groups are not part of the TCF standard.
+[x] Essential (1 Provider) Essential services enable basic functions and are necessary for the proper function of the website. [-] Statistics (2 Providers) Statistics cookies collect usage information, enabling us to gain insights into how our visitors interact with our website. [-] Marketing (3 Providers) Marketing services are used by third-party advertisers or publishers to display personalized ads. They do this by tracking visitors across websites. [-] External Media (5 Providers) Content from video platforms and social media platforms is blocked by default. If External Media services are accepted, access to those contents no longer requires manual consent.
+Non-TCF Standard
+Accept
+Individual Privacy Preferences
+Accept only essential cookies
+Preferences Privacy Policy Imprint Borlabs Cookie - TCF-CMP Id: 323
+Chat
+🎹

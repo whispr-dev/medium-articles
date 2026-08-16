@@ -1,0 +1,133 @@
+This article by Nashville mix engineer Brent Hendrich explores how sidechain compression serves as a vital tool for achieving clarity and space in modern pop music. The text begins by defining basic signal-triggering concepts before moving into sophisticated strategies like multiband sidechaining and the use of specialised plugins such as Trackspacer and Soothe to manage frequency clashing. By examining practical scenarios—such as ducking a bass guitar to favour a kick drum or carving out room for a lead vocal—the author demonstrates how to maintain a balanced and professional mix. Ultimately, the guide functions as a technical roadmap for producers to ensure that every sonic element remains punchy and distinct without overwhelming the listener.
+
+Sidechain Compression Techniques For Pop Mixes - Nashville Pop Mix Engineer - Brent Hendrich
+Skip to content
+Nashville Pop Mix Engineer - Brent HendrichNashville Pop Mix Engineer - Brent Hendrich
+HOME
+ABOUT
+FEATURED
+LISTEN
+REVIEWS
+GALLERY
+GEAR
+LEARN
+CONTACT
+Open mobile menu Close mobile menu
+Sidechain Compression Techniques For Pop Mixes
+August 7, 2024
+brenthendrich
+Advanced Mixing Techniques
+0 Comments
+Sidechain compression is a powerful technique used in pop music production to create space and clarity in a mix. By automatically adjusting the volume of certain tracks based on the input from another track, sidechain compression helps to ensure that important elements like vocals and drums stand out. This article will explore various sidechain compression techniques, provide practical examples, and compare them with Trackspacer and Soothe plugins.
+Key Takeaways
+Sidechain compression helps create space in a mix by lowering the volume of one track when another track plays.
+Advanced techniques like dual sidechaining and multiband compression can enhance the clarity and impact of a mix.
+Trackspacer uses a unique method to carve out space in a mix by applying a reversed EQ curve based on the sidechain signal.
+Soothe is a dynamic EQ plugin that can be used for sidechain compression to tame harsh frequencies and improve the overall sound.
+Combining sidechain compression with other effects like EQ, reverb, and delay can lead to a more polished and professional mix.
+Understanding Sidechain Compression in Pop Production
+What is Sidechain Compression?
+Sidechain compression is a process deliberately triggered by a signal fed into a compressor's key input. As we know, compressors act when the threshold level is exceeded. In sidechain compression, the compressor is controlled by a different audio signal, not the one being compressed. This technique is widely used in various music genres, especially in pop production.
+Why Use Sidechain Compression in Pop Music?
+Sidechain compression helps create space in a mix by reducing the volume of one track when another track plays. This is particularly useful in pop music, where vocals need to stand out. By using sidechain compression, producers can ensure that the vocal track remains clear and prominent, even when other instruments are playing.
+Basic Sidechain Compression Setup
+Choose the Compressor: Select a compressor plugin that supports sidechaining.
+Set the Key Input: Route the signal you want to trigger the compression to the compressor's key input.
+Adjust the Threshold and Ratio: Set the threshold and ratio to control how much compression is applied.
+Fine-Tune Attack and Release: Adjust the attack and release times to shape the compression effect.
+Sidechain compression is a powerful tool in pop production, allowing producers to craft mixes where every element has its own space. This technique is essential for achieving a polished and professional sound.
+Advanced Sidechain Techniques for Pop Music
+Dual Sidechaining
+Dual sidechaining is a technique where two different elements are sidechained to a single source. This can help maintain the prominence of vocals by ducking multiple background elements like pads and strings. This method ensures that the vocal track remains clear and upfront.
+Multiband Sidechain Compression
+Multiband sidechain compression allows you to apply sidechain compression to specific frequency ranges. This is useful for controlling the low end without affecting the higher frequencies. For example, you can sidechain the bass to the kick drum only in the low-frequency range, keeping the mid and high frequencies intact.
+Using Volume Shapers
+Volume shapers are tools that allow you to create custom volume automation patterns. These can be used for sidechaining effects without using a compressor. Volume shapers offer more flexibility and precision, making them ideal for creative sidechain applications.
+Advanced sidechain techniques can add a professional touch to your pop productions, making your mixes sound more polished and dynamic.
+Practical Examples of Sidechain Compression Settings
+Sidechaining Vocals and Instruments
+Sidechaining vocals and instruments can help create space in a mix. Start by inserting a compressor on the bass track and selecting the kick drum as the sidechain source. Adjust the threshold, attack, and release settings until you achieve the desired effect. This technique ensures that the bass ducks in volume whenever the kick hits, making the mix cleaner.
+Sidechaining Drums and Bass
+For sidechaining drums and bass, the process is similar. Insert a compressor on the bass track and set the kick drum as the sidechain input. Adjust the compressor settings to taste. This method helps the kick drum cut through the mix, providing a punchy and clear low end.
+Creative Sidechain Applications
+Sidechain compression isn't just for cleaning up mixes; it can also be used creatively. For example, you can sidechain a synth pad to a vocal track to create a pulsing effect that adds movement to the music. Another creative use is sidechaining reverb to the snare drum, which can make the reverb swell after the snare hits, adding a unique texture to the mix.
+Sidechain compression is a versatile tool that can be used in various ways to enhance your music production. Experiment with different settings and sources to discover new and exciting sounds.
+Comparing Sidechain Compression with Trackspacer
+How Trackspacer Works
+Trackspacer is a unique plugin that uses a 32-band EQ to react to the incoming sidechain signal. It analyzes the spectrum of the sidechain and applies a reversed EQ curve to another track. This creates space for the primary track by cutting the exact frequencies on other tracks. This process is much more powerful and transparent than traditional sidechain compression.
+Advantages of Using Trackspacer
+Trackspacer offers several advantages over traditional sidechain compression:
+Ease of Use: Trackspacer is simple to set up and requires minimal adjustments.
+Precision: It targets specific frequencies, making it more precise than volume-based sidechain compression.
+Time-Saving: No need for complicated automation moves, as Trackspacer handles everything in real-time.
+Versatility: It can be used to duck any track, making it a versatile tool in any mix.
+Trackspacer is often considered a secret mixing weapon by many artists, producers, and engineers.
+Trackspacer Settings for Pop Production
+When using Trackspacer in pop production, it's essential to fine-tune the settings to achieve the best results. Here are some recommended settings:
+Attack and Release: Quick attack and release times are generally preferred to maintain the song's rhythm.
+Amount: Set the reduction amount to around 10-15% for subtle ducking.
+Frequency Range: Focus on the frequency range that needs the most attention, typically between 20Hz and 400Hz for bass and kick.
+By following these settings, you can ensure that your mix remains clear and balanced, allowing each element to shine without clashing with others.
+Tap to unmute
+Your browser can't play this video.
+Learn more
+Using Soothe for Dynamic EQ and Sidechain Compression
+Introduction to Soothe
+Soothe is a dynamic resonance suppressor designed to handle mid and high frequencies. Originally made for vocals, it helps achieve a world-class vocal sound with ease. Unlike traditional EQ tools, Soothe analyzes the signal in real-time and adjusts the frequency reduction based on the input. This means you don't have to manually notch problematic frequencies. The reduction happens only when and where it's needed, without affecting nearby areas. This results in more detail, top end, and presence.
+Soothe vs Traditional Sidechain Compression
+Traditional sidechain compression reduces the volume of one track based on the input of another. Soothe, on the other hand, focuses on taming harsh or resonant frequencies. It works like a multiband compressor but is much faster and easier to use. You can quickly polish or remove harsh frequencies without much effort. This makes it a timesaver and a great tool for both mixing and mastering.
+Practical Applications of Soothe in Pop Music
+Soothe is useful for fixing mix problems like sibilance in vocals, fingerboard noises on guitars, and excessive cymbal whistling. It can also smooth out overly bright electric guitar and piano tracks. The graphical interface lets you target specific areas, giving you control over the frequency range and sensitivity. You can tweak the material for round results that sit well in the mix or go overboard to find new sounds. The delta toggle lets you hear and see what's being removed, allowing for fine-tuning with confidence.
+Soothe is a must-have tool for anyone looking to clean up harsh sounds in their mix quickly and efficiently.
+Integrating Sidechain Compression with Other Mixing Techniques
+Combining Sidechain Compression with EQ
+Sidechain compression can be a powerful tool when combined with EQ. By using EQ to carve out specific frequencies before applying sidechain compression, you can create a cleaner mix. For instance, you might use EQ to reduce low-end frequencies on a bass track before sidechaining it to the kick drum. This ensures that the kick remains punchy and clear in the mix.
+Using Sidechain Compression with Reverb and Delay
+Incorporating sidechain compression with reverb and delay can add depth and space to your mix. By sidechaining the reverb or delay return to the dry signal, you can prevent the effects from overwhelming the original sound. This technique helps maintain clarity while still adding the desired ambiance.
+Sidechain Compression in the Mastering Process
+While sidechain compression is often used in mixing, it can also be beneficial in the mastering stage. Applying subtle sidechain compression to the entire mix can help glue the elements together, creating a more cohesive sound. This is especially useful in genres like pop, where a polished and unified mix is essential.
+Incorporating these five mixing techniques: dynamic EQ, parallel processing, sidechain compression, reverb automation, and vocal automatio, will significantly enhance your mix.
+By integrating sidechain compression with other mixing techniques, you can achieve a more professional and polished sound. Whether you're working on individual tracks or the entire mix, these strategies can help you create a more dynamic and engaging production.
+Conclusion
+Mastering sidechain compression in pop production can truly elevate your music. By understanding and applying different sidechain settings, you can create a more polished and professional sound. While traditional sidechain compression is powerful, tools like Trackspacer and Soothe offer unique advantages. Trackspacer's ability to carve out space in the mix and Soothe's capability to tame harsh frequencies can make a significant difference. Experiment with these techniques and plugins to find what works best for your tracks. Remember, the key to a great mix is balance and clarity, and sidechain compression is a vital tool in achieving that.
+Frequently Asked Questions
+What is sidechain compression?
+Sidechain compression is a technique where the volume of one audio track is automatically lowered when another audio track plays. This is often used in music production to make sure important sounds, like vocals, stand out in the mix.
+Why is sidechain compression important in pop music?
+In pop music, sidechain compression helps create a clear and punchy mix. It ensures that the vocals and main instruments are always audible by reducing the volume of other sounds when needed.
+How do I set up basic sidechain compression?
+To set up basic sidechain compression, you need a compressor plugin that supports sidechaining. Route the signal you want to control (like a bass) to the sidechain input of the compressor on another track (like a kick drum). Adjust the compressor settings to taste.
+What is Trackspacer and how does it differ from traditional sidechain compression?
+Trackspacer is a plugin that automatically creates space in your mix by cutting the exact frequencies needed by the main track. Unlike traditional sidechain compression, which lowers the overall volume, Trackspacer is more precise and transparent. Check out the mix I did for Alfonso Terán called “ Como Yo“. I used Trackspacer on the main acoustic guitar and that did a great job of making space for the vocal.
+Can I use Soothe for sidechain compression?
+Soothe is mainly a dynamic EQ plugin used to tame harsh frequencies. While it's not a traditional sidechain compressor, it can be used creatively to achieve similar effects by dynamically reducing problematic frequencies.
+What are some advanced sidechain techniques?
+Advanced techniques include dual sidechaining, where two tracks control the compression; multiband sidechain compression, which targets specific frequency ranges; and using volume shapers for more complex rhythmic effects.
+Share This
+Twitter
+Facebook
+LinkedIn
+Email
+brenthendrich
+Brent Hendrich is an award-winning mix engineer with over 20 years of experience in the Nashville music industry.
+With a passion for creating captivating and impactful mixes and a talent for aligning each mix with the artistic vision of collaborators, Brent has established himself as a go-to professional across all genres, most notably Pop.
+Facebook Instagram
+Related Posts
+How I Use Voxengo's Span Plus for Tonal Balance and Reference Mixing
+When it comes to achieving a balanced mix, having a reliable spectrum analyzer is essential…
+Comments (0)
+Leave a Reply Cancel reply
+Your email address will not be published. Required fields are marked *
+Name *
+Email *
+Website [-] yes
+Save my name, email, and website in this browser for the next time I comment.
+Comment * Post Comment
+Alternative:
+WPA 632302
+next post: How I Use Voxengo's Span Plus for Tonal Balance and Reference Mixing
+Instagram
+Facebook
+Twitter (deprecated)
+Copyright Brent Hendrich 2026 - All Rights Reserved - Privacy Policy
+Back To Top

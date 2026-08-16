@@ -1,0 +1,95 @@
+This article introduces Throat, a sophisticated vocal processing tool from Antares that uses physical modelling to reshape the human vocal tract digitally. It explains that traditional pitch shifting often creates unnatural results because it fails to account for formant frequencies, whereas this software allows users to independently adjust the length and width of the throat and the quality of the glottal waveform. By providing a detailed anatomical interface, the tool empowers producers to either maintain a natural vocal character during transposition or completely transform a singer's identity into something entirely new. Ultimately, the text serves as both a technical guide and a creative showcase for achieving high-quality vocal customisation within the Auto-Tune ecosystem.
+
+Throat: Pitch Shifting From the Inside Out | AutoTune
+Products
+Subscriptions
+Merch
+Special Offers
+Community
+Support
+Try for Free
+ENG Sign In
+Throat: Pitch Shifting From the Inside Out
+Pitchshifting your voice with Throat by Auto-Tune couldn't be easier.
+August 3, 2020
+Pitch shifting vocals has become a normal and accepted part of music-making, but it wasn't always so easy to accomplish. Before computers were capable of pitch shifting, tapes had to be manually sped up or slowed down to alter pitch. When digital samplers entered the fray, the choice was often between time-stretching, which often sounded very grainy, or pitch-shifting, which often resulted in the “ chipmunk” effect. Today, the effect is easy to produce and sounds better than ever with Throat.
+Tap to unmute
+Your browser can't play this video.
+Learn more
+Throat lets you sculpt a singer's vocal characteristics using an adjustable physical model of the human vocal tract. Available now with Auto-Tune Unlimited.
+The Science of Pitch Shifting
+Why do voices and vocals sound so odd when pitch-shifted? Because voices are complex instruments, and the fundamental frequency of a voice is just one aspect that contributes to its overall timbre. There are also the formant frequencies, which are defined by the vocal tract. When a real person sings a higher or lower pitch, the formant frequencies remain relatively constant. In contrast, when a vocal is artificially pitch-shifted, the formant frequencies are shifted along with the fundamental pitch, creating an unnatural sound.
+Fortunately, Throat automatically corrects the formant frequencies so vocals sound natural when pitch-shifted. Not only that, it actually lets you sculpt your own vocal sound from the ground up, with a sophisticated and fully adjustable physical model of the human throat and vocal cords.
+Custom Image With Caption Throat's powerful processing and simple GUI make pitch shifting easy.
+The Human Throat, Digitized
+The throat modeling in Throat starts with the ** Model Throat** and Model Glottal sections. The Model Throat section lets you control the length and width of the throat, and there's also a fully adjustable graphic diagram of the throat's geometry in the top half of the GUI. Generally, masculine throats are wider and longer, while feminine throats are shorter and thinner, so bear that in mind if you're trying to shift to higher or lower pitches. That said, it's not a hard and fast rule. Sometimes you might find that a breathy vocal pitched up benefits from a wider throat, for example.
+The Model Glottal section models the glottal waveform, which is produced by the vocal cords. The glottal waveform is determined both by the singer's anatomy and by the intensity of the performance.
+Throat
+Physical Modeling Voice Designer
+Learn More
+In the Settings section, you'll find some important controls to set in order to get the best sound out of Throat. Vocal Range should match the range of the source vocal, while ** Source Glottal Voice Type** should represent the intensity of the singing of the dry audio. Source Throat Precision is set based on how extreme the settings are – from subtle for shifting a couple semitones to extreme for more radical pitch and throat changes.
+The
+** Pitch** control is a simple +/- 12 semitones pitch shift fader, but note that the pitch control in Throat automatically corrects the formant frequencies, to avoid the “chipmunk” or “monster” sounds of extreme pitch-shifting.
+Natural Movement
+The most immediate use for Throat involves making pitch-shifted vocals sound more natural. In this example, I'll start with a dry pop vocal:
+Throat: Pop Vocal Dry
+Let's say I need to shift the vocal down six semitones to fit with the instrumental for a track. I can try doing it using the raw pitch controls on the audio in my DAW, but the results end up sounding pretty alien:
+Throat: Pop Vocal Shift
+Sometimes I might want that sound, but in this case I'd like something more natural. So let's use throat to clean up the sound a bit – I'm setting the length to be shorter and width to be thinner, to keep things more feminine even as the vocal is shifted down half an octave:
+Throat: Pop Vocal WET
+New Voices
+Sometimes the most fun you can have with a tool like Throat is when things get rather unnatural. In this case, I've got a track in the style of Burial, with a vocal that I've processed and pitch-shifted up an octave using Auto-Tune:
+Throat: Haunt Solo Vocal Dry
+You can already hear the chipmunk sound coming in. While I don't necessarily need the vocal to sound “natural”, the singer is male and I'd like to take things up another octave and have it sound more feminine. Adjusting the length shorter and width longer gives me a haunting, breathy, more feminine sound:
+Throat: Haunt Solo Vocal Wet
+Now, let's here both voices doing a call-and-response routine in the context of the track:
+Throat: Haunt Full Wet
+Sad and spooky, just like I wanted it! The voice isn't just shifted, it's truly transformed to sound like a different singer.
+Custom Shaping
+If you want to get really specific and advanced with Throat, the graphic display in the top half of the plugin allows for custom Throat shaping. Whether you're looking to tune a vocal so that it sounds perfectly natural, or working on a sci-fi alien voice (for which you can nicely pair Throat with Mutator), Throat is a versatile and unique tool for vocal customization.
+Throat and Auto-Tune Unlimited
+If you're ready to explore the possibilities with Throat, download a free trial of Auto-Tune Unlimited. Available through subscription, Auto-Tune Unlimited comes complete with Throat, every Vocal Effects plug-in, every current edition of Auto-Tune, and more.
+AutoTune Unlimited
+The Ultimate Vocal Production Suite
+Subscribe Now
+Exclusive AutoTune Content
+Explore More Blogs
+Throat
+Learn More
+AutoTune Unlimited
+AutoTune 2026 and Metamorph Now Included
+Learn More
+Antares Editorial
+Antares is a leading developer of software for music recording and live performance. For over 20 years, Antares has powered the music of top-charting and indie artists with products including the industry standard for pitch correction, AutoTune™.
+Our website uses cookies to deliver the best possible user experience. By clicking "Accept", you allow the use of cookies.
+Reject Optional Cookies Accept
+Company
+About Us
+Press
+Join Community
+Products
+Pitch Correction
+Vocal Mixing
+Creative Vocal Effects
+Subscription Plan
+Download Manager
+Free Download
+Special Offers
+Community
+Blog
+Artists
+Discord
+Instagram
+TikTok
+YouTube
+Facebook
+Support
+Customer Support
+Tutorials
+FAQ
+Compare AutoTune
+DAW Compatibility
+Product Manuals
+Get the latest news, special offers, and tutorials
+©2026 Antares Audio Technologies.
+Evo™ and Auto-Motion™ are trademarks and AutoTune®, Auto-Tune®, Antares®, AVOX®, Harmony Engine®, Mic Mod®, and Solid-Tune®, are registered trademarks of Antares Audio Technologies.

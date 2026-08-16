@@ -1,0 +1,293 @@
+This text investigates the technical and ideological foundations of hyperpop, primarily focusing on the synthetic perfectionism embodied by artist Hannah Diamond. By examining specific production workflows—such as manual vocal editing, formant shifting, and the historic "Poke Bass" technique—the source illustrates how producers blend extreme digital artifice with human vulnerability. The overarching purpose of the analysis is to demonstrate how the genre utilizes the computer as a creative prosthetic, using tools like AI-driven synthesis and staged clipping to craft a high-definition, ultra-loud aesthetic. Ultimately, the text argues that hyperpop’s power lies in its ability to navigate the tension between satirical artifice and sincere emotional expression.
+
+The Aesthetics of Synthetic Perfection: Hannah Diamond and the Production Techniques of Hyperpop
+The evolution of hyperpop and its foundational subgenre, bubblegum bass, represents a profound ideological and technical realignment within contemporary electronic pop music [cite: 1]. Pioneered by the London-based PC Music collective under the stewardship of A.G. Cook, easyFun, and the late SOPHIE, the genre deliberately exaggerates mainstream chart tropes to produce a hyper-sweet, high-gloss aesthetic that balances on the knife-edge between cutting satire and deep emotional sincerity [cite: 1, 2]. At the center of this sonic movement is Hannah Marie Amond, known professionally as Hannah Diamond, whose work serves as both a literal and conceptual blueprint for the genre's high-definition rendering of pop stardom [cite: 2, 3].
+By analyzing the production techniques that define Diamond’s catalog—from her early collaborations with Cook to her sophomore record, Perfect Picture, executive-produced by sophisti-pop pioneer David Gamson—producers can identify the precise technical mechanisms required to construct this hyperreal pop landscape [cite: 2, 3, 4]. Achieving this sound requires a disciplined mastery of complex vocal chains, physical modeling and Frequency Modulation (FM) synthesis, subtractive arrangement workflows, and aggressive multi-stage mastering chains [cite: 1, 5, 6].
+--------------------------------------------------------------------------------
+The Audiovisual Simulacrum: Visual Artistry and Pop Artifice
+To understand the sonic architecture of Hannah Diamond's music, one must first recognize that the visual and acoustic elements are inextricably linked parts of a singular, 360-degree pop portrait [cite: 7, 8]. Growing up, Diamond was deeply influenced by the high-definition, heavily retouched fashion photography of Mert and Marcus, David LaChapelle, and Nick Knight, as well as the futuristic, technology-focused music videos of early 2000s R&B artists like TLC and Blu Cantrell [cite: 2, 9]. Having studied fashion communication and styling, Diamond views her pop persona as a visual-sonic self-portrait that explores the psychological pressures of girlhood and identity projection in a highly digitized society [cite: 2, 7, 8].
+This obsession with physical perfection is translated directly into her sonic aesthetic [cite: 8]. Just as her cover art uses extreme photo retouching to present a flattened, uncanny, one-dimensional version of herself, her music utilizes intense, transparent digital processing to strip away any raw, acoustic imperfections [cite: 2, 8]. This rejects the mainstream pop convention where vocal styling like melisma is equated with emotional soulfulness [cite: 9]. Instead, Diamond’s music delivers emotional vulnerability through staccato, childlike, highly processed delivery, using the synthetic parameters of digital technology as a conceptual shield to express genuine human fragility [cite: 2, 8, 9].
+This relationship with technology reached its logical peak during the production of Perfect Picture (2023), where Diamond utilized ChatGPT to draft the album’s highly structured, self-aware pop lyrics, and Midjourney to visualize the sleek, bubblegum-pink promotional campaign [cite: 10]. This production approach highlights the future outlook of hyperpop, where artificial intelligence and advanced generative tools are not viewed as threats to artistic authenticity, but rather as creative prosthetics [cite: 10, 11]. In this framework, the machine becomes a vital collaborator, allowing the artist to step outside traditional boundaries of authorship to construct a highly curated, hyper-conceptual brand of pop perfectionism [cite: 10, 12].
+--------------------------------------------------------------------------------
+Engineering the Hyperreal Vocal: The Logic of the Vocoloid Voice
+The vocal production style of Hannah Diamond is defined by staccato phrasing, absolute pitch accuracy, and a glassy, crystalline high end that borders on the synthetic response of a software vocal synthesizer [cite: 1, 2, 3]. Achieving this level of polished precision requires an uncompromising vocal chain that prioritizes meticulous manual editing over generalized, automated processing [cite: 5].
+[Raw Vocal Tracking]
+       │
+       ▼
+[Manual Comping & Gain Automation] (Attenuation of all breath transients)
+       │
+       ▼
+[Real-Time Pitch Correction] (Auto-Tune Classic: 0-8 ms Retune, 20-35 Humanize)
+       │
+       ▼
+[Dynamic Resonance Suppression] (Soothe2: Active target range 2.5 kHz - 8 kHz)
+       │
+       ▼
+[Saturation & Harmonic Excitation] (Fresh Air / Saturn 2 Parallel Tube Saturation)
+       │
+       ▼
+[Split-Path Routing]
+       ├─────────────────────────────────┐
+       ▼                                 ▼
+[Primary Vocal Channel]       [Parallel Formant Pitch Bus]
+(De-Esser & Level Control)    (High Octave Doubling: +12st, -3 Formant)
+       │                      (Low Octave Doubling: -12st, +4 Formant)
+       │                                 │
+       ▼                                 ▼
+       └────────────────►[Summing Bus]◄──┘
+                               │
+                               ▼
+                    [Transient Reconstruction] (Spiff: Resuscitating lost consonants)
+                               │
+                               ▼
+                    [Staged Peak Limiting] (Soft Clipper into Lookahead Limiter)
+Manual Comping and Precision Transient Alignment
+Before any dynamic or spectral processing plugins are inserted, the raw vocal takes must undergo exhaustive manual editing [cite: 5]. The engineer must comp the vocal at the syllable level, selecting takes that exhibit a highly defined, staccato delivery [cite: 2, 3]. All natural breath sounds must be manually attenuated by −12 dB to −24 dB, or cut out entirely, rather than relying on a noise gate [cite: 5]. Allowing breaths to pass into the heavy downstream compression stages of a hyperpop vocal chain causes them to swell unnaturally, muddying the high-frequency spectrum and breaking the illusion of the smooth, robotic pop star [cite: 3, 5].
+Real-Time Pitch Correction Configuration
+To achieve the rapid, stair-stepped pitch transitions characteristic of the PC Music sound, real-time pitch correction is inserted as the very first processor in the signal path [cite: 5, 13]. Antares Auto-Tune (specifically utilizing the "Classic" algorithm due to its distinct, aggressive tracking curves) or Waves Tune Real-Time is configured with the following parameters [cite: 5, 14]:
+Retune Speed: Set between 0 and 8 ms to force immediate, unnatural note transitions [cite: 5, 15].
+Humanize: Set between 20 and 35 [cite: 5]. This is a crucial setting; it allows the plugin to ignore tiny micro-pitch variations on fast staccato notes while still hard-quantizing held, sustained notes, striking a delicate balance between digital artifice and human performance [cite: 5].
+This real-time tracking is highly functional; recording artists monitor this hard-tuned signal in their headphones during tracking sessions, which builds vocal confidence and encourages them to execute bold, highly stylized melodic lines [cite: 16].
+Parallel Pitch and Formant Shifting Mechanics
+The signature "helium-infused" vocal character heard on tracks like "Fade Away" is achieved by shifting the vocal formants independently of the fundamental pitch [cite: 17, 18]. Formants represent the fixed spectral resonances of the human vocal tract [cite: 18, 19]. When a vocal is pitched up by traditional means, its formants shift upward proportionally, causing the unnatural "chipmunk" distortion [cite: 18, 19]. By utilizing dedicated formant-shifting processors—such as Antares Throat Evo, Soundtoys Little AlterBoy, or Polyverse Manipulator—producers can artificially reshape the vocal tract [cite: 20, 21]. Shifting the formants upward simulates a smaller, narrower physical vocal tract, injecting a bright, synthetic quality while maintaining the original, written key of the song [cite: 1, 18].
+To create the dense, lush vocal space typical of A.G. Cook's arrangements, the lead vocal is blended with two printed parallel pitch-shifted layers [cite: 5]:
+The High Parallel Octave: Pitched +12 semitones with the formant dialed down to −3 semitones [cite: 5]. Shifting the formant downward on the pitched-up layer adds body and avoids the thin, raspy frequency spikes that plague amateur hyperpop mixes [cite: 5, 18].
+The Low Parallel Octave: Pitched −12 semitones with the formant shifted upward to +4 semitones [cite: 5]. This prevents the lower octave from sounding muddy or "demonic," ensuring the low-mid frequencies remain clean and artificial [cite: 5, 18].
+These parallel channels are high-passed aggressively at 180 Hz to 300 Hz to prevent low-end accumulation, and are mixed subtly beneath the primary vocal at under −18 dB RMS to color the lead [cite: 5].
+Dynamic Control of Extreme Brightness
+Hyperpop vocal chains utilize dramatic high-frequency excitation [cite: 1, 5]. To make the vocal cut through a wall of detuned supersaws without sounding harsh, dynamic EQ and spectral resonance suppression must be applied [cite: 5, 22]. Placing a static high-shelf EQ boost on a vocal introduces brittle sibilance and physical ear fatigue [cite: 5].
+The industry solution is to insert a dynamic resonance suppressor, such as Oeksound Soothe2, after the saturation stages but before the final de-esser [cite: 5]. The active target range is focused between 2.5 kHz and 8 kHz with a depth of 2 to 4 dB and a selectivity of 3 [cite: 5]. If the vocal begins to lose its presence in the mix, the engineer must back off the depth of the suppressor rather than adding more high-shelf boost, preserving the natural edge of the performance [cite: 5].
+Because heavy compression and spectral suppression can sometimes round off the consonants (T, K, P, S), which are crucial for vocal intelligibility, a transient design processor like Oeksound Spiff is inserted late in the chain [cite: 23]. Spiff is configured to analyze the incoming signal and selectively boost only the initial, non-tonal impact of the consonants, restoring physical presence and clear articulation to the highly compressed vocal track [cite: 23].
+Processing Stage
+Target Frequency Range
+Parameter Values
+Audio Engineering Purpose
+Manual Editing
+Wideband
+−12 dB to −∞ dB
+Eliminates breath noise and room tone prior to compression stages [cite: 5].
+Pitch Correction
+Root Scale Detector
+Retune: 0 to 8 ms; Humanize: 20 to 35
+Forces absolute pitch accuracy; generates staccato, robotic pitch glides [cite: 5, 15].
+Spectral Suppression
+2.5 kHz to 8 kHz
+Depth: 2 to 4 dB; Selectivity: 3.0
+Dynamic attenuation of harsh, resonant frequencies [cite: 5].
+Parallel High Octave
+180 Hz to 20 kHz
+Pitch: +12 st; Formant: −3; Mix: <−18 dB RMS
+Adds a glassy, metallic sheen; enhances stereo width [cite: 5].
+Parallel Low Octave
+250 Hz to 10 kHz
+Pitch: −12 st; Formant: +4; Mix: <−18 dB RMS
+Provides artificial low-mid weight; stabilizes vocal foundation [cite: 5].
+Transient Shaping
+1 kHz to 6 kHz
+Sensitivity: 4.0; Decay: 25 ms; Boost: +2 dB
+Restores vocal consonants lost to extreme compression [cite: 23].
+--------------------------------------------------------------------------------
+Synthesis Lineage: From Sophisti-Pop to Bubblegum Bass
+The synth programming of hyperpop is a hybrid of multiple eras of digital and analog design [cite: 1, 24]. The genre traces its lineage from early 1980s synth-pop and sophisti-pop straight through happy hardcore and late-2000s electro-pop [cite: 1, 24, 25].
+A.G. Cook’s Sound Design Toolkit
+A.G. Cook’s synthesis methods rely on specific software instruments, each chosen for its unique digital footprint [cite: 26]:
+Native Instruments Super*Saw: Developed directly from Cook’s custom patches, this soft synth features dual independent 16-saw oscillator banks designed to generate stacked, slightly detuned sawtooth waves [cite: 27, 28]. The instrument utilizes a central XY pad to morph between distinct patch states, allowing producers to construct massive, harmonically dense pads and ravey, gliding leads that define the peak moments of hyperpop tracks [cite: 27, 28].
+Arturia DX7: A virtual recreation of the vintage 6-operator FM synthesizer, used heavily by Cook to generate raw, metallic, and gritty low-end basslines [cite: 26].
+Native Instruments Razor: An additive synthesizer designed to manipulate hundreds of individual sine waves [cite: 26]. Razor is used to produce sharp, clinical harmonics and modern, clean digital filters that contrast with warmer analog tones [cite: 26].
+Reveal Sound Spire: Known for its crisp, clean polyphonic oscillators and intuitive pitch envelopes, Spire is Cook's preferred tool for sequencing fast, melodic arpeggios and high-definition plucks [cite: 26, 29].
+Sonic Charge Synplant 2: Used for its AI-driven organic synthesis engine, allowing producers to generate unpredictable, morphing sounds by "growing" genetic patch variations from a central sound seed [cite: 30].
+The David Gamson "Poke Bass" Technique
+On Hannah Diamond's sophomore album, Perfect Picture, the production duties were transitioned to legendary producer David Gamson, whose work with Scritti Politti on seminal 1980s albums like Cupid & Psyche 85 established a new standard for hyper-polished, quantized pop [cite: 25, 31]. Gamson brought a historical production technique known as "Poke Bass" to the project [cite: 24].
+This method was originally developed during the early days of MIDI and hardware sequencing to solve a physical limitation: analog synthesizers (such as the Moog Minimoog) possessed deep, warm low-end weight but exhibited soft, slightly sluggish attack phases, while early FM synthesizers (such as the Yamaha DX7) lacked low-end body but produced exceptionally fast, percussive transients [cite: 6, 24].
+Poke Bass Output=Minimoog (Analog Sub-Sustain)+DX7 (FM Transient Click)
+To reconstruct the Poke Bass technique in a modern DAW [cite: 6, 24]:
+The Low-End Engine: Program a deep, warm sub-bass patch on an analog synthesizer (or a virtual emulation like the Arturia Mini V) [cite: 6, 24]. Set the oscillator to a single sawtooth or sine wave, route it to a 24 dB low-pass filter, and shape the envelope with 0 ms attack, moderate decay, and 100% sustain to provide the solid, physical foundation of the bassline [cite: 6].
+The Transient Poke: Program a secondary patch on an FM synthesizer (such as Dexed, Plogue OPS7, or Arturia DX7 V) [cite: 24]. This patch must be configured with a coarse tuning ratio that yields bright, high-frequency harmonics [cite: 24]. Set the envelope parameters to 0 ms attack, an extremely fast decay (10 to 30 ms), and −∞ dB sustain [cite: 24, 32]. This collapses the sound immediately into a dry, high-pitched digital transient click [cite: 6, 24].
+The Summation: Align and layer these two signals on a single bus [cite: 24, 33]. The FM click "pokes" through the mix, providing an immediate, sharp transient that defines the start of each note, while the analog synth delivers the deep, warm body of the bass [cite: 6, 24].
+Historically, syncing these synthesizers was an immense challenge [cite: 6]. In the pre-SMPTE and early MIDI era of Cupid & Psyche 85, sequencing was painstakingly executed in step time on devices like the Roland MSQ-700 and Yamaha QX1, requiring the song to be run from start to finish to ensure hardware synchronization [cite: 6, 24]. The release of the Friend Chip SRC (which converted SMPTE to MIDI clock) revolutionized the studio workflow, allowing producers to sync tape and hardware from any point in the timeline [cite: 6]. Today, while DAWs provide sample-accurate alignment, the sonic concept of the Poke Bass remains a vital tool for ensuring synthesizers retain an aggressive, immediate physical impact on modern, low-bandwidth consumer speakers [cite: 5, 24].
+Synthesizer
+Primary Synthesis Architecture
+Target Production Role
+Timbral Characteristics
+NI Super*Saw
+Multi-Oscillator Subtractive / Wavetable
+Massive ravey leads, gliding chords [cite: 27, 28].
+Detuned, wide, harmonically dense, epic [cite: 27, 28].
+Arturia DX7 V
+Frequency Modulation (FM)
+"Poke Bass" transients, glassy bells [cite: 24, 32].
+Sharp, clinical, metallic, digital [cite: 24, 26].
+NI Razor
+Additive Synthesis
+Cutting digital leads, futuristic sub-bass [cite: 26].
+Bright, clean, distinct upper harmonics [cite: 26].
+Reveal Sound Spire
+Subtractive / Hybrid
+Gliding arpeggios, fast pitch-sweeps [cite: 26, 29].
+High-definition, precise, polished [cite: 26].
+Moog Minimoog
+Analog Subtractive (3 Oscillators)
+Low-end bass body, warm sub-bass [cite: 6, 24].
+Heavy, round, saturated, physically thick [cite: 6, 24].
+Sonic Charge Synplant
+AI-Driven Genetic Sound Design
+Evolving soundscapes, organic FX [cite: 30].
+Unpredictable, morphing, fluid, biological [cite: 30].
+Glassy FM Bell and Plastic Pluck Synthesis
+To generate the highly reflective, plastic plucks that form the melodic backbone of bubblegum bass, FM synthesis is superior to subtractive synthesis, as it easily generates inharmonic, metallic sidebands [cite: 1, 32, 34].
+To build a definitive plastic pluck in an FM synthesizer (such as Xfer Serum's FM matrix) [cite: 32, 35]:
+Configure Operator A (The Carrier): Set the waveform to a pure sine wave [cite: 32]. Set the envelope with an instantaneous 0 ms attack, a rapid decay of 180 ms, sustain at −∞ dB, and a short release of 50 ms [cite: 32].
+Configure Operator B (The Modulator): Set to a sine wave and route its output to modulate the phase of Operator A [cite: 32]. Set the coarse tuning ratio of Operator B to exactly 3.0 or 4.0 to generate bright, glassy harmonics [cite: 32]. Shape Operator B's envelope with a slightly faster decay (120 ms) than Operator A, causing the high-frequency harmonics to damp quickly, simulating the physical properties of a struck piece of hard acrylic or plastic.
+Introduce Operator C & D (Dissonant Transient Modulators): Set Operator C to modulate Operator B, with its coarse tuning ratio set to a non-integer, inharmonic value (e.g., 5.71) [cite: 32]. Set its envelope to an extremely fast decay (30 ms) to generate a brief, metallic chirp at the onset of the pluck [cite: 32]. Set the initial phase of all active operators to 90 
+∘
+  to guarantee that the transient remains identical on every note-on message [cite: 32].
+Post-Processing Filters and Aliasing: Route the master pitch of the synth to a lightning-fast pitch sweep (+24 semitones decaying to 0 in 12 ms) to enhance the initial crack [cite: 32]. Route the output through a downsampler or bitcrusher set to a low wet/dry mix (15%) to add high-frequency digital aliasing [cite: 1, 16]. Finally, insert a resonant bandpass filter, mapping the keytracking to the cutoff frequency, to emulate the physical resonance of a small, synthetic chamber [cite: 16, 36].
+--------------------------------------------------------------------------------
+Tactile Percussion Design: Dissonant Snares and Found-Sound Foley
+The drum architectures of hyperpop and bubblegum bass abandon standard acoustic hits and typical synthesized 808/909 samples in favor of highly tactile, physical, and metallic hits [cite: 1, 37]. The production goal is to synthesize percussion that sounds like physical materials under tension: popping bubbles, stretched latex balloons, and vibrating metal bars [cite: 38, 39].
+Metallic Snare Synthesis
+The distinct, hollow metallic snare popularized by SOPHIE is constructed entirely from pitch-swept sine waves and micro-delay feedback systems rather than white noise generators [cite: 38, 40]:
+The Transient Generator: Load a single sine wave oscillator [cite: 38, 40]. Route an envelope to the oscillator’s pitch with a 0 ms attack and a fast, exponential decay of 40 to 60 ms [cite: 40]. Set the pitch envelope depth to +36 semitones, sweeping downward to a fundamental frequency of 150 Hz [cite: 40]. This generates a clean, aggressive transient "pop" [cite: 38, 40].
+Generating Metallic Harmonics: Activate a second sine wave oscillator to modulate the phase of the first oscillator [cite: 40]. Adjust the fine-tuning parameter of the modulator oscillator upward by a small, fractional amount (e.g., +25 cents) [cite: 40]. This slight detuning breaks the integer relationship between the carrier and modulator, producing a complex, metallic timbre [cite: 40].
+The Static Comb-Delay Resonator: Route the FM output into an ultra-fast, high-feedback delay line [cite: 39, 40]. Set the delay to 100% wet with the delay time configured between 1 ms and 15 ms in "repitch" or "tape" mode, and turn the feedback up to 85% to 95% [cite: 38, 39]. By setting different delay times for the left and right channels (e.g., 6.5 ms left, 12 ms right), a static comb filter is established [cite: 40, 41]. This physically models the sound of a hollow metal pipe, transforming the simple pitch-swept FM pop into a wide, metallic clank that rings out with pristine high-frequency energy [cite: 40, 41].
+Saturation and Layering: Run the comb-delay output through a wave folder or tape saturator to round off the harsh transient peaks, and layer it with a dry, acoustic woodblock or rimshot sample to provide mid-range knock [cite: 34, 39, 40].
+Foley Integration and Digital Mutation
+To construct highly original, organic percussion, hyperpop producers avoid standard sample packs, opting instead to record and mutate physical objects [cite: 34, 39]. Field recordings of empty aluminum cans getting struck with pencils, stretching rubber bands, or clinking glass keys provide rich, non-linear harmonic material [cite: 34, 39].
+These raw foley recordings are processed using granular delay plugins [cite: 38, 42]. By setting the grain size to extremely small values (10 to 45 ms), turning the feedback up to 90%, and modulating the pitch feedback upward by an octave, the foley is transformed into a shimmering, digital spray [cite: 38, 43]. These mutated textures are then gated and sidechained to the primary kick and snare to act as high-frequency transient layers, injecting an organic, physical character into the highly synthetic mix [cite: 1, 39, 42].
+This advanced sound design style has undergone massive democratization [cite: 37, 44]. Originally confined to the underground PC Music scene, the sound libraries of producers like SOPHIE and umru (specifically their Splice sample packs) have crossed over into global pop music [cite: 37, 44, 45]. Major Western pop acts like Sam Smith and prominent K-Pop groups like ITZY and Purple Kiss have integrated these precise metallic percussive hits directly into their chart-topping releases, demonstrating how avant-garde sound synthesis has become the structural backbone of modern commercial pop production [cite: 44, 45].
+--------------------------------------------------------------------------------
+Subtractive Arrangement and Soundstage Architecture
+A common pitfall when producing hyperpop is constructing a dense, exhausting wall of sound that lacks physical space, causing the mix to sound muddy and amateur [cite: 5]. Professional hyperpop productions manage density through subtractive arrangement workflows and precise frequency carving [cite: 16, 42].
+The Subtractive Production Workflow
+Unlike traditional analog recording, which is additive (building structures by continuously tracking instruments over a basic rhythm section), hyperpop production relies on subtraction [cite: 16]. In the production style of A.G. Cook and Charli XCX, tracks are created in Logic Pro using software synthesizers and then exported to Pro Tools for final mixing [cite: 16].
+The workflow involves duplicating massive, dense MIDI blocks—containing stacked supersaws, arpeggios, vocal chops, and percussion—across the entire length of the song [cite: 16]. The arrangement is then constructed by deleting blocks of MIDI or muting entire regions [cite: 5, 16].
+This subtractive method yields clean, empty spaces, punctuated by abrupt silences [cite: 16]. By dropping elements out instantly without warning, the producer creates sudden dynamic pivots that keep the listener disoriented [cite: 1, 5]. Rather than utilizing complex transitional sound effects (such as risers or white noise sweeps) every eight bars, hyperpop establishes tension by using mutes as arrangement tools, allowing the listener’s ear to reset before the full instrumentation slams back in [cite: 5].
+This play between extreme pop sugar and abrasive sound design is also the foundation of easyFun's (Finn Keane) production philosophy [cite: 17, 46]. In 2013, Keane established a simple, radical mission statement for his work: "Make something really immediate and undeniable and perfect" [cite: 47]. Influenced by the polished pop formulas of Max Martin, the sophisti-pop of Scritti Politti, and the aggressive club music of Rustie, easyFun constructs pop arrangements that feature sudden, jarring transitions rather than smooth, beat-matched fades [cite: 46, 48].
+This technique of extreme contrast is explored deeply in Cook and Keane’s collaborative project, Thy Slaughter, which juxtaposes sugary pop vocals with heavily distorted, grunge-influenced guitar elements, drawing inspiration from Steve Albini’s minimalist, raw punk recording ethics laid out to Nirvana during the tracking of In Utero [cite: 46, 49].
+Dynamic Low-End Isolation
+To achieve a heavy, club-ready low end, the producer must choose one dominant "sub-owner" per section of the track, ensuring the kick and sub-bass do not occupy the same physical space [cite: 5]. Attempting to resolve a muddy low end by simply limiting the master harder only squashes the transients, making the high frequencies sound brittle and harsh [cite: 5].
+Arrangement Model
+Kick Target Frequencies
+Bass Target Frequencies
+Sidechain Ducking Settings
+Low-End Processing Chain
+Model A: Kick-Dominant
+45 to 70 Hz (Heavy sub-impact, long decay)
+90 to 180 Hz (No sub-bass energy)
+Minimal dynamic sidechain ducking (1 to 2 dB)
+Bass is saturated using a multiband saturator (such as FabFilter Saturn 2) to push its harmonics into the low-mids, leaving the sub clean for the kick [cite: 5].
+Model B: Bass-Dominant
+2.5 to 5 kHz (Transient click, short 100 ms tail) [cite: 5]
+40 to 80 Hz (Primary sub-bass energy)
+Aggressive, timed ducking (3 to 6 dB) [cite: 5]
+The kick is high-passed at 50 Hz. A fast-acting sidechain compressor is placed on the bass, triggered by the kick, configured with 0 ms attack and a 1/16-note synced release [cite: 5].
+--------------------------------------------------------------------------------
+Master Bus Dynamics and Staged Clipping
+To compete with commercial hyperpop releases, the mastering chain must achieve extreme loudness while preserving the sharp, physical attack of the synthesized percussion [cite: 50, 51]. Driving a single brickwall limiter to achieve these levels will result in heavy gain reduction, causing audible pumping and a loss of punch [cite: 5]. The industry solution is to execute staged clipping using high-oversampling soft and hard clippers prior to the limiting stage [cite: 50, 51, 52].
+[Mix Bus Output (Peak: -6dB)]
+       │
+       ▼
+[Corrective Linear Phase EQ] (High-pass side frequencies below 120 Hz)
+       │
+       ▼
+[Dynamic EQ / Multiband Compression] (1-2 dB of control on low-mid build-ups)
+       │
+       ▼
+[Soft Clipper (e.g., StandardCLIP)]
+       ├─► Mode: Soft Satin / Wavefolder
+       ├─► Peak Shaving: 1.5 - 3 dB GR on transients
+       └─► Oversampling: 16x (Suppresses aliasing distortion)
+       │
+       ▼
+[Hard Clipper] (Truncates remaining transient peaks cleanly)
+       │
+       ▼
+[Final Brickwall Limiter] (Ozone Maximizer: Max 0.5 - 1.0 dB GR, -1.0 dBTP Ceiling)
+The Mechanics of Staged Clipping
+Clipping truncates waveform peaks instantly when they cross a defined threshold, unlike a compressor or limiter, which turns down the volume of the signal over a recovery period (attack/release) [cite: 50, 51]. By clipping the loudest transients of the kick and snare by 1.5 to 3 dB on the master bus, the mastering engineer removes the massive peak energy that would otherwise trigger the limiter's gain reduction circuit [cite: 5, 50].
+Because clipping chops off the peak of the waveform, it generates harmonic distortion [cite: 50, 51]. In hyperpop, this added distortion is a stylistic advantage; it generates even and odd harmonics that add brightness and grit to the mix [cite: 50, 51].
+To execute this without introducing digital aliasing (which causes a harsh, plasticky high-frequency buildup):
+Insert a Clipper: Place a precision clipper, such as SIR Audio Tools StandardCLIP, on the master bus after your corrective EQ but before your final limiter [cite: 15, 50, 52].
+Configure Oversampling: Set the clipper's oversampling to 16x to ensure that any harmonic distortion generated by the clipped peaks is processed well above the Nyquist frequency, preventing foldback aliasing [cite: 50, 53].
+Dial in the Knee: Set the clipper to a soft-saturation or "soft sine" curve to gradually round off the peaks of the kick and snare, adding warm harmonic coloration [cite: 50, 54].
+Adjust Input Gain: Increase the input gain of the clipper until the peaks are being shaved by approximately 2 dB on loud chorus sections [cite: 50, 52].
+The Final Limiter: Insert a high-quality brickwall limiter (such as iZotope Ozone Maximizer set to IRC IV or Modern mode) directly after the clipper [cite: 5, 50]. Set the ceiling to −1.0 dBTP to prevent inter-sample clipping on streaming codecs, and push the threshold until the limiter is executing a maximum of 0.5 to 1.0 dB of gain reduction [cite: 5].
+This staged approach allows the master to easily achieve a competitive, ultra-loud output of −6 to −5 LUF’s while retaining a punchy, aggressive transient response [cite: 5, 52].
+--------------------------------------------------------------------------------
+Nuanced Conclusions and Synthesis
+To synthesize the production techniques of hyperpop and achieve the highly polished, emotionally resonant aesthetic of Hannah Diamond, the producer must abandon traditional concepts of acoustic authenticity and embrace the computer as an expressive, creative prosthetic [cite: 8, 11].
+By approaching vocal tracking with manual comping and real-time tuning, producers can construct a highly polished "vocoloid" persona [cite: 3, 16]. Combining this vocal precision with historical synthesis methods, like David Gamson’s "Poke Bass" technique, ensures that digital synths maintain physical impact [cite: 24]. Finally, using subtractive arrangement workflows and staged clipping allows the producer to build a dense, high-definition soundstage that achieves competitive commercial loudness while retaining dynamic punch [cite: 5, 16, 52].
+Ultimately, hyperpop’s power lies in this deliberate play between opposites: using cold, hard, synthetic technology to deliver warm, fragile human sincerity [cite: 8, 9].
+--------------------------------------------------------------------------------
+Bubblegum Bass - Melodigging, https://www.melodigging.com/genre/bubblegum-bass
+Hannah Diamond - Wikipedia, https://en.wikipedia.org/wiki/Hannah_Diamond
+Hannah Diamond : r/pcmusic - Reddit, https://www.reddit.com/r/pcmusic/comments/1gebshw/hannah_diamond/
+Perfect Picture: How are we feeling almost a year later? : r/pcmusic - Reddit, https://www.reddit.com/r/pcmusic/comments/1fqpntw/perfect_picture_how_are_we_feeling_almost_a_year/
+Hyperpop Artist Mistakes That Make Tracks Sound Cheap - The Ghost Production, https://theghostproduction.com/hyperpop-artist-mistakes-cheap-tracks/
+Scritti Politti, Me'Shell and beyond - GForce Software, https://www.gforcesoftware.com/blog/scritti-politti-meshell-and-beyond/
+Hannah Diamond's glistening hyperpop explores 'the space between being a person and an image' - 48 hills, https://48hills.org/2023/10/hannah-diamond-perfect-picture-rickshaw-stop-tour-interview/
+Hannah Diamond | Rinse FM, https://www.rinse.fm/shows/hannah-diamond
+Hannah Diamond Is Real | The FADER, https://www.thefader.com/2016/02/29/hannah-diamond-interview
+Hannah Diamond's Most Vulnerable Album Was Written by ChatGPT - Third Bridge Creative, https://www.thirdbridgecreative.com/blog/hannah-diamond-chatgpt
+A. G. Cook Dissolves Into the Light - Interview Magazine, https://www.interviewmagazine.com/music/ag-cook-pc-music
+Hannah Diamond's pop vision comes into full focus on Perfect Picture - The Line of Best Fit, https://www.thelineofbestfit.com/albums/hannah-diamond-perfect-picture-pop-vision-full-focus
+How to do PC Music vocal effects? : r/pcmusic - Reddit, https://www.reddit.com/r/pcmusic/comments/hckivz/how_to_do_pc_music_vocal_effects/
+Finding Your Voice Through Auto-Tune - Paste Magazine, https://www.pastemagazine.com/music/scene-report/finding-your-voice-through-auto-tune
+URM Podcast EP 326 | Dwilly, https://urm.academy/urmpc326-dwilly/
+"I drink and I smoke and I use Auto-Tune": But what's the music theory behind Charli XCX's Brat? | MusicRadar, https://www.musicradar.com/music-tech/recording/i-drink-and-i-smoke-and-i-use-auto-tune-but-whats-the-music-theory-behind-charli-xcxs-brat
+Hannah Diamond - Exclaim!, https://exclaim.ca/music/article/hannah_diamond-reflections
+Throat: Pitch Shifting From the Inside Out | AutoTune, https://www.antarestech.com/blog/pitch-shifting-plug-in-blog
+Formant Shifting: Why You Should Use It On Every Vocal Sample - EDMProd, https://www.edmprod.com/formant-shifting/
+Top 10 Best Vocal Formant Shifting VST Plugins in 2024 - Production Music Live, https://www.productionmusiclive.com/blogs/news/top-10-best-vocal-formant-shifting-vst-plugins-in-2022
+umru - Equipboard, https://equipboard.com/pros/umru
+Sidechain Compression Techniques For Pop Mixes - Brent Hendrich, https://brenthendrich.com/sidechain-compression-techniques-for-pop-mixes/
+Adding Impact to Your Sounds Explained® - Groove3, https://www.groove3.com/products/Adding-Impact-to-Your-Sounds-Explained
+Cupid & Psyche 85: Scritti Politti's Triumphant Classic, Synth by Synth - Gearnews.com, https://www.gearnews.com/cupid-psyche-85-scritti-politti-synths/
+Hannah Diamond - Perfect Picture | Reviews - Clash Magazine, https://www.clashmusic.com/reviews/hannah-diamond-perfect-picture/
+These are the Plugins Behind A.G. Cook's Hyperpop Sound - Internet Tattoo, https://www.internettattoo.com/blog/ag-cook-hyperpop-plugin-svst
+Native Instruments announce Super*Saw, https://www.soundonsound.com/news/native-instruments-announce-supersaw
+Native Instruments and A. G. Cook launch Super*Saw synthesiser - Attack Magazine, https://www.attackmagazine.com/news/native-instruments-and-a-g-cook-launch-supersaw-synthesiser/
+"The Opposite of Beautiful is Literal": A Conversation with A. G. Cook and Caroline Polachek, https://officemagazine.net/opposite-beautiful-literal-conversation-g-cook-and-caroline-polachek
+INTERVIEW: Unleashing A.G. Cook's Musical Freedom: “Anything Can Happen in a Track”, https://enfntsterribles.com/interview-unleashing-a-g-cooks-musical-freedom-anything-can-happen-in-a-track/
+David Gamson - Wikipedia, https://en.wikipedia.org/wiki/David_Gamson
+How to make immaterial bubble gum bell bass at 0:27 : r/synthrecipes - Reddit, https://www.reddit.com/r/synthrecipes/comments/m4c7k6/how_to_make_immaterial_bubble_gum_bell_bass_at_027/
+hyperpop bass synth - YouTube, https://www.youtube.com/shorts/uNMf2Jbxdpg
+How to get those metallic-sounding snares? : r/edmproduction - Reddit, https://www.reddit.com/r/edmproduction/comments/pqtib8/how_to_get_those_metallicsounding_snares/
+Metallic Pluck sound at 0:12? : r/sounddesign - Reddit, https://www.reddit.com/r/sounddesign/comments/1czriq0/metallic_pluck_sound_at_012/
+How do I get a plucked synth created like at the start of "Teeth!" by ElyOtto? : r/HYPERPOP, https://www.reddit.com/r/HYPERPOP/comments/1dtm885/how_do_i_get_a_plucked_synth_created_like_at_the/
+Where do I find bubblegum bass/electro-pop drums and percs? : r/musicproduction - Reddit, https://www.reddit.com/r/musicproduction/comments/j2t1s5/where_do_i_find_bubblegum_basselectropop_drums/
+Make SOPHIE snares no monomachine required - YouTube, https://www.youtube.com/shorts/3AfUnorf3s4
+Tips on how to make some of Sophie's metallic and brash “impact” like sounds, or her bubbly popping sounds? : r/VitalSynth - Reddit, https://www.reddit.com/r/VitalSynth/comments/1k0ppwp/tips_on_how_to_make_some_of_sophies_metallic_and/
+SOPHIE'S Crazy Metallic Sound Design #musicproducer #ableton #electronicmusic #sophie #sounddesign - YouTube, https://www.youtube.com/shorts/F3f8E61GRP8
+Is there a "typical hyperpop beat" like there is some other genres, or are they too varied?, https://www.reddit.com/r/edmproduction/comments/1catlxw/is_there_a_typical_hyperpop_beat_like_there_is/
+How do I create the huge bass hit in this song by SOPHIE? : r/edmproduction - Reddit, https://www.reddit.com/r/edmproduction/comments/7yxh1k/how_do_i_create_the_huge_bass_hit_in_this_song_by/
+Help with producing. : r/pcmusic - Reddit, https://www.reddit.com/r/pcmusic/comments/7yw4yl/help_with_producing/
+Hyperpop was posed as this "next big thing" that was going to take the mainstream music scene by storm, why didn't it? : r/popheads - Reddit, https://www.reddit.com/r/popheads/comments/1ib4dpy/hyperpop_was_posed_as_this_next_big_thing_that/
+What do you guys think about hyperpop starting to work its way into modern pop music?, https://www.reddit.com/r/pcmusic/comments/12d0umk/what_do_you_guys_think_about_hyperpop_starting_to/
+EASYFUN: Interview - STATIC – WNYU's Music Magazine, https://staticmag.org/bernarda-basualdo/easyfun-interview/
+In 2013, Finn Keane had a very simple mission: "Make something really immediate and undeniable and perfect," he says of the ethos behind EASYFUN : r/pcmusic - Reddit, https://www.reddit.com/r/pcmusic/comments/1gjd9xa/in_2013_finn_keane_had_a_very_simple_mission_make/
+The past, present, and future of PC Music - Rolling Stone UK, https://www.rollingstone.co.uk/music/pc-music-a-g-cook-easyfun-namasenda-2022-interview-18584/
+Thy Slaughter on medieval fantasy, 'Soft Rock' and PC Music - Crack Magazine, https://crackmagazine.net/article/long-reads/thy-slaughter/
+How To Use a Clipper When Mastering - Mastering The Mix, https://www.masteringthemix.com/blogs/learn/how-to-use-a-clipper-when-mastering
+Clipper on the master? Advice for this? : r/audioengineering - Reddit, https://www.reddit.com/r/audioengineering/comments/1dcxrzc/clipper_on_the_master_advice_for_this/
+How do I get a loud mix without clipping peak volumes? : r/edmproduction - Reddit, https://www.reddit.com/r/edmproduction/comments/11z5kbm/how_do_i_get_a_loud_mix_without_clipping_peak/
+Top 10 Beat Making Services & Consultants 2026 | Pro Beatmakers & Producers - iCreativez, https://www.icreativez.com/categories/music-audio/best-beat-making-services-consultants-2026.html
+For people that hard clip and soft clip instead of mastering. Any side chain or eq tips to help stuff sit better and get as clean as possible. Just curious as to how y'all do it : r/trapproduction - Reddit, https://www.reddit.com/r/trapproduction/comments/n40dg2/for_people_that_hard_clip_and_soft_clip_instead/
+Chat
+🎹
+The Art and Theory of Brat Era Music Production
+21 sources
+·
+16 Aug 2026
+These sources examine the technical and artistic foundations of modern experimental pop, with a specific focus on Charli XCX’s album Brat and the bubblegum bass genre. Music theorists and producers detail how artists use subtractive digital production, minimalist arrangements, and heavy Auto-Tune to create a distinctively confident, party-focused atmosphere. The texts highlight the historical influence of the PC Music collective and the late producer SOPHIE, noting their use of high-pitched vocals and metallic synth textures. Additional analysis connects these contemporary styles to 1980s synth-pop, specifically referencing the complex layers of FM synthesis and digital sequencing used by Scritti Politti. Technical discussions further explore specific software like Serum and Logic Pro, alongside hardware classics like the Yamaha DX7, to explain how these "hyper-sweet" yet abrasive sounds are constructed. Community insights from Reddit offer practical advice on achieving these aesthetics through formant shifting, distortion, and creative vocal resampling.
+
+Today • 16:00
+Teach me everything about A.G. Cook's production style as a beginner.
+
+A.G. Cook, the founder of the PC Music collective and a pioneer of hyperpop, is known for a production style that blends high-gloss pop perfection with experimental, often abrasive digital textures
+. His approach balances "extreme pop sugar" with disorienting sound design, using the computer as an expressive "creative prosthetic" to deliver emotional sincerity through synthetic means
+.
+1. Subtractive Arrangement Workflow
+Unlike traditional additive production, where layers are continuously added, Cook primarily works by subtraction
+.
+The "Machete" Method: He typically starts with dense loops and MIDI blocks 

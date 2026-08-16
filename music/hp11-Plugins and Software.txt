@@ -1,0 +1,152 @@
+This Reddit thread serves as a practical guide for sound designers seeking to recreate the metallic, percussive textures of bubblegum bass using basic digital tools. A community expert details a specific method using FM synthesis within Ableton’s Operator, where multiple sine waves are layered and tuned to high frequency ratios to mimic the inharmonic qualities of a bell. The process emphasizes the manipulation of volume envelopes and phase settings to achieve a sharp, "plucked" transient that defines the genre's signature aesthetic. Ultimately, the text functions as a collaborative technical tutorial, illustrating how complex, modern pop timbres can be engineered through the incremental adjustment of simple waveforms and pitch modulation.
+
+How to make immaterial bubble gum bell bass at 0:27 : r/synthrecipes
+Skip to main content How to make immaterial bubble gum bell bass at 0:27 : r/synthrecipes
+Open menu
+Open navigation
+Go to Reddit Home
+Ask
+Find anything
+Sign Up
+Sign up for Reddit
+Log In
+Log in to Reddit
+Expand user menu
+Open settings menu
+Skip to Sign up Skip to Right Sidebar
+Back
+Go to synthrecipes
+r/synthrecipes
+â€¢ 6y ago
+club__pc
+Locked post
+Stickied post
+Archived post
+Award this post
+Report
+How to make immaterial bubble gum bell bass at 0:27
+request
+I have only have ableton stock!!â ¤ï¸
+https://youtu.be/Kv3yIv9nwf8
+Read more
+Upvote 12 Downvote 3 Go to comments
+Share
+Sort by: Best
+Open comment sort options
+Best
+Top
+New
+Controversial
+Old
+Q&A
+Search Comments Expand comment search
+Cancel
+Comments Section
+simonandfunkfunkle
+â€¢ 6y ago
+This can 100% be done in operator.
+Itâ€™s worth noting that thereâ€™s at least 2-3 instruments happening all at once here including the bell sound plus the bass.
+FM bells are just a matter of setting all operators (all set to sine waves) sustain to -inf db and adjusting the ratio and level to suit. Start with operator A Which will just be a sine wave. Bring up operator B and adjust the ratio. Same with C, then D. It sounds like youâ€™ll have to go quite high with the ratios. Generally, Iâ€™ll go incrementally higher from B to D and set the decay incrementally faster.
+Itâ€™s hard to give exact settings without sitting down and doing it for you, but this is the basis. Have an experiment.
+It will help the transient a lot if you set the phase to 90Â° on all operators. Do a quick sharp pitch envelope as well.
+Upvote 8 Downvote Reply Award
+Share
+Report
+Award
+Share
+cockybuzz
+â€¢ 6y ago
+What he said
+Upvote 5 Downvote Reply Award
+Share
+Report
+Award
+Share
+More replies
+These_Doughnut_7709
+â€¢ 6y ago
+its a pluck bass, with layer, the first comment gave the detail
+Upvote 3 Downvote Reply Award
+Share
+Report
+Award
+Share
+More posts you may like
+Related posts
+Is this setup safe for my bass? r/doublebass â€¢ 11d ago [
+Is this setup safe for my bass?
+](https://www.reddit.com/r/doublebass/comments/1vgbtwk/is_this_setup_safe_for_my_bass/) 59 upvotes Â· 66 comments
+How sick is my bass? Am I allowed in? r/BassCirclejerk â€¢ 7mo ago [
+How sick is my bass? Am I allowed in?
+](https://www.reddit.com/r/BassCirclejerk/comments/1qrmg3c/how_sick_is_my_bass_am_i_allowed_in/) 69 upvotes Â· 27 comments
+Rate my first bass r/Davie504 â€¢ 3mo ago [
+Rate my first bass
+](https://www.reddit.com/r/Davie504/comments/1td1nze/rate_my_first_bass/) 2 52 upvotes Â· 6 comments
+Gat Decor â€” Passion: Main Lead + Bass r/synthrecipes â€¢ 5y ago [
+Gat Decor â€” Passion: Main Lead + Bass
+](https://www.reddit.com/r/synthrecipes/comments/mf9po8/gat_decor_passion_main_lead_bass/) 7 upvotes Â· 6 comments
+Need help identifying this bass r/BassCirclejerk â€¢ 6mo ago [
+Need help identifying this bass
+](https://www.reddit.com/r/BassCirclejerk/comments/1r16ycx/need_help_identifying_this_bass/) 310 upvotes Â· 33 comments
+Is my bass real / authentic? r/BassCirclejerk â€¢ 2mo ago [
+Is my bass real / authentic?
+](https://www.reddit.com/r/BassCirclejerk/comments/1udtvng/is_my_bass_real_authentic/) 44 upvotes Â· 25 comments
+Do you actually enjoy the sound of your bass? r/BassCirclejerk â€¢ 2mo ago [
+Do you actually enjoy the sound of your bass?
+](https://www.reddit.com/r/BassCirclejerk/comments/1ubr0ur/do_you_actually_enjoy_the_sound_of_your_bass/) 61 upvotes Â· 50 comments
+Best substances for bass playing? r/BassCirclejerk â€¢ 3mo ago [
+Best substances for bass playing?
+](https://www.reddit.com/r/BassCirclejerk/comments/1t8glwi/best_substances_for_bass_playing/) 101 upvotes Â· 55 comments
+can anyone identify this bass please? thanks r/BassCirclejerk â€¢ 4mo ago [
+can anyone identify this bass please? thanks
+](https://www.reddit.com/r/BassCirclejerk/comments/1sxgcli/can_anyone_identify_this_bass_please_thanks/) 130 upvotes Â· 16 comments
+What are some bassists you think are underrated r/BassCirclejerk â€¢ 8mo ago [
+What are some bassists you think are underrated
+](https://www.reddit.com/r/BassCirclejerk/comments/1q0t8oz/what_are_some_bassists_you_think_are_underrated/) 246 upvotes Â· 98 comments
+Nice bass guitar I guess r/ToolJerk â€¢ 3mo ago [
+Nice bass guitar I guess
+](https://www.reddit.com/r/ToolJerk/comments/1tb8kol/nice_bass_guitar_i_guess/) 0:16 154 upvotes Â· 20 comments
+the first thing I did to my first bass r/whirr â€¢ 3mo ago [
+the first thing I did to my first bass
+](https://www.reddit.com/r/whirr/comments/1t8oxw8/the_first_thing_i_did_to_my_first_bass/) 61 upvotes Â· 6 comments
+specific use of this instrument? r/howdoesthiswork â€¢ 16d ago [
+specific use of this instrument?
+](https://www.reddit.com/r/howdoesthiswork/comments/1vc74xi/specific_use_of_this_instrument/) 2 46 upvotes Â· 53 comments
+Workflow advice for high-res Drill'n'Bass (317 BPM / 16 LPB). Struggling with structure vs. variation. r/renoise â€¢ 7mo ago [
+Workflow advice for high-res Drill'n'Bass (317 BPM / 16 LPB). Struggling with structure vs. variation.
+](https://www.reddit.com/r/renoise/comments/1qshl6r/workflow_advice_for_highres_drillnbass_317_bpm_16/) 0:23 26 upvotes Â· 29 comments
+Will this "thing" affect my tone at all? r/BassCirclejerk â€¢ 4mo ago [
+Will this "thing" affect my tone at all?
+](https://www.reddit.com/r/BassCirclejerk/comments/1t119xw/will_this_thing_affect_my_tone_at_all/) 349 upvotes Â· 33 comments
+Bubblegum Bass/PC Music/Hyperpop Schism? r/LetsTalkMusic â€¢ 5y ago [
+Bubblegum Bass/PC Music/Hyperpop Schism?
+](https://www.reddit.com/r/LetsTalkMusic/comments/mhtdci/bubblegum_basspc_musichyperpop_schism/) 141 upvotes Â· 17 comments
+How to improve my bass r/UpdatesHymnsOfINC â€¢ 5mo ago [
+How to improve my bass
+](https://www.reddit.com/r/UpdatesHymnsOfINC/comments/1rnpi6j/how_to_improve_my_bass/) 0:55 8 upvotes Â· 12 comments
+My first Bass ! r/doublebass â€¢ 6mo ago [
+My first Bass !
+](https://www.reddit.com/r/doublebass/comments/1r1xyv1/my_first_bass/) 4 112 upvotes Â· 6 comments
+How do you make your bass psychedelic? r/BassCirclejerk â€¢ 3mo ago [
+How do you make your bass psychedelic?
+](https://www.reddit.com/r/BassCirclejerk/comments/1t6zy37/how_do_you_make_your_bass_psychedelic/) 54 upvotes Â· 28 comments
+The bass is bumpin r/airplaneears â€¢ 4mo ago [
+The bass is bumpin
+](https://www.reddit.com/r/airplaneears/comments/1szh4oy/the_bass_is_bumpin/) 2 331 upvotes Â· 6 comments
+Most bass players donâ€™t need to be audible r/BassCirclejerk â€¢ 11d ago [
+Most bass players donâ€™t need to be audible
+](https://www.reddit.com/r/BassCirclejerk/comments/1vgofbq/most_bass_players_dont_need_to_be_audible/) 31 upvotes Â· 16 comments
+Can Anyone Tell Me What this Instrument is? r/UnusualInstruments â€¢ 1mo ago [
+Can Anyone Tell Me What this Instrument is?
+](https://www.reddit.com/r/UnusualInstruments/comments/1upjuon/can_anyone_tell_me_what_this_instrument_is/) 2 54 upvotes Â· 17 comments
+PC music/Bubblegum Bass r/Sophie â€¢ 2y ago [
+PC music/Bubblegum Bass
+](https://www.reddit.com/r/Sophie/comments/1gpcnw0/pc_musicbubblegum_bass/) spotify 1 upvote Â· 1 comment
+Does anybody know what this instrument is called? r/UnusualInstruments â€¢ 7mo ago [
+Does anybody know what this instrument is called?
+](https://www.reddit.com/r/UnusualInstruments/comments/1qa75s9/does_anybody_know_what_this_instrument_is_called/) 1:02 998 upvotes Â· 57 comments
+Community Info Section
+r/synthrecipes
+Join
+/r/SynthRecipes
+Where sound designers / synthesizer enthusiasts come to share and grow their skill set. Check our Wiki for the Synthrecipes Cookbook!

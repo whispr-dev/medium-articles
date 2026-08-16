@@ -1,0 +1,116 @@
+This archived discussion from the edmproduction subreddit explores the technical methods used to replicate the powerful, avant-garde bass hits characteristic of the musician SOPHIE. While many users suggest that the sound relies on heavy distortion, ring modulation, or the layering of filtered 808 kicks, a prominent contributor argues that the perceived impact is primarily achieved through sidechaining the entire mix to the bass. Other experts highlight the artist's use of FM synthesis, comb filtering, and unconventional sound sources to create a metallic, hyper-dense texture. Ultimately, the thread serves as a collaborative breakdown of how sound design and deliberate arrangement can make a singular audio element feel massive and unique.
+
+Post locked: keep it on topic and respectful.
+
+1
+[deleted]
+•
+9y ago
+u/whingeypomme avatar
+whingeypomme
+•
+9y ago
+kick drum, distortion, ring modulation / phasing with a squelchy kick over the top
+
+3
+how_small_a_thought
+•
+9y ago
+SOPHIE uses a lot of FM and comb filters. It's mostly the comb filters that give the sounds their metallic quality, along with some flangers as well. I'd advise using a sine wave to modulate a saw, with maybe a separate sine to modulate nothing and act as an impact sound. And of course, comb filters and a low-pass filter so that your ears don't die.
+
+14
+[deleted]
+•
+9y ago
+u/Azakeen avatar
+Azakeen
+•
+9y ago
+Bass/mid layer: distorted 808 High layer : granulized percussion (use something with alot of treble)
+
+Glue together with a lot of compression, use a transient shaper and then add your fades
+
+1
+vacmaster420
+•
+9y ago
+sounds like a typical distorted 808, a rap producer by the name of ronny j is known for using these kinds of 808s a lot
+
+1
+ChocLife
+•
+9y ago
+I'd say it's in two parts - a traditional kick with a LAYER of distortion over it. If you just distort a kick, what will usually happen is you suck the punch out of it. The specifics of each part I cannot say.
+
+1
+u/djbeefburger avatar
+djbeefburger
+•
+9y ago
+(Disclaimer: unpopular question) I'm not on super great headphones, but .... Am I the only one that doesn't know what "huge bass hit" OP is asking about? The distorted kick that comes in at :24? Something later? All the kicks?
+
+3
+u/corvidsarecrows avatar
+corvidsarecrows
+•
+9y ago
+Yeah definitely referring to the distorted kick. I imagine it's just layering a clean sub with a couple filtered and heavily distorted samples for the mids. It kinda sounds like there might be an LFO on there too to add some graininess
+
+2
+u/undrs avatar
+undrs
+•
+9y ago
+fuck if i know... havnt heard nothing that sounds like Sophie ever. doubt it is as simple as sound layering. GOD!
+
+1
+u/danieldaviswho avatar
+danieldaviswho
+•
+9y ago
+SOPHIE is really something else. i really love how she's able to be minimal while simultaneously being hyper dense with timbre.
+
+i think a lot of it really boils down to that. she probably has a existing library of unique sounds made from previous sessions and just arranges them well so everything just works. with much of her work, if you listen carefully there are few sounds actually happening at the exact same time. no sound needs to fight for it's own place in the mix because nothing else is even being played then. we tend to do this often with sidechain compressors that duck the volume, but here she doesn't even need to do that because the sounds are arranged in a way that she doesn't even need to duck much (if anything).
+
+there's a lot of different bass sounds that play throughout this track but if you're referring to the repeating hit that happens at roughly 0:25, it honestly sounds like a distorted and filtered kick drum with an especially long bass tail. but the main thing that really draws me to SOPHIE's music so much is that she's not afraid to use really unconventional sounds as elements. like sure, i say that this sounds like a filtered crunchy kick drum, but for all we know it could be made from stretched out duck quacks. yes she has a signature sound with metallic hits, the high pitched squeaky lead synth and those glossy chords, but everything in-between instruments those feels like absolutely fair game in terms of sound design. in fact, to me the only familiar element piercing the track together is the pop vocal. that in itself kind of forces people to hear all these odd sounds underneath it all. it's all super cool stuff and very interesting to me, IMHO
+
+41
+[deleted]
+•
+9y ago
+[deleted]
+•
+9y ago
+[deleted]
+•
+9y ago
+Sounds like some distortions and ring modulation on an 808 to me
+
+1
+chewbaccas_jam
+•
+9y ago
+Try using distortion on 808s
+
+7
+reaIity
+•
+9y ago
+I'd say the same; distort the 808 alot and then add a high and low pass filter and control it until it's still really saturated but still holds its tone and sound
+
+1
+[deleted]
+•
+9y ago
+[deleted]
+•
+9y ago
+u/ThaRudistMonk avatar
+ThaRudistMonk
+•
+9y ago
+i cant help just wanted to say this song is amazing. SOPHIE is god.
+
+27
+
+25 more replies

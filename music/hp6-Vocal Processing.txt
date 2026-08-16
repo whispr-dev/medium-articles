@@ -1,0 +1,199 @@
+Formant Shifting: Why You Should Use It On Every Vocal Sample - EDMProd
+Source guide
+This comprehensive guide explores formant shifting, a production technique that alters the tonal character and timbre of a sound without affecting its fundamental pitch. By explaining how to manipulate harmonic resonances—which define whether a voice sounds male, female, or even robotic—the text illustrates how producers can reimagine vocal samples, add depth through layering, or achieve more natural-sounding pitch correction. Beyond technical definitions, the article provides practical creative applications for delays and percussion, while evaluating industry-standard tools ranging from free plugins like MAutoPitch to advanced spectral processors like Melodyne and Little AlterBoy. Ultimately, the source serves as a roadmap for electronic musicians to personalise generic samples and inject unique "color" into their arrangements through precise frequency manipulation.
+
+Formant Shifting: Why You Should Use It On Every Vocal Sample
+Skip to content
+New Master Serum 2
+Courses
+Ableton Racks
+All-Access Bundle
+Blog
+Free Downloads
+Student Login Customer Portal
+Search...
+New Master Serum 2
+Courses
+Ableton Racks
+All-Access Bundle
+Blog
+Student Login
+Customer Portal
+Free Downloads
+Search Enter to search Esc to close · ⌘ K to open
+Formant Shifting: Why You Should Use It On Every Vocal Sample
+Bonus material: download our biggest sample pack (700+ samples) for free!
+Picture of Simon Haven Simon Haven
+January 9, 2024
+Formant shifting is an extremely powerful tool. At the turn of a knob, it can turn dull vocal samples into something exciting.
+If you've never experimented with formant shifting, then this is the guide for you.
+Together, we are going to look at:
+what formant shifting actually is
+how it works under the hood
+when to use formant shifting (and not just on vocals 👀)
+the best free and paid plugins to start using formant shifting in your tracks TODAY 🔥
+Let's get started! 👇
+Get the headstart you need in music production with our EDM Starter Kit 🎛
+Get our collection of high-quality presets, samples and PDF guides – suitable for all genres of electronic music 👇
+Download the FREE EDM Starter Kit
+Table of contents
+What is Formant Shifting? 🤔
+Harmonics and formants
+Formant shifting
+Formant Shifting in Practice
+When to Use Formant Shifting
+Creative layering
+Delay… with a twist
+Realistic Autotuning
+Creative Uses of Formant Shifting
+The Best Formant Shifting Plugins
+MAutoPitch by MeldaProduction (FREE)
+Little AlterBoy by Soundtoys
+Throat by Antares
+Melodyne by Celemony
+That's It for This Guide on Formant Shifting!
+What is Formant Shifting? 🤔
+Before diving deeper into formant shifting, let's first define what formants are.
+Harmonics and formants
+A look at Wikipedia tells us that a formant is the “broad spectral maximum that results from an acoustic resonance of the human vocal tract”.
+Cool… that doesn't tell us much 😅. So what are formants in layman's terms?
+The way I like to think of formants is similar to the concept of timbre. Timbre is also often called the tone “color” or “quality” of a sound. Basically, it's what makes the note D#4 sound different on a piano and a guitar. Both notes have the pitch, but they sound different. That's timbre.
+Each instrument has its timbre
+Without going into too much music theory, this has to do with harmonics. Two instruments playing the same note will have the same fundamental frequency (let's say 440 Hz for the note A4). However, the number of harmonics and their relative amplitude will be different.
+Here's a quick example:
+A4 played on a piano
+Here's the frequency spectrum for the note A4 played on a piano. We can clearly distinguish the fundamental at 440 Hz and the upper harmonics:
+A4 played on a piano
+Here's the same note, played on a mandolin:
+A4 played on a mandolin
+Clearly, we are playing the same note, but let's look at the frequency spectrum of the mandolin:
+A4 played on a mandolin
+Although the fundamental is the same, the harmonics are completely different. In a nutshell, this is timbre.
+Formant shifting
+You can think of formant shifting as the timbre of a voice. Both a male and female voice can sing the note A4 – but they will sound drastically different. This is due to the amount of harmonics and their relative volume.
+With formant shifting, we are shifting the amount of harmonics upward or downward. However, the fundamental remains the same.
+The result is a change in the tone of the vocal, without changing the actual notes. Here's a quick example:
+Raw vocal Pitching the formants down
+The pitch remains the same, but the quality of the vocal has changed. In these examples, I used Little AlterBoy by Soundtoys (more on that plugin later 👀):
+Using Little AlterBoy for formant shifting
+Tap to unmute
+Your browser can't play this video.
+Learn more
+Formant Shifting in Practice
+Now that we know what formant shifting is, let's look at how to use it.
+All formant shifting plugins will have a main knob that you can turn up or down.
+Usually, this knob goes from -12 semitones to +12 semitones. However, keep in mind that we are not changing the actual pitch here:
+Formant shifting with the free plugin MAutoPitch
+Depending on the plugin you use, you might have additional controls such as:
+Dry/Wet: controls how much of the processed vocal is mixed with the original vocal
+Width: adds stereo widening by detuning and panning two copies
+More advanced plugins might have advanced controls to imitate certain types of vocal performances (soprano, tenor, etc.)
+Get the headstart you need in music production with our EDM Starter Kit 🎛
+Get our collection of high-quality presets, samples and PDF guides – suitable for all genres of electronic music 👇
+Download the FREE EDM Starter Kit
+When to Use Formant Shifting
+So, when should you use formant shifting?
+Well, the most obvious example is to transform a sample you found online.
+We actually dedicated a full guide to processing samples creatively. Whenever you download a sample from Splice or Loopcloud, the goal should always be to make it your own.
+However, there are a ton of other ways to use this cool effect. Let's have a look 👇
+Creative layering
+You can also use formant shifting to add depth to your vocals.
+This works especially well on background vocals. But you can also add a subtle layer on a lead vocal.
+If your vocal feels a bit too thin, try adding one or two layers. You could for example shift one layer up, and the other down.
+The best to go about this is to use parallel processing. Essentially, you duplicate your vocal: one dry and one wet:
+Formant shifting and parallel processing
+On our wet channel, you are going to set our formant shifting to 100% wet. We can then further sculpt it with its own EQ, compression, and reverb.
+Delay… with a twist
+We all love a good delay on our vocals. But why not spice things up with a bit of formant shifting?
+To do this, make sure your delay is set on a send or parallel channel. Adjust the formant shifting, and experiment with different delay times.
+Here's an example with the following settings:
+Formant shifting at -7 semitones
+Delay set at 1/2 note
+Rolling off the lows with EQ
+Using formant shifting to spice up a delay
+Realistic Autotuning
+Do you sometimes need to pitch-correct a vocal performance? Then formant shifting will help you get a more natural tone.
+This is because when you pitch a vocal up or down, you are also moving the entire harmonic content. The result is often called the “chipmunk” effect if you go more than a few semitones.
+When this happens, try adjusting with some downward formant shifting. This will help you remove some of the high harmonics that were introduced with the pitch shifting.
+Creative Uses of Formant Shifting
+Finally, you don't have to restrict yourself to vocals!
+Try adding formant shifting on random instruments and see what you come up with.
+I find that automating this effect works great for transitions. In this example, I am pitching down the formants of the drum loop. The effect is somewhat similar to a filter, but with an added twist:
+Processing the drums
+The Best Formant Shifting Plugins
+To wrap things up, let's look at some of the best plugins for formant shifting.
+MAutoPitch by MeldaProduction (FREE)
+We've talked about MeldaProduction here before, notably in our top free plugins list.
+Among their suite of free plugins, MAutoPitch stands out as an amazing free auto-tune option:
+MAutoPitch by MeldaProduction
+Its features include:
+Scale tracking to automatically pitch any note to a scale
+Depth and speed control how quick and precise the auto-tuning is
+Formant shifting with a Dry/Wet control and stereo-enhancing
+For a plugin that costs precisely $0, you won't find better out there.
+Check out MAutoPitch here
+Little AlterBoy by Soundtoys
+As you've guessed through this guide, I'm a big fan of Little AlterBoy (and no, we are not sponsored 😅):
+Little Alterboy by Soundtoys
+Not only does this plugin sound insanely good. But you also have a great choice of presets, especially for vocal doubling.
+On top of that, you get some really cool features, such as linking the pitch and formant shifting.
+There are 3 different modes available:
+Transpose: the pitch is shifted normally
+Quantize: the plugin will automatically pitch notes to the closest semitone. This re-creates the T-Pain auto-tune effect.
+Robot: the vocal is locked to a single note. When the Pitch is set to 0, that note is C.
+For a more in-depth look at Little AlterBoy, check out our list of favorite Soundtoys plugins here.
+Throat by Antares
+Antares is the company behind the OG Auto-tune plugin. However, they also have a whole suite of plugins that let you manipulate the human voice:
+Throat by Antares
+Throat goes well beyond any other similar plugin. In essence, it lets you control up to 5 different points in the human voice, including:
+vocal cords
+throat
+mouth
+lips
+This lets you shape the precise output of a voice with unprecedented control.
+Check out Throat here
+Melodyne by Celemony
+Despite a vastly outdated GUI, Melodyne remains the king of audio correction:
+Celemony Melodyne
+Melodyne is the by far the most advanced tool to precisely correct every syllable of a vocal performance. With Melodyne, formant shifting is just one of the options you have. Practically, you can change the timing, pitch, volume, formant, and more of every single word.
+If you're looking to correct a vocal performance transparently, Melodyne is your best bet.
+Check out Melodyne here
+Get the headstart you need in music production with our EDM Starter Kit 🎛
+Get our collection of high-quality presets, samples and PDF guides – suitable for all genres of electronic music 👇
+Download the FREE EDM Starter Kit
+That's It for This Guide on Formant Shifting!
+That's a wrap for this guide on formant shifting! Hopefully, we were able to give you some ideas on why and how you should use formant shifting in your tracks.
+Did we miss out on anything? What is your favorite formant shifting plugin? Let us know at simon@edmprod.com
+Simon Haven
+I make drum and bass under the alias Millstreet, and host the weekly podcast Last Week Liquid where I chat to producers about their workflow and production tips. Asides from music, I enjoy off-the-wall movies, writing, and going out for a pint of Guinness.
+CONTENT
+Glossary
+Track Breakdowns
+Workflow & Creativity
+Arrangement & Composition
+Mixing & Mastering
+General
+PRODUCTS
+All-Access Bundle
+EDM Foundations
+Songwriting For Producers
+Master Serum 2
+Drums By Design
+Mixing For Producers
+Partners & OTHER
+Student Login
+Privacy Policy
+Terms of Service
+Contact/Support
+Email
+Join Newsletter
+Follow Us
+Facebook Twitter Youtube Instagram
+© 2025 EDMProd
+Chat
+🎹
+The Art and Theory of Brat Era Music Production
+21 sources
+·
+16 Aug 2026
+These sources examine the technical and artistic foundations of modern experimental pop, with a specific focus on Charli XCX’s album Brat and the bubblegum bass genre. Music theorists and producers detail how artists use subtractive digital production, minimalist arrangements, and heavy Auto-Tune to create a distinctively confident, party-focused atmosphere. The texts highlight the historical influence of the PC Music collective and the late producer SOPHIE, noting their use of high-pitched vocals and metallic synth textures. Additional analysis connects these contemporary styles to 1980s synth-pop, specifically referencing the complex layers of FM synthesis and digital sequencing used by Scritti Politti. Technical discussions further explore specific software like Serum and Logic Pro, alongside hardware classics like the Yamaha DX7, to explain how these "hyper-sweet" yet abrasive sounds are constructed. Community insights from 

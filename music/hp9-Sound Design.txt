@@ -1,0 +1,130 @@
+This Reddit thread serves as a collaborative technical guide for music producers attempting to replicate the distinctive plucked synthesiser sound found in ElyOtto’s hyperpop track, "Teeth!". The discussion outlines a specific sound design recipe involving a sawtooth waveform processed through a bandpass filter with an envelope and high resonance to achieve a sharp, percussive character. To refine the texture and avoid a "muted" quality, the contributors suggest applying bitcrushing for digital grit and using an equaliser to remove mud at the 200 Hz frequency range. Ultimately, the text illustrates how the hyperpop community shares knowledge to master the genre’s signature aesthetic of exaggerated, distorted, and high-energy electronic melodies.
+
+How do I get a plucked synth created like at the start of "Teeth!" by ElyOtto? : r/HYPERPOP
+Skip to main content How do I get a plucked synth created like at the start of "Teeth!" by ElyOtto? : r/HYPERPOP
+Open menu
+Open navigation
+Go to Reddit Home
+Ask
+Find anything
+Sign Up
+Sign up for Reddit
+Log In
+Log in to Reddit
+Expand user menu
+Open settings menu
+Skip to Sign up Skip to Right Sidebar
+Back
+Go to HYPERPOP
+r/HYPERPOP
+â€¢ 2y ago
+VaetheEgirl
+Locked post
+Stickied post
+Archived post
+Award this post
+Language and translations
+Report
+How do I get a plucked synth created like at the start of "Teeth!" by ElyOtto?
+Questions
+I've tried everything to make my plucks sound like theirs, but nothing is working. they always come out muted. Any tips? https://open.spotify.com/track/4t2AtxetnW6fRtZfk5NJvW?si=138f2c3347e0433d Using FL Studio.
+Update: I now can make the plucked synth sound. Thank you!
+Read more
+Upvote 9 Downvote 4 Go to comments
+Share
+Sort by: Best
+Open comment sort options
+Best
+Top
+New
+Controversial
+Old
+Q&A
+Search Comments Expand comment search
+Cancel
+Comments Section
+lampblackink
+â€¢ 2y ago
+remade the synth just for this comment
+if you have a synth that can generate a sawtooth wave and has a bandpass filter with an envelope you can make a sawtooth pluck out of that. make sure to put some resonance
+bitcrush it a little and blend it with the original signal, then EQ a dip at around 200 HZ
+Upvote 8 Downvote Reply Award
+Share
+Report
+Language and translations
+Award
+Share
+VaetheEgirl
+OP â€¢ 2y ago
+Thank you so much! I'm a beginner so I'll have to play around with it, but hopefully I can get a nice sound. Can you do this in Vital effectively?
+Upvote 2 Downvote Reply Award
+Share
+Report
+Language and translations
+Award
+Share
+More replies
+Saf751
+â€¢ 2y ago
+No idea either. Thanks for asking tho since i actually liked teeth a lot.
+Upvote 3 Downvote Reply Award
+Share
+Report
+Language and translations
+Award
+Share
+VaetheEgirl
+OP â€¢ 2y ago
+Yeah. easily one of my favorite ElyOtto songs and hyperpop songs in general, the sound of it is so comforting <3
+Upvote 2 Downvote Reply Award
+Share
+Report
+Language and translations
+Award
+Share
+More replies
+More posts you may like
+Related posts
+Type of Synth in "Midi Sans Frontiers" by Squarepusher r/synthesizers â€¢ 2y ago [
+Type of Synth in "Midi Sans Frontiers" by Squarepusher
+](https://www.reddit.com/r/synthesizers/comments/1dbmr4b/type_of_synth_in_midi_sans_frontiers_by/) 1 upvote Â· 6 comments
+Does anyone know how to get a "revvy" synth? r/FL_Studio â€¢ 2y ago [
+Does anyone know how to get a "revvy" synth?
+](https://www.reddit.com/r/FL_Studio/comments/1dsarkx/does_anyone_know_how_to_get_a_revvy_synth/) 1 upvote Â· 3 comments
+How was the bass tone achieved in the RATM song "How I Could Just Kill a Man" r/Bass â€¢ 2y ago [
+How was the bass tone achieved in the RATM song "How I Could Just Kill a Man"
+](https://www.reddit.com/r/Bass/comments/1d4m9bf/how_was_the_bass_tone_achieved_in_the_ratm_song/) 3 upvotes Â· 2 comments
+Synth Brass in The Voidz's "All Wordz Are Made Up" r/synthrecipes â€¢ 2y ago [
+Synth Brass in The Voidz's "All Wordz Are Made Up"
+](https://www.reddit.com/r/synthrecipes/comments/1cvgh2e/synth_brass_in_the_voidzs_all_wordz_are_made_up/) 2 upvotes
+help request- trying to figure out what dance fits the Waterboys' cover of "Sweet Thing" (103bpm) r/ballroom â€¢ 2y ago [
+help request- trying to figure out what dance fits the Waterboys' cover of "Sweet Thing" (103bpm)
+](https://www.reddit.com/r/ballroom/comments/1cqzzme/help_request_trying_to_figure_out_what_dance_fits/) 3 upvotes Â· 3 comments
+Anyone know how to create this Bass from "HStikkytokky - Hold This" in Sytrus? r/FL_Studio â€¢ 2y ago [
+Anyone know how to create this Bass from "HStikkytokky - Hold This" in Sytrus?
+](https://www.reddit.com/r/FL_Studio/comments/1ctmihq/anyone_know_how_to_create_this_bass_from/) 2 upvotes
+How to recreate bass from "Optical Disco"'s 'Rhythm of the Night' r/serum â€¢ 2y ago [
+How to recreate bass from "Optical Disco"'s 'Rhythm of the Night'
+](https://www.reddit.com/r/serum/comments/1dsarc8/how_to_recreate_bass_from_optical_discos_rhythm/) 2 upvotes Â· 4 comments
+how to achieve a similar drum sound to this song from the half-life 1 soundtrack? r/musicproduction â€¢ 2y ago [
+how to achieve a similar drum sound to this song from the half-life 1 soundtrack?
+](https://www.reddit.com/r/musicproduction/comments/1dkopiw/how_to_achieve_a_similar_drum_sound_to_this_song/)
+Is there a song that sounds similar to Flux Pavilion's "Dawn"? r/findthatsong â€¢ 2y ago [
+Is there a song that sounds similar to Flux Pavilion's "Dawn"?
+](https://www.reddit.com/r/findthatsong/comments/1cpq6ru/is_there_a_song_that_sounds_similar_to_flux/) 1 upvote
+How do I make this kind of "dreamcore" sound like in the song "Ghost" by Machine Girl? r/FL_Studio â€¢ 2y ago [
+How do I make this kind of "dreamcore" sound like in the song "Ghost" by Machine Girl?
+](https://www.reddit.com/r/FL_Studio/comments/1dd0m57/how_do_i_make_this_kind_of_dreamcore_sound_like/) 1 upvote
+Keyboard sounds in "To Listen Is To Love" performed live by JoJo Mayer & Nerver r/synthrecipes â€¢ 2y ago [
+Keyboard sounds in "To Listen Is To Love" performed live by JoJo Mayer & Nerver
+](https://www.reddit.com/r/synthrecipes/comments/1drihgr/keyboard_sounds_in_to_listen_is_to_love_performed/) 1 upvote
+View Post in
+See more See fewer
+Italiano
+Deutsch
+EspaÃ±ol (LatinoamÃ©rica)
+Community Info Section
+r/HYPERPOP
+Join
+HYPERPOP
+Hyperpop is a genre of music that "reflects an exaggerated, eclectic, and self-referential approach to pop music and typically employs elements such as brash synth melodies, Auto-Tuned "earworm" vocals, and excessive compression and distortion."
